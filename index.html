@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solent Labs</title>
+    <title>Solent Labs™</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -14,10 +14,32 @@
     <link rel="alternate" hreflang="fr" href="https://solentlabs.io/lang/fr/" />
     <link rel="alternate" hreflang="x-default" href="https://solentlabs.io/" />
     <script data-goatcounter="https://solentlabs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+    // Auto-detect language for first-time visitors
+    (function() {
+        // Skip if user has stored preference (they chose manually)
+        if (localStorage.getItem('solent-lang')) return;
+
+        var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        var redirect = null;
+
+        if (lang.startsWith('pt')) redirect = '/lang/pt-br/';
+        else if (lang.startsWith('es')) redirect = '/lang/es/';
+        else if (lang.startsWith('de')) redirect = '/lang/de/';
+        else if (lang.startsWith('fr')) redirect = '/lang/fr/';
+
+        if (redirect) {
+            localStorage.setItem('solent-lang', lang.split('-')[0]);
+            location.replace(redirect);
+        } else {
+            localStorage.setItem('solent-lang', 'en');
+        }
+    })();
+    </script>
 </head>
 <body>
     <nav class="lang-switcher">
-        <a href="#" class="active">EN</a> | <a href="lang/pt-br/">PT-BR</a> | <a href="lang/es/">ES</a> | <a href="lang/de/">DE</a> | <a href="lang/fr/">FR</a>
+        <a href="#" class="active" onclick="localStorage.setItem('solent-lang','en')">EN</a> | <a href="lang/pt-br/" onclick="localStorage.setItem('solent-lang','pt')">PT-BR</a> | <a href="lang/es/" onclick="localStorage.setItem('solent-lang','es')">ES</a> | <a href="lang/de/" onclick="localStorage.setItem('solent-lang','de')">DE</a> | <a href="lang/fr/" onclick="localStorage.setItem('solent-lang','fr')">FR</a>
     </nav>
 
     <div class="container">
@@ -51,7 +73,7 @@
         </div>
 
         <footer>
-            <p>A Solent Labs project.</p>
+            <p>A Solent Labs™ project.</p>
         </footer>
     </div>
 </body>

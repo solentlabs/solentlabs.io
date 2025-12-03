@@ -1,0 +1,17 @@
+{
+  "name": "solentlabs-website",
+  "version": "1.0.0",
+  "description": "Solent Labs website - solentlabs.io",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "serve": "npx serve -l 3000 ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "serve": "^14.2.0"
+  }
+}
