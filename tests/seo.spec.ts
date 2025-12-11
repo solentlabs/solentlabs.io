@@ -82,12 +82,12 @@ test.describe('Accessibility', () => {
   test('page has proper heading hierarchy', async ({ page }) => {
     await page.goto('/');
 
-    // h1 exists (main headline)
-    const h1s = await page.locator('h1').all();
+    // h1 exists (main headline) - scope to container to avoid Astro dev toolbar
+    const h1s = await page.locator('.container h1').all();
     expect(h1s.length).toBe(1);
 
     // h2 elements exist for sections
-    const h2s = await page.locator('h2').all();
+    const h2s = await page.locator('.container h2').all();
     expect(h2s.length).toBeGreaterThanOrEqual(2);
   });
 
