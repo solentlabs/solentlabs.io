@@ -103,6 +103,7 @@ Keep these terms unchanged:
 - DOCSIS
 - GitHub
 - DRY (Don't Repeat Yourself)
+- Open Source
 
 ## For Developers
 
