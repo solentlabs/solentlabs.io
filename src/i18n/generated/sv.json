@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — Nätverksövervakning med Öppen Källkod",
+    "description": "Vi bygger mjukvara som gör komplexa system observerbara. Öppen källkod i kärnan."
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "Verktyg som avslöjar dold data.",
+    "subtitle": "Vi bygger mjukvara som gör komplexa system observerbara. Öppen källkod i kärnan."
+  },
+  "approach": {
+    "text": "Komplexa system döljer sin data. Enheter begraver mätvärden i klumpiga gränssnitt. API:er exponerar inte vad du behöver. Informationen finns — den är bara inte tillgänglig. Vi bygger broar."
+  },
+  "products": {
+    "title": "Produkter",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "DOCSIS-signalövervakning för Home Assistant. Spåra signalstyrka, brusmarginaler och fel över alla ditt modems kanaler. 10+ stödda modem. 700+ tester.",
+      "learnMore": "Läs mer",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "Hur Vi Bygger",
+    "intro": "Dessa principer styr varje beslut — och sätter förväntningar för bidragsgivare.",
+    "aiAccelerated": {
+      "title": "AI-accelererad:",
+      "text": "Vi använder AI som en kraftmultiplikator. Inte som en gimmick, utan som hur ett litet team levererar det som tidigare krävde ett stort. Varje bidragsgivare drar nytta av samma verktyg."
+    },
+    "systemsFirst": {
+      "title": "System först:",
+      "text": "Förstå helheten innan du optimerar delar. Övervakning är inte bara siffror — det är att förstå hur mätvärden hänger ihop och vilka mönster förutsäger fel."
+    },
+    "rootCause": {
+      "title": "Grundorsak:",
+      "text": "Fixa systemet, inte symptomet. När något går sönder, spåra det bakåt. Varje bugg är en chans att göra systemet mer korrekt."
+    },
+    "dryArchitecture": {
+      "title": "DRY-arkitektur:",
+      "text": "Don't Repeat Yourself. En abstraktion hanterar dussintals modem. Bidragsgivare utökar mönster — de duplicerar inte logik."
+    }
+  },
+  "whySolent": {
+    "title": "Varför \"Solent\"?",
+    "intro": "Två betydelser, ett namn.",
+    "nautical": "Solent är förstaget på en kutterriggad segelbåt — linan som håller under tryck. Nautiskt arv går djupt här.",
+    "geographic": "Solentsundet, mellan England och Isle of Wight, är känt för strömmar som förvirrar även erfarna seglare. Våra verktyg ger transparens till system där komplexitet är osynlig tills något går sönder."
+  },
+  "community": {
+    "title": "Community",
+    "text": "Byggt öppet. Bidrag välkomna.",
+    "github": "GitHub",
+    "contributeModem": "Bidra med ett modem"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "Ett Solent Labs™-projekt."
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "DOCSIS-signalövervakning för Home Assistant. Spåra signalstyrka, brusmarginaler och fel."
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "Gör ditt modems signaldata användbar.",
+      "subtitleSecondary": "DOCSIS-signalövervakning för Home Assistant.",
+      "stats": {
+        "modems": "10+ modem",
+        "tests": "700+ tester",
+        "languages": "12 språk"
+      }
+    },
+    "problem": {
+      "title": "Problemet",
+      "intro": "Ditt kabelmodem spårar signalkvalitetsdata — hur stark din anslutning är, hur ren signalen är, om fel ackumuleras. Allt är begravt i modemets webbgränssnitt. Men den datan är inte användbar.",
+      "items": {
+        "noHistory": "Ingen historik — du ser en ögonblicksbild av nu, inte vad som hände kl 02 när din anslutning tappades",
+        "noAlerts": "Inga varningar — modemet berättar inte när signalkvaliteten försämras eller fel börjar öka",
+        "noProof": "Inga bevis — när du ringer din ISP är \"internet är långsamt\" inte bevis de kan agera på",
+        "noCorrelation": "Ingen korrelation — du kan inte koppla \"Zoom tappades kl 15\" med signalproblem du inte övervakade"
+      }
+    },
+    "solution": {
+      "title": "Lösningen",
+      "intro": "Cable Modem Monitor hämtar signaldata direkt från ditt modem och för in det i Home Assistant. Spåra anslutningshälsa över tid med historiska grafer som fångar problem du annars skulle missa.",
+      "captions": {
+        "dashboard": "Anslutningsstatus, drifttid, latens och felräkningar på ett ögonblick",
+        "downstream": "Signalstyrka över alla kanaler — upptäck obalanser direkt",
+        "snr": "Signalkvalitetsspårning hjälper identifiera problem innan de orsakar avbrott",
+        "latency": "Svarstidsövervakning fångar nedgångar när de händer",
+        "errors": "Feltrender avslöjar utvecklande problem över dagar och veckor"
+      }
+    },
+    "value": {
+      "title": "Varför Det Spelar Roll",
+      "proof": {
+        "title": "Bevis när du behöver dem",
+        "text": "Visa din ISP verklig data — signalkvalitet som sjunker, felräkningar som ökar. Bevis är svårare att avfärda än \"det känns långsamt\"."
+      },
+      "patterns": {
+        "title": "Mönster över tid",
+        "text": "Fånga avbrotten kl 02 och intermittenta problem. Problem som försvinner innan du kontrollerar fångas i graferna."
+      },
+      "oneIntegration": {
+        "title": "En integration, 12+ modem",
+        "text": "Arris, Motorola, Netgear, Technicolor — skriv en gång, stöd många. Varje parser testas mot verkliga enhetsinspelningar."
+      },
+      "haAutomation": {
+        "title": "Home Assistant-automation",
+        "text": "Sätt varningar för signalförsämring. Få notiser innan problem blir avbrott."
+      }
+    },
+    "install": {
+      "title": "Installation",
+      "hacs": "Lägg till via HACS",
+      "manual": "Manuell installation",
+      "hacsNote": "Sök efter \"Cable Modem Monitor\" i HACS-integrationer."
+    },
+    "modems": {
+      "title": "Stödda Modem",
+      "verified": "Verifierad",
+      "unverified": "Overifierad",
+      "contributeNote": "Ser du inte ditt modem? Du kan hjälpa till att lägga till det."
+    },
+    "contribute": {
+      "title": "Bidra",
+      "intro": "Cable Modem Monitor växer genom community-bidrag. Två sätt att hjälpa:",
+      "captureData": {
+        "title": "Fånga modemdata",
+        "description": "Dela rådata från ditt modem för att hjälpa oss lägga till stöd.",
+        "step1": "Installera med Unknown Modem-läge",
+        "step2": "Klicka \"Capture HTML\" i inställningar",
+        "step3": "Dela filen med utvecklare",
+        "button": "Fångstguide"
+      },
+      "writeCode": {
+        "title": "Skriv en parser",
+        "description": "Bygg stöd för en ny modemmodell.",
+        "items": {
+          "fork": "Forka repositoryt",
+          "parser": "Skapa en parser enligt mönstret",
+          "tests": "Lägg till tester med fixture-data",
+          "pr": "Skicka in en pull request"
+        },
+        "button": "Utvecklarguide"
+      }
+    },
+    "cta": {
+      "title": "Kom Igång",
+      "viewGithub": "Se på GitHub",
+      "readDocs": "Läs dokumentationen"
+    }
+  }
+}

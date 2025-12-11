@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../i18n';
+
+const locale = 'en';
+const t = getTranslations(locale);
+---
+
+<BaseLayout locale={locale} title={t.cmm.meta.title} description={t.cmm.meta.description}>
+  <div class="container">
+    <header class="page-header">
+      <img src="/assets/images/cmm/logo.png" alt="Cable Modem Monitor" class="hero-logo">
+      <h1>{t.cmm.header.title}</h1>
+      <p class="subtitle">{t.cmm.header.subtitle}</p>
+      <p class="subtitle-secondary">{t.cmm.header.subtitleSecondary}</p>
+      <div class="stats-row">
+        <span class="stat">{t.cmm.header.stats.modems}</span>
+        <span class="stat">{t.cmm.header.stats.tests}</span>
+        <span class="stat">{t.cmm.header.stats.languages}</span>
+      </div>
+    </header>
+
+    <article class="content">
+      <section class="problem-section">
+        <h2>{t.cmm.problem.title}</h2>
+        <p>{t.cmm.problem.intro}</p>
+        <ul class="problem-list">
+          <li>{t.cmm.problem.items.noHistory}</li>
+          <li>{t.cmm.problem.items.noAlerts}</li>
+          <li>{t.cmm.problem.items.noProof}</li>
+          <li>{t.cmm.problem.items.noCorrelation}</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>{t.cmm.solution.title}</h2>
+        <p>{t.cmm.solution.intro}</p>
+        <div class="screenshot-grid">
+          <figure class="screenshot">
+            <img src="/assets/images/cmm/dashboard-screenshot.png" alt="Cable Modem Status Dashboard">
+            <figcaption>{t.cmm.solution.captions.dashboard}</figcaption>
+          </figure>
+          <div class="screenshot-pair">
+            <figure class="screenshot">
+              <img src="/assets/images/cmm/downstream-power-levels.png" alt="Downstream Power Levels Graph">
+              <figcaption>{t.cmm.solution.captions.downstream}</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="/assets/images/cmm/signal-to-noise-ratio.png" alt="Signal-to-Noise Ratio Graph">
+              <figcaption>{t.cmm.solution.captions.snr}</figcaption>
+            </figure>
+          </div>
+          <div class="screenshot-pair">
+            <figure class="screenshot">
+              <img src="/assets/images/cmm/latency.png" alt="Modem Latency Graph">
+              <figcaption>{t.cmm.solution.captions.latency}</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="/assets/images/cmm/corrected_errors.png" alt="Error Tracking Graph">
+              <figcaption>{t.cmm.solution.captions.errors}</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-section">
+        <h2>{t.cmm.value.title}</h2>
+        <div class="value-grid">
+          <div class="value-item">
+            <h3>{t.cmm.value.proof.title}</h3>
+            <p>{t.cmm.value.proof.text}</p>
+          </div>
+          <div class="value-item">
+            <h3>{t.cmm.value.patterns.title}</h3>
+            <p>{t.cmm.value.patterns.text}</p>
+          </div>
+          <div class="value-item">
+            <h3>{t.cmm.value.oneIntegration.title}</h3>
+            <p>{t.cmm.value.oneIntegration.text}</p>
+          </div>
+          <div class="value-item">
+            <h3>{t.cmm.value.haAutomation.title}</h3>
+            <p>{t.cmm.value.haAutomation.text}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="install-section">
+        <h2>{t.cmm.install.title}</h2>
+        <div class="install-actions">
+          <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=solentlabs&repository=cable_modem_monitor&category=integration" class="cta-button">{t.cmm.install.hacs}</a>
+          <a href="https://github.com/solentlabs/cable_modem_monitor#manual-installation" class="cta-button secondary">{t.cmm.install.manual}</a>
+        </div>
+        <p class="badge-note">{t.cmm.install.hacsNote}</p>
+      </section>
+
+      <section class="contribute-section">
+        <h2>{t.cmm.contribute.title}</h2>
+        <p>{t.cmm.contribute.intro}</p>
+        <div class="contribute-paths">
+          <div class="contribute-path">
+            <h3>{t.cmm.contribute.captureData.title}</h3>
+            <p>{t.cmm.contribute.captureData.description}</p>
+            <div class="contribute-flow">
+              <div class="flow-step">
+                <span class="flow-number">1</span>
+                <div class="flow-content">
+                  <p>{t.cmm.contribute.captureData.step1}</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span class="flow-number">2</span>
+                <div class="flow-content">
+                  <p>{t.cmm.contribute.captureData.step2}</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span class="flow-number">3</span>
+                <div class="flow-content">
+                  <p>{t.cmm.contribute.captureData.step3}</p>
+                </div>
+              </div>
+            </div>
+            <a href="https://github.com/solentlabs/cable_modem_monitor/blob/main/docs/CAPTURE_GUIDE.md" class="cta-button secondary">{t.cmm.contribute.captureData.button}</a>
+          </div>
+          <div class="contribute-path">
+            <h3>{t.cmm.contribute.writeCode.title}</h3>
+            <p>{t.cmm.contribute.writeCode.description}</p>
+            <ul class="code-contrib-list">
+              <li>{t.cmm.contribute.writeCode.items.fork}</li>
+              <li>{t.cmm.contribute.writeCode.items.parser}</li>
+              <li>{t.cmm.contribute.writeCode.items.tests}</li>
+              <li>{t.cmm.contribute.writeCode.items.pr}</li>
+            </ul>
+            <a href="https://github.com/solentlabs/cable_modem_monitor/blob/main/docs/ADDING_NEW_PARSER.md" class="cta-button secondary">{t.cmm.contribute.writeCode.button}</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>{t.cmm.cta.title}</h2>
+        <div class="cta-links">
+          <a href="https://github.com/solentlabs/cable_modem_monitor" class="cta-button">{t.cmm.cta.viewGithub}</a>
+          <a href="https://github.com/solentlabs/cable_modem_monitor#readme" class="cta-button secondary">{t.cmm.cta.readDocs}</a>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <p>{t.footer.tagline}</p>
+    </footer>
+  </div>
+</BaseLayout>

@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — Monitoraggio di Rete Open Source",
+    "description": "Costruiamo software che rende i sistemi complessi osservabili. Open source al centro."
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "Strumenti che rivelano dati nascosti.",
+    "subtitle": "Costruiamo software che rende i sistemi complessi osservabili. Open source al centro."
+  },
+  "approach": {
+    "text": "I sistemi complessi nascondono i loro dati. I dispositivi seppelliscono le metriche in interfacce macchinose. Le API non espongono ciò di cui hai bisogno. L'informazione esiste — semplicemente non è accessibile. Noi costruiamo ponti."
+  },
+  "products": {
+    "title": "Prodotti",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "Monitoraggio del segnale DOCSIS per Home Assistant. Traccia la potenza del segnale, i margini di rumore e gli errori su tutti i canali del tuo modem. 10+ modem supportati. 700+ test.",
+      "learnMore": "Scopri di più",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "Come Costruiamo",
+    "intro": "Questi principi guidano ogni decisione — e stabiliscono le aspettative per i contributori.",
+    "aiAccelerated": {
+      "title": "Accelerato dall'IA:",
+      "text": "Usiamo l'IA come moltiplicatore di forza. Non come un espediente, ma come il modo in cui un piccolo team consegna ciò che prima richiedeva un team grande. Ogni contributore beneficia degli stessi strumenti."
+    },
+    "systemsFirst": {
+      "title": "Prima i sistemi:",
+      "text": "Comprendi l'insieme prima di ottimizzare le parti. Il monitoraggio non è solo numeri — è capire come le metriche si relazionano e quali pattern predicono i guasti."
+    },
+    "rootCause": {
+      "title": "Causa radice:",
+      "text": "Ripara il sistema, non il sintomo. Quando qualcosa si rompe, risali alla fonte. Ogni bug è un'opportunità per rendere il sistema più corretto."
+    },
+    "dryArchitecture": {
+      "title": "Architettura DRY:",
+      "text": "Don't Repeat Yourself. Un'astrazione gestisce decine di modem. I contributori estendono i pattern — non duplicano la logica."
+    }
+  },
+  "whySolent": {
+    "title": "Perché \"Solent\"?",
+    "intro": "Due significati, un nome.",
+    "nautical": "Il solent è il cavo dello strallo di prua su una barca a vela con armatura cutter — la linea che tiene sotto pressione. L'eredità nautica è profonda qui.",
+    "geographic": "Lo stretto di Solent, tra l'Inghilterra e l'Isola di Wight, è famoso per correnti che confondono anche i marinai esperti. I nostri strumenti portano trasparenza ai sistemi dove la complessità è invisibile finché qualcosa non si rompe."
+  },
+  "community": {
+    "title": "Community",
+    "text": "Costruito apertamente. Contributi benvenuti.",
+    "github": "GitHub",
+    "contributeModem": "Contribuisci un modem"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "Un progetto Solent Labs™."
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "Monitoraggio del segnale DOCSIS per Home Assistant. Traccia la potenza del segnale, i margini di rumore e gli errori."
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "Rendi i dati del segnale del tuo modem utilizzabili.",
+      "subtitleSecondary": "Monitoraggio del segnale DOCSIS per Home Assistant.",
+      "stats": {
+        "modems": "10+ modem",
+        "tests": "700+ test",
+        "languages": "12 lingue"
+      }
+    },
+    "problem": {
+      "title": "Il Problema",
+      "intro": "Il tuo modem via cavo traccia i dati sulla qualità del segnale — quanto è forte la tua connessione, quanto è pulito il segnale, se gli errori si stanno accumulando. È tutto sepolto nell'interfaccia web del modem. Ma quei dati non sono utilizzabili.",
+      "items": {
+        "noHistory": "Nessuna cronologia — vedi un'istantanea di adesso, non cosa è successo alle 2 di notte quando la connessione è caduta",
+        "noAlerts": "Nessun avviso — il modem non ti dirà quando la qualità del segnale degrada o gli errori iniziano a salire",
+        "noProof": "Nessuna prova — quando chiami il tuo ISP, \"internet è lento\" non è una prova su cui possono agire",
+        "noCorrelation": "Nessuna correlazione — non puoi collegare \"Zoom è caduto alle 15\" con problemi di segnale che non stavi osservando"
+      }
+    },
+    "solution": {
+      "title": "La Soluzione",
+      "intro": "Cable Modem Monitor estrae i dati del segnale direttamente dal tuo modem e li porta in Home Assistant. Traccia la salute della connessione nel tempo con grafici storici che catturano i problemi che altrimenti perderesti.",
+      "captions": {
+        "dashboard": "Stato della connessione, uptime, latenza e conteggio errori a colpo d'occhio",
+        "downstream": "Potenza del segnale su tutti i canali — individua gli squilibri istantaneamente",
+        "snr": "Il tracciamento della qualità del segnale aiuta a identificare i problemi prima che causino disconnessioni",
+        "latency": "Il monitoraggio del tempo di risposta cattura i rallentamenti quando si verificano",
+        "errors": "Le tendenze degli errori rivelano problemi in sviluppo su giorni e settimane"
+      }
+    },
+    "value": {
+      "title": "Perché È Importante",
+      "proof": {
+        "title": "Prove quando ne hai bisogno",
+        "text": "Mostra al tuo ISP dati reali — qualità del segnale in calo, conteggio errori in aumento. Le prove sono più difficili da respingere di \"sembra lento\"."
+      },
+      "patterns": {
+        "title": "Pattern nel tempo",
+        "text": "Cattura le disconnessioni delle 2 di notte e i problemi intermittenti. I problemi che scompaiono prima che tu controlli vengono catturati nei grafici."
+      },
+      "oneIntegration": {
+        "title": "Un'integrazione, 12+ modem",
+        "text": "Arris, Motorola, Netgear, Technicolor — scrivi una volta, supporta molti. Ogni parser è testato contro catture di dispositivi reali."
+      },
+      "haAutomation": {
+        "title": "Automazione Home Assistant",
+        "text": "Imposta avvisi per il degrado del segnale. Ricevi notifiche prima che i problemi diventino interruzioni."
+      }
+    },
+    "install": {
+      "title": "Installazione",
+      "hacs": "Aggiungi via HACS",
+      "manual": "Installazione manuale",
+      "hacsNote": "Cerca \"Cable Modem Monitor\" nelle integrazioni HACS."
+    },
+    "modems": {
+      "title": "Modem Supportati",
+      "verified": "Verificato",
+      "unverified": "Non verificato",
+      "contributeNote": "Non vedi il tuo modem? Puoi aiutare ad aggiungerlo."
+    },
+    "contribute": {
+      "title": "Contribuisci",
+      "intro": "Cable Modem Monitor cresce grazie ai contributi della community. Due modi per aiutare:",
+      "captureData": {
+        "title": "Cattura dati del modem",
+        "description": "Condividi i dati grezzi dal tuo modem per aiutarci ad aggiungere supporto.",
+        "step1": "Installa con la modalità Unknown Modem",
+        "step2": "Clicca \"Capture HTML\" nelle impostazioni",
+        "step3": "Condividi il file con gli sviluppatori",
+        "button": "Guida alla cattura"
+      },
+      "writeCode": {
+        "title": "Scrivi un parser",
+        "description": "Costruisci supporto per un nuovo modello di modem.",
+        "items": {
+          "fork": "Fai il fork del repository",
+          "parser": "Crea un parser seguendo il pattern",
+          "tests": "Aggiungi test con dati di fixture",
+          "pr": "Invia una pull request"
+        },
+        "button": "Guida sviluppatore"
+      }
+    },
+    "cta": {
+      "title": "Inizia",
+      "viewGithub": "Vedi su GitHub",
+      "readDocs": "Leggi la documentazione"
+    }
+  }
+}

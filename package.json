@@ -1,17 +1,24 @@
 {
   "name": "solentlabs-website",
-  "version": "1.0.0",
-  "description": "Solent Labs website - solentlabs.io",
-  "private": true,
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Solent Labs website with i18n support for 12 languages",
   "scripts": {
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:ui": "playwright test --ui",
-    "test:debug": "playwright test --debug",
-    "serve": "npx serve -l 3000 ."
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "translate": "python scripts/translate.py",
+    "translate:check": "python scripts/translate.py --check",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.16.5"
   },
   "devDependencies": {
-    "@playwright/test": "^1.49.0",
-    "serve": "^14.2.0"
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
   }
 }

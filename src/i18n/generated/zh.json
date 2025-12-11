@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — 开源网络监控",
+    "description": "我们构建让复杂系统可观测的软件。开源为核心。"
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "揭示隐藏数据的工具。",
+    "subtitle": "我们构建让复杂系统可观测的软件。开源为核心。"
+  },
+  "approach": {
+    "text": "复杂系统隐藏它们的数据。设备将指标埋藏在笨拙的界面中。API不提供你需要的信息。数据存在——只是无法访问。我们搭建桥梁。"
+  },
+  "products": {
+    "title": "产品",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "适用于 Home Assistant 的 DOCSIS 信号监控。追踪调制解调器所有通道的信号强度、噪声余量和错误。支持10+调制解调器。700+测试。",
+      "learnMore": "了解更多",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "我们如何构建",
+    "intro": "这些原则指导每个决策——并为贡献者设定期望。",
+    "aiAccelerated": {
+      "title": "AI加速：",
+      "text": "我们将AI作为力量倍增器。不是噱头，而是让小团队能够交付以前需要大团队才能完成的工作。每个贡献者都能使用相同的工具。"
+    },
+    "systemsFirst": {
+      "title": "系统优先：",
+      "text": "在优化部分之前先理解整体。监控不仅仅是数字——是理解指标之间的关联以及哪些模式能预测故障。"
+    },
+    "rootCause": {
+      "title": "根本原因：",
+      "text": "修复系统，而不是症状。当出现问题时，追溯根源。每个bug都是让系统更正确的机会。"
+    },
+    "dryArchitecture": {
+      "title": "DRY架构：",
+      "text": "不要重复自己。一个抽象处理数十种调制解调器。贡献者扩展模式——而不是复制逻辑。"
+    }
+  },
+  "whySolent": {
+    "title": "为什么叫\"Solent\"？",
+    "intro": "两层含义，一个名字。",
+    "nautical": "Solent是单桅帆船上的前支索缆绳——在压力下保持稳定的线。航海传统在这里根深蒂固。",
+    "geographic": "索伦特海峡位于英格兰和怀特岛之间，以其让经验丰富的水手也困惑的水流而闻名。我们的工具为那些复杂性在出问题前不可见的系统带来透明度。"
+  },
+  "community": {
+    "title": "社区",
+    "text": "开放构建。欢迎贡献。",
+    "github": "GitHub",
+    "contributeModem": "贡献调制解调器"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "Solent Labs™ 项目。"
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "适用于 Home Assistant 的 DOCSIS 信号监控。追踪信号强度、噪声余量和错误。"
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "让您的调制解调器信号数据可操作。",
+      "subtitleSecondary": "适用于 Home Assistant 的 DOCSIS 信号监控。",
+      "stats": {
+        "modems": "10+ 调制解调器",
+        "tests": "700+ 测试",
+        "languages": "12 种语言"
+      }
+    },
+    "problem": {
+      "title": "问题",
+      "intro": "您的有线调制解调器追踪信号质量数据——连接有多强、信号有多干净、错误是否在积累。这些都埋藏在调制解调器的网页界面中。但这些数据无法操作。",
+      "items": {
+        "noHistory": "没有历史记录——您只能看到现在的快照，而不是凌晨2点连接断开时发生了什么",
+        "noAlerts": "没有警报——当信号质量下降或错误开始增加时，调制解调器不会告诉您",
+        "noProof": "没有证据——当您打电话给ISP时，\"网络很慢\"不是他们可以采取行动的证据",
+        "noCorrelation": "没有关联——您无法将\"Zoom在下午3点断开\"与您没有观察到的信号问题联系起来"
+      }
+    },
+    "solution": {
+      "title": "解决方案",
+      "intro": "Cable Modem Monitor 直接从您的调制解调器获取信号数据并将其导入 Home Assistant。通过历史图表追踪连接健康状况，捕捉您可能错过的问题。",
+      "captions": {
+        "dashboard": "一目了然的连接状态、运行时间、延迟和错误计数",
+        "downstream": "所有通道的信号强度——即时发现不平衡",
+        "snr": "信号质量追踪有助于在问题导致断开之前识别它们",
+        "latency": "响应时间监控在延迟发生时捕捉它们",
+        "errors": "错误趋势揭示数天和数周内发展的问题"
+      }
+    },
+    "value": {
+      "title": "为什么重要",
+      "proof": {
+        "title": "需要时有证据",
+        "text": "向您的ISP展示真实数据——信号质量下降、错误计数上升。证据比\"感觉很慢\"更难被忽视。"
+      },
+      "patterns": {
+        "title": "长期模式",
+        "text": "捕捉凌晨2点的断开和间歇性问题。在您检查之前就消失的问题会被记录在图表中。"
+      },
+      "oneIntegration": {
+        "title": "一个集成，12+调制解调器",
+        "text": "Arris、Motorola、Netgear、Technicolor——一次编写，支持多种。每个解析器都针对真实设备捕获进行测试。"
+      },
+      "haAutomation": {
+        "title": "Home Assistant 自动化",
+        "text": "设置信号降级警报。在问题变成故障之前收到通知。"
+      }
+    },
+    "install": {
+      "title": "安装",
+      "hacs": "通过HACS添加",
+      "manual": "手动安装",
+      "hacsNote": "在HACS集成中搜索\"Cable Modem Monitor\"。"
+    },
+    "modems": {
+      "title": "支持的调制解调器",
+      "verified": "已验证",
+      "unverified": "未验证",
+      "contributeNote": "没看到您的调制解调器？您可以帮助添加它。"
+    },
+    "contribute": {
+      "title": "贡献",
+      "intro": "Cable Modem Monitor 通过社区贡献成长。两种帮助方式：",
+      "captureData": {
+        "title": "捕获调制解调器数据",
+        "description": "分享您调制解调器的原始数据，帮助我们添加支持。",
+        "step1": "使用Unknown Modem模式安装",
+        "step2": "在设置中点击\"Capture HTML\"",
+        "step3": "与开发者分享文件",
+        "button": "捕获指南"
+      },
+      "writeCode": {
+        "title": "编写解析器",
+        "description": "为新调制解调器型号构建支持。",
+        "items": {
+          "fork": "Fork仓库",
+          "parser": "按照模式创建解析器",
+          "tests": "使用fixture数据添加测试",
+          "pr": "提交pull request"
+        },
+        "button": "开发者指南"
+      }
+    },
+    "cta": {
+      "title": "开始使用",
+      "viewGithub": "在GitHub上查看",
+      "readDocs": "阅读文档"
+    }
+  }
+}

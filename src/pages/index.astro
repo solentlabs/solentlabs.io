@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTranslations } from '../i18n';
+
+const locale = 'en';
+const t = getTranslations(locale);
+---
+
+<BaseLayout locale={locale}>
+  <div class="container">
+    <header class="hero">
+      <img src="/assets/images/solent-labs-web.png" alt="Solent Labs" class="hero-logo">
+      <h1>{t.hero.headline}</h1>
+      <p class="hero-subtitle">{t.hero.subtitle}</p>
+    </header>
+
+    <section class="approach">
+      <p>{t.approach.text}</p>
+    </section>
+
+    <section class="product-feature">
+      <h2>{t.products.title}</h2>
+      <div class="product-card featured">
+        <h3>{t.products.cableModemMonitor.name}</h3>
+        <p>{t.products.cableModemMonitor.description}</p>
+        <div class="product-actions">
+          <a href="/cable-modem-monitor/" class="cta-button">{t.products.cableModemMonitor.learnMore}</a>
+          <a href="https://github.com/solentlabs/cable_modem_monitor" class="cta-button secondary">{t.products.cableModemMonitor.github}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy">
+      <h2>{t.philosophy.title}</h2>
+      <p class="section-intro">{t.philosophy.intro}</p>
+      <div class="philosophy-grid">
+        <div class="philosophy-item">
+          <strong>{t.philosophy.aiAccelerated.title}</strong>
+          <p>{t.philosophy.aiAccelerated.text}</p>
+        </div>
+        <div class="philosophy-item">
+          <strong>{t.philosophy.systemsFirst.title}</strong>
+          <p>{t.philosophy.systemsFirst.text}</p>
+        </div>
+        <div class="philosophy-item">
+          <strong>{t.philosophy.rootCause.title}</strong>
+          <p>{t.philosophy.rootCause.text}</p>
+        </div>
+        <div class="philosophy-item">
+          <strong>{t.philosophy.dryArchitecture.title}</strong>
+          <p>{t.philosophy.dryArchitecture.text}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-solent">
+      <h2>{t.whySolent.title}</h2>
+      <p class="section-intro">{t.whySolent.intro}</p>
+      <p>{t.whySolent.nautical}</p>
+      <p>{t.whySolent.geographic}</p>
+    </section>
+
+    <section class="community">
+      <h2>{t.community.title}</h2>
+      <p>{t.community.text}</p>
+      <div class="community-links">
+        <a href="https://github.com/solentlabs" class="cta-button">{t.community.github}</a>
+        <a href="https://github.com/solentlabs/cable_modem_monitor/blob/main/docs/CAPTURE_GUIDE.md" class="cta-button secondary">{t.community.contributeModem}</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>{t.footer.brand}</p>
+    </footer>
+  </div>
+</BaseLayout>

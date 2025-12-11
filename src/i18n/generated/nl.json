@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — Open Source Netwerkmonitoring",
+    "description": "Wij bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "Tools die verborgen data aan het licht brengen.",
+    "subtitle": "Wij bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
+  },
+  "approach": {
+    "text": "Complexe systemen verbergen hun data. Apparaten begraven metrics in onhandige interfaces. API's onthullen niet wat je nodig hebt. De informatie bestaat — ze is alleen niet toegankelijk. Wij bouwen bruggen."
+  },
+  "products": {
+    "title": "Producten",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "DOCSIS-signaalmonitoring voor Home Assistant. Volg signaalsterkte, ruismarges en fouten over alle kanalen van je modem. 10+ ondersteunde modems. 700+ tests.",
+      "learnMore": "Meer informatie",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "Hoe Wij Bouwen",
+    "intro": "Deze principes sturen elke beslissing — en bepalen verwachtingen voor bijdragers.",
+    "aiAccelerated": {
+      "title": "AI-versneld:",
+      "text": "Wij gebruiken AI als krachtversterker. Niet als gimmick, maar als de manier waarop een klein team levert wat vroeger een groot team vereiste. Elke bijdrager profiteert van dezelfde tools."
+    },
+    "systemsFirst": {
+      "title": "Systemen eerst:",
+      "text": "Begrijp het geheel voordat je delen optimaliseert. Monitoring is niet alleen cijfers — het gaat om begrijpen hoe metrics samenhangen en welke patronen storingen voorspellen."
+    },
+    "rootCause": {
+      "title": "Grondoorzaak:",
+      "text": "Repareer het systeem, niet het symptoom. Als iets kapot gaat, traceer het terug. Elke bug is een kans om het systeem correcter te maken."
+    },
+    "dryArchitecture": {
+      "title": "DRY-architectuur:",
+      "text": "Don't Repeat Yourself. Eén abstractie behandelt tientallen modems. Bijdragers breiden patronen uit — ze dupliceren geen logica."
+    }
+  },
+  "whySolent": {
+    "title": "Waarom \"Solent\"?",
+    "intro": "Twee betekenissen, één naam.",
+    "nautical": "De solent is de voorstag op een kottergetuigd zeilschip — de lijn die standhoudt onder druk. Nautisch erfgoed zit hier diep.",
+    "geographic": "De Solent-zeestraat, tussen Engeland en het Isle of Wight, staat bekend om stromingen die zelfs ervaren zeilers in verwarring brengen. Onze tools brengen transparantie naar systemen waar complexiteit onzichtbaar is totdat iets kapot gaat."
+  },
+  "community": {
+    "title": "Community",
+    "text": "Open gebouwd. Bijdragen welkom.",
+    "github": "GitHub",
+    "contributeModem": "Draag een modem bij"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "Een Solent Labs™ project."
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "DOCSIS-signaalmonitoring voor Home Assistant. Volg signaalsterkte, ruismarges en fouten."
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "Maak de signaaldata van je modem bruikbaar.",
+      "subtitleSecondary": "DOCSIS-signaalmonitoring voor Home Assistant.",
+      "stats": {
+        "modems": "10+ modems",
+        "tests": "700+ tests",
+        "languages": "12 talen"
+      }
+    },
+    "problem": {
+      "title": "Het Probleem",
+      "intro": "Je kabelmodem volgt signaalkwaliteitsdata — hoe sterk je verbinding is, hoe schoon het signaal is, of fouten zich opstapelen. Het zit allemaal begraven in de webinterface van het modem. Maar die data is niet bruikbaar.",
+      "items": {
+        "noHistory": "Geen geschiedenis — je ziet een momentopname van nu, niet wat er om 2 uur 's nachts gebeurde toen je verbinding wegviel",
+        "noAlerts": "Geen waarschuwingen — het modem vertelt je niet wanneer signaalkwaliteit verslechtert of fouten beginnen te stijgen",
+        "noProof": "Geen bewijs — als je je provider belt, is \"het internet is traag\" geen bewijs waarop ze kunnen handelen",
+        "noCorrelation": "Geen correlatie — je kunt \"Zoom viel uit om 15:00\" niet verbinden met signaalproblemen die je niet observeerde"
+      }
+    },
+    "solution": {
+      "title": "De Oplossing",
+      "intro": "Cable Modem Monitor haalt signaaldata rechtstreeks van je modem en brengt het naar Home Assistant. Volg verbindingsgezondheid over tijd met historische grafieken die problemen vangen die je anders zou missen.",
+      "captions": {
+        "dashboard": "Verbindingsstatus, uptime, latentie en foutentellingen in één oogopslag",
+        "downstream": "Signaalsterkte over alle kanalen — spot onbalansen direct",
+        "snr": "Signaalkwaliteitsmonitoring helpt problemen identificeren voordat ze uitval veroorzaken",
+        "latency": "Responstijdmonitoring vangt vertragingen op wanneer ze gebeuren",
+        "errors": "Foutentrends onthullen zich ontwikkelende problemen over dagen en weken"
+      }
+    },
+    "value": {
+      "title": "Waarom Het Belangrijk Is",
+      "proof": {
+        "title": "Bewijs wanneer je het nodig hebt",
+        "text": "Toon je provider echte data — signaalkwaliteit die daalt, foutentellingen die stijgen. Bewijs is moeilijker af te wijzen dan \"het voelt traag.\""
+      },
+      "patterns": {
+        "title": "Patronen over tijd",
+        "text": "Vang de uitval om 2 uur 's nachts en intermitterende problemen. Problemen die verdwijnen tegen de tijd dat je kijkt worden vastgelegd in de grafieken."
+      },
+      "oneIntegration": {
+        "title": "Eén integratie, 12+ modems",
+        "text": "Arris, Motorola, Netgear, Technicolor — schrijf één keer, ondersteun velen. Elke parser is getest tegen echte apparaatopnames."
+      },
+      "haAutomation": {
+        "title": "Home Assistant automatisering",
+        "text": "Stel waarschuwingen in voor signaalverslechtering. Word gewaarschuwd voordat problemen uitval worden."
+      }
+    },
+    "install": {
+      "title": "Installeren",
+      "hacs": "Toevoegen via HACS",
+      "manual": "Handmatige installatie",
+      "hacsNote": "Zoek naar \"Cable Modem Monitor\" in HACS-integraties."
+    },
+    "modems": {
+      "title": "Ondersteunde Modems",
+      "verified": "Geverifieerd",
+      "unverified": "Niet geverifieerd",
+      "contributeNote": "Zie je je modem niet? Je kunt helpen het toe te voegen."
+    },
+    "contribute": {
+      "title": "Bijdragen",
+      "intro": "Cable Modem Monitor groeit door community-bijdragen. Twee manieren om te helpen:",
+      "captureData": {
+        "title": "Modemdata vastleggen",
+        "description": "Deel ruwe data van je modem om ons te helpen ondersteuning toe te voegen.",
+        "step1": "Installeer met Unknown Modem-modus",
+        "step2": "Klik op \"Capture HTML\" in instellingen",
+        "step3": "Deel het bestand met ontwikkelaars",
+        "button": "Vastleggids"
+      },
+      "writeCode": {
+        "title": "Schrijf een parser",
+        "description": "Bouw ondersteuning voor een nieuw modemmodel.",
+        "items": {
+          "fork": "Fork de repository",
+          "parser": "Maak een parser volgens het patroon",
+          "tests": "Voeg tests toe met fixture-data",
+          "pr": "Dien een pull request in"
+        },
+        "button": "Ontwikkelaarsgids"
+      }
+    },
+    "cta": {
+      "title": "Aan de Slag",
+      "viewGithub": "Bekijk op GitHub",
+      "readDocs": "Lees de documentatie"
+    }
+  }
+}

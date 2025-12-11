@@ -12,8 +12,7 @@ export default defineConfig({
   ],
 
   use: {
-    // Base URL for local development server
-    baseURL: process.env.BASE_URL || 'http://localhost:3000',
+    baseURL: process.env.BASE_URL || 'http://localhost:4321',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
@@ -23,17 +22,15 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    // Mobile viewport
     {
       name: 'mobile-chrome',
       use: { ...devices['Pixel 5'] },
     },
   ],
 
-  // Run local server before tests
   webServer: {
-    command: 'npx serve -l 3000 .',
-    url: 'http://localhost:3000',
+    command: 'npm run dev',
+    url: 'http://localhost:4321',
     reuseExistingServer: !process.env.CI,
     timeout: 120000,
   },

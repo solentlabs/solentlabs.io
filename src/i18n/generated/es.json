@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — Monitoreo de Red Open Source",
+    "description": "Construimos software que hace los sistemas complejos observables. Open source en el núcleo."
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "Herramientas que revelan datos ocultos.",
+    "subtitle": "Construimos software que hace los sistemas complejos observables. Open source en el núcleo."
+  },
+  "approach": {
+    "text": "Los sistemas complejos ocultan sus datos. Los dispositivos entierran métricas en interfaces torpes. Las API no exponen lo que necesitas. La información existe — simplemente no es accesible. Nosotros construimos puentes."
+  },
+  "products": {
+    "title": "Productos",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "Monitoreo de señal DOCSIS para Home Assistant. Rastrea la potencia de señal, márgenes de ruido y errores en todos los canales de tu módem. 10+ módems soportados. 700+ tests.",
+      "learnMore": "Más información",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "Cómo Construimos",
+    "intro": "Estos principios guían cada decisión — y establecen expectativas para los contribuidores.",
+    "aiAccelerated": {
+      "title": "Acelerado por IA:",
+      "text": "Usamos la IA como multiplicador de fuerza. No como un truco, sino como la forma en que un equipo pequeño entrega lo que antes requería uno grande. Cada contribuidor se beneficia de las mismas herramientas."
+    },
+    "systemsFirst": {
+      "title": "Sistemas primero:",
+      "text": "Entiende el todo antes de optimizar las partes. El monitoreo no es solo números — es entender cómo las métricas se relacionan y qué patrones predicen fallos."
+    },
+    "rootCause": {
+      "title": "Causa raíz:",
+      "text": "Arregla el sistema, no el síntoma. Cuando algo se rompe, rastréalo hacia atrás. Cada bug es una oportunidad de hacer el sistema más correcto."
+    },
+    "dryArchitecture": {
+      "title": "Arquitectura DRY:",
+      "text": "Don't Repeat Yourself. Una abstracción maneja docenas de módems. Los contribuidores extienden patrones — no duplican lógica."
+    }
+  },
+  "whySolent": {
+    "title": "¿Por qué \"Solent\"?",
+    "intro": "Dos significados, un nombre.",
+    "nautical": "El solent es el cable del estay de proa en un velero aparejado de cúter — la línea que aguanta bajo presión. La herencia náutica es profunda aquí.",
+    "geographic": "El estrecho de Solent, entre Inglaterra y la Isla de Wight, es famoso por corrientes que confunden incluso a marineros experimentados. Nuestras herramientas traen transparencia a sistemas donde la complejidad es invisible hasta que algo se rompe."
+  },
+  "community": {
+    "title": "Comunidad",
+    "text": "Construido abiertamente. Contribuciones bienvenidas.",
+    "github": "GitHub",
+    "contributeModem": "Contribuir un módem"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "Un proyecto de Solent Labs™."
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "Monitoreo de señal DOCSIS para Home Assistant. Rastrea la potencia de señal, márgenes de ruido y errores."
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "Haz que los datos de señal de tu módem sean accionables.",
+      "subtitleSecondary": "Monitoreo de señal DOCSIS para Home Assistant.",
+      "stats": {
+        "modems": "10+ módems",
+        "tests": "700+ tests",
+        "languages": "12 idiomas"
+      }
+    },
+    "problem": {
+      "title": "El Problema",
+      "intro": "Tu módem de cable rastrea datos de calidad de señal — qué tan fuerte es tu conexión, qué tan limpia es la señal, si los errores se están acumulando. Todo está enterrado en la interfaz web del módem. Pero esos datos no son accionables.",
+      "items": {
+        "noHistory": "Sin historial — ves una instantánea del ahora, no lo que pasó a las 2am cuando tu conexión cayó",
+        "noAlerts": "Sin alertas — el módem no te dirá cuando la calidad de señal se degrada o los errores empiezan a subir",
+        "noProof": "Sin pruebas — cuando llamas a tu ISP, \"el internet está lento\" no es evidencia sobre la que puedan actuar",
+        "noCorrelation": "Sin correlación — no puedes conectar \"Zoom se cayó a las 3pm\" con problemas de señal que no estabas observando"
+      }
+    },
+    "solution": {
+      "title": "La Solución",
+      "intro": "Cable Modem Monitor extrae datos de señal directamente de tu módem y los trae a Home Assistant. Rastrea la salud de la conexión a lo largo del tiempo con gráficos históricos que capturan los problemas que de otro modo te perderías.",
+      "captions": {
+        "dashboard": "Estado de conexión, tiempo activo, latencia y conteo de errores de un vistazo",
+        "downstream": "Potencia de señal en todos los canales — detecta desequilibrios instantáneamente",
+        "snr": "El seguimiento de calidad de señal ayuda a identificar problemas antes de que causen caídas",
+        "latency": "El monitoreo de tiempo de respuesta captura las ralentizaciones cuando ocurren",
+        "errors": "Las tendencias de errores revelan problemas en desarrollo a lo largo de días y semanas"
+      }
+    },
+    "value": {
+      "title": "Por Qué Importa",
+      "proof": {
+        "title": "Pruebas cuando las necesitas",
+        "text": "Muestra a tu ISP datos reales — calidad de señal cayendo, conteo de errores subiendo. La evidencia es más difícil de desestimar que \"se siente lento\"."
+      },
+      "patterns": {
+        "title": "Patrones a lo largo del tiempo",
+        "text": "Captura las caídas de las 2am y los problemas intermitentes. Los problemas que desaparecen para cuando revisas quedan capturados en los gráficos."
+      },
+      "oneIntegration": {
+        "title": "Una integración, 12+ módems",
+        "text": "Arris, Motorola, Netgear, Technicolor — escribe una vez, soporta muchos. Cada parser es probado contra capturas de dispositivos reales."
+      },
+      "haAutomation": {
+        "title": "Automatización de Home Assistant",
+        "text": "Configura alertas para degradación de señal. Recibe notificaciones antes de que los problemas se conviertan en cortes."
+      }
+    },
+    "install": {
+      "title": "Instalación",
+      "hacs": "Agregar vía HACS",
+      "manual": "Instalación manual",
+      "hacsNote": "Busca \"Cable Modem Monitor\" en las integraciones de HACS."
+    },
+    "modems": {
+      "title": "Módems Soportados",
+      "verified": "Verificado",
+      "unverified": "No verificado",
+      "contributeNote": "¿No ves tu módem? Puedes ayudar a agregarlo."
+    },
+    "contribute": {
+      "title": "Contribuir",
+      "intro": "Cable Modem Monitor crece a través de contribuciones de la comunidad. Dos formas de ayudar:",
+      "captureData": {
+        "title": "Capturar datos del módem",
+        "description": "Comparte datos crudos de tu módem para ayudarnos a agregar soporte.",
+        "step1": "Instala con el modo Unknown Modem",
+        "step2": "Haz clic en \"Capture HTML\" en configuración",
+        "step3": "Comparte el archivo con los desarrolladores",
+        "button": "Guía de captura"
+      },
+      "writeCode": {
+        "title": "Escribir un parser",
+        "description": "Construye soporte para un nuevo modelo de módem.",
+        "items": {
+          "fork": "Haz fork del repositorio",
+          "parser": "Crea un parser siguiendo el patrón",
+          "tests": "Agrega tests con datos de fixture",
+          "pr": "Envía un pull request"
+        },
+        "button": "Guía del desarrollador"
+      }
+    },
+    "cta": {
+      "title": "Comenzar",
+      "viewGithub": "Ver en GitHub",
+      "readDocs": "Leer la documentación"
+    }
+  }
+}

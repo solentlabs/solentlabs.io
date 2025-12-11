@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Solent Labs™ — Open Source Network Monitoring",
+    "description": "We build software that makes complex systems observable. Open source at the core."
+  },
+  "nav": {
+    "cableModemMonitor": "Cable Modem Monitor"
+  },
+  "hero": {
+    "headline": "Tools that surface hidden data.",
+    "subtitle": "We build software that makes complex systems observable. Open source at the core."
+  },
+  "approach": {
+    "text": "Complex systems hide their data. Devices bury metrics in clunky interfaces. APIs don't expose what you need. The information exists — it's just not accessible. We build bridges."
+  },
+  "products": {
+    "title": "Products",
+    "cableModemMonitor": {
+      "name": "Cable Modem Monitor",
+      "description": "DOCSIS signal monitoring for Home Assistant. Track signal strength, noise margins, and errors across all your modem's channels. 10+ supported modems. 700+ tests.",
+      "learnMore": "Learn more",
+      "github": "GitHub"
+    }
+  },
+  "philosophy": {
+    "title": "How We Build",
+    "intro": "These principles guide every decision — and set expectations for contributors.",
+    "aiAccelerated": {
+      "title": "AI-accelerated:",
+      "text": "We use AI as a force multiplier. Not as a gimmick, but as how a small team ships what used to take a large one. Every contributor benefits from the same tools."
+    },
+    "systemsFirst": {
+      "title": "Systems-first:",
+      "text": "Understand the whole before optimizing parts. Monitoring isn't just numbers — it's understanding how metrics relate and what patterns predict failures."
+    },
+    "rootCause": {
+      "title": "Root cause:",
+      "text": "Fix the system, not the symptom. When something breaks, trace it back. Every bug is a chance to make the system more correct."
+    },
+    "dryArchitecture": {
+      "title": "DRY architecture:",
+      "text": "Don't Repeat Yourself. One abstraction handles dozens of modems. Contributors extend patterns — they don't duplicate logic."
+    }
+  },
+  "whySolent": {
+    "title": "Why \"Solent\"?",
+    "intro": "Two meanings, one name.",
+    "nautical": "The solent is the forestay cable on a cutter-rigged sailboat — the line that holds under pressure. Nautical heritage runs deep here.",
+    "geographic": "The Solent strait, between England and the Isle of Wight, is famous for currents that confound even experienced sailors. Our tools bring transparency to systems where complexity is invisible until something breaks."
+  },
+  "community": {
+    "title": "Community",
+    "text": "Built in the open. Contributions welcome.",
+    "github": "GitHub",
+    "contributeModem": "Contribute a modem"
+  },
+  "footer": {
+    "brand": "Solent Labs™",
+    "tagline": "A Solent Labs™ project."
+  },
+  "cmm": {
+    "meta": {
+      "title": "Cable Modem Monitor — Solent Labs™",
+      "description": "DOCSIS signal monitoring for Home Assistant. Track signal strength, noise margins, and errors."
+    },
+    "header": {
+      "title": "Cable Modem Monitor",
+      "subtitle": "Make your modem's signal data actionable.",
+      "subtitleSecondary": "DOCSIS signal monitoring for Home Assistant.",
+      "stats": {
+        "modems": "10+ modems",
+        "tests": "700+ tests",
+        "languages": "12 languages"
+      }
+    },
+    "problem": {
+      "title": "The Problem",
+      "intro": "Your cable modem tracks signal quality data — how strong your connection is, how clean the signal is, whether errors are accumulating. It's all buried in the modem's web interface. But that data isn't actionable.",
+      "items": {
+        "noHistory": "No history — you see a snapshot of right now, not what happened at 2am when your connection dropped",
+        "noAlerts": "No alerts — the modem won't tell you when signal quality degrades or errors start climbing",
+        "noProof": "No proof — when you call your ISP, \"the internet is slow\" isn't evidence they can act on",
+        "noCorrelation": "No correlation — you can't connect \"Zoom dropped at 3pm\" with signal issues you weren't watching"
+      }
+    },
+    "solution": {
+      "title": "The Solution",
+      "intro": "Cable Modem Monitor pulls signal data directly from your modem and brings it into Home Assistant. Track connection health over time with historical graphs that catch the problems you'd otherwise miss.",
+      "captions": {
+        "dashboard": "Connection status, uptime, latency, and error counts at a glance",
+        "downstream": "Signal strength across all channels — spot imbalances instantly",
+        "snr": "Signal quality tracking helps identify issues before they cause drops",
+        "latency": "Response time monitoring catches slowdowns as they happen",
+        "errors": "Error trends reveal developing problems over days and weeks"
+      }
+    },
+    "value": {
+      "title": "Why It Matters",
+      "proof": {
+        "title": "Proof when you need it",
+        "text": "Show your ISP actual data — signal quality dropping, error counts climbing. Evidence is harder to dismiss than \"it feels slow.\""
+      },
+      "patterns": {
+        "title": "Patterns over time",
+        "text": "Catch the 2am drops and intermittent issues. Problems that vanish by the time you check are captured in the graphs."
+      },
+      "oneIntegration": {
+        "title": "One integration, 12+ modems",
+        "text": "Arris, Motorola, Netgear, Technicolor — write once, support many. Each parser is tested against real device captures."
+      },
+      "haAutomation": {
+        "title": "Home Assistant automation",
+        "text": "Set alerts for signal degradation. Get notified before problems become outages."
+      }
+    },
+    "install": {
+      "title": "Install",
+      "hacs": "Add via HACS",
+      "manual": "Manual install",
+      "hacsNote": "Search for \"Cable Modem Monitor\" in HACS integrations."
+    },
+    "modems": {
+      "title": "Supported Modems",
+      "verified": "Verified",
+      "unverified": "Unverified",
+      "contributeNote": "Don't see your modem? You can help add it."
+    },
+    "contribute": {
+      "title": "Contribute",
+      "intro": "Cable Modem Monitor grows through community contributions. Two ways to help:",
+      "captureData": {
+        "title": "Capture modem data",
+        "description": "Share raw data from your modem to help us add support.",
+        "step1": "Install with Unknown Modem mode",
+        "step2": "Click \"Capture HTML\" in settings",
+        "step3": "Share the file with developers",
+        "button": "Capture Guide"
+      },
+      "writeCode": {
+        "title": "Write a parser",
+        "description": "Build support for a new modem model.",
+        "items": {
+          "fork": "Fork the repository",
+          "parser": "Create a parser following the pattern",
+          "tests": "Add tests with fixture data",
+          "pr": "Submit a pull request"
+        },
+        "button": "Developer Guide"
+      }
+    },
+    "cta": {
+      "title": "Get Started",
+      "viewGithub": "View on GitHub",
+      "readDocs": "Read the docs"
+    }
+  }
+}

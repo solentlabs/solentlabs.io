@@ -1,0 +1,161 @@
+---
+import { getTranslations } from '../i18n';
+import { locales } from '../../astro.config.mjs';
+
+interface Props {
+  locale: string;
+  title?: string;
+  description?: string;
+}
+
+const { locale, title, description } = Astro.props;
+const t = getTranslations(locale);
+const pageTitle = title || t.meta.title;
+const pageDescription = description || t.meta.description;
+
+// Build alternate language links for SEO
+const alternateLinks = Object.keys(locales).map((lang) => ({
+  hreflang: lang,
+  href: lang === 'en' ? 'https://solentlabs.io/' : `https://solentlabs.io/${lang}/`,
+}));
+---
+
+<!DOCTYPE html>
+<html lang={locale}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={pageDescription}>
+  <title>{pageTitle}</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {alternateLinks.map(({ hreflang, href }) => (
+    <link rel="alternate" hreflang={hreflang} href={href} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href="https://solentlabs.io/" />
+  <script data-goatcounter="https://solentlabs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <a href={locale === 'en' ? '/' : `/${locale}/`} class="nav-brand">
+      <img src="/assets/images/solent-labs-web.png" alt="Solent Labs" class="nav-logo">
+    </a>
+    <div class="nav-links">
+      <a href={locale === 'en' ? '/cable-modem-monitor/' : `/${locale}/cable-modem-monitor/`}>
+        {t.nav.cableModemMonitor}
+      </a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Select language">
+        {locales[locale as keyof typeof locales]?.flag || '🌐'}
+        <span class="lang-label">{locale.toUpperCase()}</span>
+        <svg class="chevron" width="12" height="12" viewBox="0 0 12 12">
+          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </button>
+      <div class="lang-dropdown">
+        {Object.entries(locales).map(([code, { label, flag }]) => (
+          <a
+            href={code === 'en' ? '/' : `/${code}/`}
+            class:list={['lang-option', { active: code === locale }]}
+          >
+            <span class="flag">{flag}</span>
+            <span class="label">{label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+
+  <slot />
+
+  <style>
+    .lang-switcher {
+      position: relative;
+    }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.5rem 0.75rem;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      color: inherit;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+
+    .lang-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .lang-label {
+      font-weight: 500;
+    }
+
+    .chevron {
+      transition: transform 0.2s;
+    }
+
+    .lang-switcher:hover .chevron,
+    .lang-switcher:focus-within .chevron {
+      transform: rotate(180deg);
+    }
+
+    .lang-dropdown {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: #1a1a2e;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-0.5rem);
+      transition: all 0.2s;
+      min-width: 160px;
+      z-index: 100;
+    }
+
+    .lang-switcher:hover .lang-dropdown,
+    .lang-switcher:focus-within .lang-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+
+    .lang-option:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .lang-option.active {
+      background: rgba(99, 102, 241, 0.2);
+    }
+
+    .lang-option .flag {
+      font-size: 1.25rem;
+    }
+
+    .lang-option .label {
+      font-size: 0.875rem;
+    }
+  </style>
+</body>
+</html>
