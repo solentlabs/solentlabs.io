@@ -4,7 +4,8 @@
     "description": "Vi bygger mjukvara som gör komplexa system observerbara. Öppen källkod i kärnan."
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "Om oss"
   },
   "hero": {
     "headline": "Verktyg som avslöjar dold data.",
@@ -17,7 +18,7 @@
     "title": "Produkter",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "DOCSIS-signalövervakning för Home Assistant. Spåra signalstyrka, brusmarginaler och fel över alla ditt modems kanaler. 10+ stödda modem. 700+ tester.",
+      "description": "DOCSIS-signalövervakning för Home Assistant. Spåra signalstyrka, brusmarginaler och fel över alla ditt modems kanaler. 13 verifierade modem. 70% testtäckning.",
       "learnMore": "Läs mer",
       "github": "GitHub"
     }
@@ -68,8 +69,8 @@
       "subtitle": "Gör ditt modems signaldata användbar.",
       "subtitleSecondary": "DOCSIS-signalövervakning för Home Assistant.",
       "stats": {
-        "modems": "10+ modem",
-        "tests": "700+ tester",
+        "modems": "13 verifierade modem",
+        "tests": "70% testtäckning",
         "languages": "12 språk"
       }
     },
@@ -105,8 +106,8 @@
         "text": "Fånga avbrotten kl 02 och intermittenta problem. Problem som försvinner innan du kontrollerar fångas i graferna."
       },
       "oneIntegration": {
-        "title": "En integration, 10+ modem",
-        "text": "Arris, Motorola, Netgear, Technicolor — skriv en gång, stöd många. Varje parser testas mot verkliga enhetsinspelningar."
+        "title": "En integration, 13 modem",
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — skriv en gång, stöd många. Varje parser testas mot verkliga enhetsinspelningar."
       },
       "haAutomation": {
         "title": "Home Assistant-automation",
@@ -161,6 +162,55 @@
       "title": "Kom Igång",
       "viewGithub": "Se på GitHub",
       "readDocs": "Läs dokumentationen"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Om oss — Solent Labs™",
+      "description": "Lär dig om Solent Labs, vårt uppdrag att göra komplexa system observerbara, och personen bakom projekten."
+    },
+    "header": {
+      "title": "Om Solent Labs",
+      "subtitle": "Gör komplexa system observerbara genom öppen källkod."
+    },
+    "mission": {
+      "title": "Uppdrag",
+      "text": "Komplexa system döljer sin data. Internetleverantörer ger dig ett black-box-modem utan insyn i anslutningshälsa. Smarta hem-enheter begraver användbara mätvärden i proprietära appar. Informationen finns — den är bara inte tillgänglig. Vi bygger broarna som exponerar denna data för de som behöver den."
+    },
+    "founder": {
+      "title": "Skapare",
+      "name": "Ken Schulz",
+      "role": "Grundare & Utvecklare",
+      "bio": "I 27 ar har jag byggt foretagssystem och den automation, testning och verktyg som hjalper team att leverera battre. Mannisko-forst-ledarskap. Operativ excellens. Minska manuellt arbete sa att manniskor kan fokusera pa det som spelar roll. Hemma ar jag make och far till tva barn. Jag coachar en robotikklubb pa hogstadiet, har honor och tillbringar min fritid med segling, cykling, skidakning och triathlontraning. Det finns alltid ett annat berg. Något att lära sig. Något att bygga. Något att lära ut.",
+      "approach": "Jag bygger mjukvara med AI som en kraftmultiplikator — hur en ensam utvecklare levererar det som tidigare krävde ett team. Varje rad kod är skriven med samma verktyg som är tillgängliga för alla bidragsgivare."
+    },
+    "impact": {
+      "title": "Projektpåverkan",
+      "commits": "commits",
+      "contributors": "bidragsgivare",
+      "modems": "verifierade modem",
+      "tests": "testtäckning"
+    },
+    "values": {
+      "title": "Värderingar",
+      "openSource": {
+        "title": "Öppen källkod som standard",
+        "text": "Offentliga projekt är MIT-licensierade. Forka, modifiera, bidra — delat arbete tillhör communityt."
+      },
+      "privacy": {
+        "title": "Dina data, ditt val",
+        "text": "Vi bygger verktyg som fungerar lokalt först. När molnfunktioner finns är de frivilliga och transparenta. Du styr vad som lämnar ditt nätverk."
+      },
+      "quality": {
+        "title": "Lärningskultur",
+        "text": "Verkliga enhets-fixtures. Växande testtäckning. Varje problem är en chans att göra systemet bättre."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Rapportera ett problem"
     }
   }
 }

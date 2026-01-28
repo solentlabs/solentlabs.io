@@ -4,7 +4,8 @@
     "description": "Construimos software que hace los sistemas complejos observables. Open source en el núcleo."
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "Acerca de"
   },
   "hero": {
     "headline": "Herramientas que revelan datos ocultos.",
@@ -17,7 +18,7 @@
     "title": "Productos",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "Monitoreo de señal DOCSIS para Home Assistant. Rastrea la potencia de señal, márgenes de ruido y errores en todos los canales de tu módem. 10+ módems soportados. 700+ tests.",
+      "description": "Monitoreo de señal DOCSIS para Home Assistant. Rastrea la potencia de señal, márgenes de ruido y errores en todos los canales de tu módem. 13 módems verificados. 70% cobertura de tests.",
       "learnMore": "Más información",
       "github": "GitHub"
     }
@@ -68,8 +69,8 @@
       "subtitle": "Haz que los datos de señal de tu módem sean accionables.",
       "subtitleSecondary": "Monitoreo de señal DOCSIS para Home Assistant.",
       "stats": {
-        "modems": "10+ módems",
-        "tests": "700+ tests",
+        "modems": "13 módems verificados",
+        "tests": "70% cobertura de tests",
         "languages": "12 idiomas"
       }
     },
@@ -105,8 +106,8 @@
         "text": "Captura las caídas de las 2am y los problemas intermitentes. Los problemas que desaparecen para cuando revisas quedan capturados en los gráficos."
       },
       "oneIntegration": {
-        "title": "Una integración, 10+ módems",
-        "text": "Arris, Motorola, Netgear, Technicolor — escribe una vez, soporta muchos. Cada parser es probado contra capturas de dispositivos reales."
+        "title": "Una integración, 13 módems",
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — escribe una vez, soporta muchos. Cada parser es probado contra capturas de dispositivos reales."
       },
       "haAutomation": {
         "title": "Automatización de Home Assistant",
@@ -161,6 +162,55 @@
       "title": "Comenzar",
       "viewGithub": "Ver en GitHub",
       "readDocs": "Leer la documentación"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Acerca de — Solent Labs™",
+      "description": "Conoce Solent Labs, nuestra misión de hacer los sistemas complejos observables, y la persona detrás de los proyectos."
+    },
+    "header": {
+      "title": "Acerca de Solent Labs",
+      "subtitle": "Haciendo los sistemas complejos observables a través de software open source."
+    },
+    "mission": {
+      "title": "Misión",
+      "text": "Los sistemas complejos ocultan sus datos. Los ISP te dan un módem de caja negra sin visibilidad sobre la salud de la conexión. Los dispositivos de hogar inteligente entierran métricas útiles en aplicaciones propietarias. La información existe — simplemente no es accesible. Construimos los puentes que exponen estos datos a las personas que los necesitan."
+    },
+    "founder": {
+      "title": "Creador",
+      "name": "Ken Schulz",
+      "role": "Fundador y Desarrollador",
+      "bio": "Durante 27 anos he construido sistemas empresariales y la automatizacion, pruebas y herramientas que ayudan a los equipos a entregar mejor. Liderazgo centrado en las personas. Excelencia operacional. Reducir el trabajo manual para que las personas puedan enfocarse en lo que importa. En casa, soy esposo y padre de dos hijos. Entreno un club de robotica en secundaria, crio gallinas y paso mi tiempo libre navegando, en bicicleta, esquiando y entrenando para triatlones. Siempre hay otra montaña. Algo que aprender. Algo que construir. Algo que enseñar.",
+      "approach": "Construyo software con IA como multiplicador de fuerza — la forma en que un desarrollador solo entrega lo que antes requería un equipo. Cada línea de código está escrita con las mismas herramientas disponibles para cualquier contribuidor."
+    },
+    "impact": {
+      "title": "Impacto del proyecto",
+      "commits": "commits",
+      "contributors": "contribuidores",
+      "modems": "módems verificados",
+      "tests": "cobertura de tests"
+    },
+    "values": {
+      "title": "Valores",
+      "openSource": {
+        "title": "Open source por defecto",
+        "text": "Los proyectos públicos tienen licencia MIT. Haz fork, modifica, contribuye — el trabajo compartido pertenece a la comunidad."
+      },
+      "privacy": {
+        "title": "Tus datos, tu elección",
+        "text": "Construimos herramientas que funcionan localmente primero. Cuando existen características en la nube, son opcionales y transparentes. Controlas qué sale de tu red."
+      },
+      "quality": {
+        "title": "Cultura de aprendizaje",
+        "text": "Fixtures de dispositivos reales. Cobertura de pruebas en crecimiento. Cada problema es una oportunidad para mejorar el sistema."
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Reportar un problema"
     }
   }
 }

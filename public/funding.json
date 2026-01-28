@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "entity": {
+    "type": "individual",
+    "name": "Ken Schulz",
+    "description": "Creator of Solent Labs and Cable Modem Monitor. Building open-source tools that make complex systems observable.",
+    "webpageUrl": "https://solentlabs.io"
+  },
+  "projects": [
+    {
+      "guid": "cable-modem-monitor",
+      "name": "Cable Modem Monitor",
+      "description": "Home Assistant integration that pulls DOCSIS signal data from cable modems, enabling consumers to track connection health, diagnose issues, and hold ISPs accountable with historical data. Supports 13 verified modem models across 5 manufacturers with 70% test coverage.",
+      "webpageUrl": "https://solentlabs.io/cable-modem-monitor",
+      "repositoryUrl": "https://github.com/solentlabs/cable_modem_monitor",
+      "licenses": ["MIT"],
+      "tags": [
+        "home-automation",
+        "home-assistant",
+        "networking",
+        "monitoring",
+        "docsis",
+        "cable-modem",
+        "consumer-rights",
+        "isp-accountability",
+        "iot",
+        "python"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "github-sponsors",
+        "type": "payment-provider",
+        "address": "https://github.com/sponsors/solentlabs"
+      }
+    ],
+    "plans": [
+      {
+        "guid": "device-abstraction-layer",
+        "status": "active",
+        "name": "Device-Agnostic Modem Abstraction Layer",
+        "description": "Transform Cable Modem Monitor from individual parser implementations to a YAML-driven, HAR-capture-based architecture. This will: (1) Enable community members to add modem support without Python knowledge, (2) Abstract authentication strategies into reusable components, (3) Create a standard format for modem data exchange, (4) Reduce maintenance burden as modem firmware changes.",
+        "amount": 50000,
+        "currency": "USD",
+        "frequency": "one-time"
+      }
+    ]
+  }
+}

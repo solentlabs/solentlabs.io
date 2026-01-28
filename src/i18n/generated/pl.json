@@ -4,7 +4,8 @@
     "description": "Tworzymy oprogramowanie, które czyni złożone systemy obserwowalnymi. Open source w centrum."
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "O nas"
   },
   "hero": {
     "headline": "Narzędzia ujawniające ukryte dane.",
@@ -17,7 +18,7 @@
     "title": "Produkty",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, marginesy szumu i błędy na wszystkich kanałach modemu. 10+ obsługiwanych modemów. 700+ testów.",
+      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, marginesy szumu i błędy na wszystkich kanałach modemu. 13 zweryfikowanych modemów. 70% pokrycia testami.",
       "learnMore": "Dowiedz się więcej",
       "github": "GitHub"
     }
@@ -68,8 +69,8 @@
       "subtitle": "Uczyń dane sygnału modemu użytecznymi.",
       "subtitleSecondary": "Monitorowanie sygnału DOCSIS dla Home Assistant.",
       "stats": {
-        "modems": "10+ modemów",
-        "tests": "700+ testów",
+        "modems": "13 zweryfikowanych modemów",
+        "tests": "70% pokrycia testami",
         "languages": "12 języków"
       }
     },
@@ -105,8 +106,8 @@
         "text": "Wychwytuj zerwania o 2 w nocy i sporadyczne problemy. Problemy, które znikają zanim sprawdzisz, są rejestrowane na wykresach."
       },
       "oneIntegration": {
-        "title": "Jedna integracja, 10+ modemów",
-        "text": "Arris, Motorola, Netgear, Technicolor — napisz raz, obsługuj wiele. Każdy parser jest testowany na rzeczywistych zrzutach urządzeń."
+        "title": "Jedna integracja, 13 modemów",
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — napisz raz, obsługuj wiele. Każdy parser jest testowany na rzeczywistych zrzutach urządzeń."
       },
       "haAutomation": {
         "title": "Automatyzacja Home Assistant",
@@ -161,6 +162,55 @@
       "title": "Zacznij",
       "viewGithub": "Zobacz na GitHub",
       "readDocs": "Przeczytaj dokumentację"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "O nas — Solent Labs™",
+      "description": "Poznaj Solent Labs, naszą misję uczynienia złożonych systemów obserwowalnymi oraz osobę stojącą za projektami."
+    },
+    "header": {
+      "title": "O Solent Labs",
+      "subtitle": "Czynimy złożone systemy obserwowalnymi poprzez oprogramowanie open source."
+    },
+    "mission": {
+      "title": "Misja",
+      "text": "Złożone systemy ukrywają swoje dane. Dostawcy internetu dają ci modem-czarną skrzynkę bez wglądu w stan połączenia. Urządzenia smart home zakopują przydatne metryki w zastrzeżonych aplikacjach. Informacje istnieją — po prostu nie są dostępne. Budujemy mosty, które udostępniają te dane ludziom, którzy ich potrzebują."
+    },
+    "founder": {
+      "title": "Twórca",
+      "name": "Ken Schulz",
+      "role": "Założyciel i programista",
+      "bio": "Od 27 lat buduję systemy korporacyjne oraz automatyzację, testy i narzędzia, które pomagają zespołom dostarczać lepsze wyniki. Przywództwo skoncentrowane na ludziach. Doskonałość operacyjna. Redukcja pracy ręcznej, aby ludzie mogli skupić się na tym, co ważne. W domu jestem mężem i ojcem dwójki dzieci. Prowadzę koło robotyki w gimnazjum, hoduję kury i spędzam wolny czas na żeglarstwie, jeździe na rowerze, nartach i treningu do triathlonów. Zawsze jest kolejna góra. Coś do nauki. Coś do zbudowania. Coś do nauczenia.",
+      "approach": "Tworzę oprogramowanie z AI jako mnożnikiem siły — sposobem, w jaki samodzielny programista dostarcza to, co kiedyś wymagało zespołu. Każda linia kodu jest napisana tymi samymi narzędziami dostępnymi dla każdego kontrybutora."
+    },
+    "impact": {
+      "title": "Wpływ projektu",
+      "commits": "commitów",
+      "contributors": "kontrybutorów",
+      "modems": "zweryfikowanych modemów",
+      "tests": "pokrycia testami"
+    },
+    "values": {
+      "title": "Wartości",
+      "openSource": {
+        "title": "Open source domyślnie",
+        "text": "Projekty publiczne są na licencji MIT. Forkuj, modyfikuj, kontrybuuj — wspólna praca należy do społeczności."
+      },
+      "privacy": {
+        "title": "Twoje dane, Twój wybór",
+        "text": "Budujemy narzędzia, które działają lokalnie w pierwszej kolejności. Kiedy funkcje chmury istnieją, są opcjonalne i przejrzyste. Kontrolujesz, co opuszcza twoją sieć."
+      },
+      "quality": {
+        "title": "Kultura uczenia się",
+        "text": "Rzeczywiste fixture urządzeń. Rosnące pokrycie testami. Każdy problem to szansa na ulepszenie systemu."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Zgłoś problem"
     }
   }
 }

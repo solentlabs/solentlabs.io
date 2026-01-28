@@ -4,7 +4,8 @@
     "description": "我们构建让复杂系统可观测的软件。开源为核心。"
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "关于"
   },
   "hero": {
     "headline": "揭示隐藏数据的工具。",
@@ -17,7 +18,7 @@
     "title": "产品",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "适用于 Home Assistant 的 DOCSIS 信号监控。追踪调制解调器所有通道的信号强度、噪声余量和错误。支持10+调制解调器。700+测试。",
+      "description": "适用于 Home Assistant 的 DOCSIS 信号监控。追踪调制解调器所有通道的信号强度、噪声余量和错误。13个已验证调制解调器。70%测试覆盖率。",
       "learnMore": "了解更多",
       "github": "GitHub"
     }
@@ -68,9 +69,9 @@
       "subtitle": "让您的调制解调器信号数据可操作。",
       "subtitleSecondary": "适用于 Home Assistant 的 DOCSIS 信号监控。",
       "stats": {
-        "modems": "10+ 调制解调器",
-        "tests": "700+ 测试",
-        "languages": "12 种语言"
+        "modems": "13个已验证调制解调器",
+        "tests": "70%测试覆盖率",
+        "languages": "12种语言"
       }
     },
     "problem": {
@@ -105,8 +106,8 @@
         "text": "捕捉凌晨2点的断开和间歇性问题。在您检查之前就消失的问题会被记录在图表中。"
       },
       "oneIntegration": {
-        "title": "一个集成，10+调制解调器",
-        "text": "Arris、Motorola、Netgear、Technicolor——一次编写，支持多种。每个解析器都针对真实设备捕获进行测试。"
+        "title": "一个集成，13个调制解调器",
+        "text": "Arris、Motorola、Netgear、Technicolor、Virgin Media——一次编写，支持多种。每个解析器都针对真实设备捕获进行测试。"
       },
       "haAutomation": {
         "title": "Home Assistant 自动化",
@@ -161,6 +162,55 @@
       "title": "开始使用",
       "viewGithub": "在GitHub上查看",
       "readDocs": "阅读文档"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "关于 — Solent Labs™",
+      "description": "了解Solent Labs，我们让复杂系统可观测的使命，以及项目背后的人。"
+    },
+    "header": {
+      "title": "关于 Solent Labs",
+      "subtitle": "通过开源软件让复杂系统可观测。"
+    },
+    "mission": {
+      "title": "使命",
+      "text": "复杂系统隐藏它们的数据。ISP给你一个黑盒调制解调器，让你无法了解连接健康状况。智能家居设备将有用的指标埋藏在专有应用中。信息存在——只是无法访问。我们搭建桥梁，将这些数据暴露给需要它的人。"
+    },
+    "founder": {
+      "title": "创建者",
+      "name": "Ken Schulz",
+      "role": "创始人兼开发者",
+      "bio": "27年来，我一直在构建企业系统以及帮助团队更好交付的自动化、测试和工具。以人为本的领导力。卓越运营。减少手动工作，让人们能够专注于真正重要的事情。在家里，我是一名丈夫和两个孩子的父亲。我指导中学机器人社团，养鸡，业余时间用于帆船、骑行、滑雪和铁人三项训练。总有另一座山峰。某些东西要学习。某些东西要构建。某些东西要教导。",
+      "approach": "我将AI作为力量倍增器来构建软件——让独立开发者能够交付以前需要团队才能完成的工作。每一行代码都是用任何贡献者都可以使用的相同工具编写的。"
+    },
+    "impact": {
+      "title": "项目影响",
+      "commits": "次提交",
+      "contributors": "位贡献者",
+      "modems": "个已验证调制解调器",
+      "tests": "测试覆盖率"
+    },
+    "values": {
+      "title": "价值观",
+      "openSource": {
+        "title": "开源默认",
+        "text": "公开项目采用MIT许可。Fork、修改、贡献——共享的工作属于社区。"
+      },
+      "privacy": {
+        "title": "您的数据，您的选择",
+        "text": "我们构建在本地优先工作的工具。当云功能存在时，它们是可选的且透明的。您控制离开您网络的内容。"
+      },
+      "quality": {
+        "title": "学习文化",
+        "text": "真实设备fixtures。不断增长的测试覆盖率。每个问题都是让系统变得更好的机会。"
+      }
+    },
+    "contact": {
+      "title": "联系",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "报告问题"
     }
   }
 }

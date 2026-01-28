@@ -4,7 +4,8 @@
     "description": "Wir entwickeln Software, die komplexe Systeme beobachtbar macht. Open Source im Kern."
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "Über uns"
   },
   "hero": {
     "headline": "Werkzeuge, die verborgene Daten sichtbar machen.",
@@ -17,7 +18,7 @@
     "title": "Produkte",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "DOCSIS-Signalüberwachung für Home Assistant. Verfolgen Sie Signalstärke, Rauschabstände und Fehler über alle Kanäle Ihres Modems. 10+ unterstützte Modems. 700+ Tests.",
+      "description": "DOCSIS-Signalüberwachung für Home Assistant. Verfolgen Sie Signalstärke, Rauschabstände und Fehler über alle Kanäle Ihres Modems. 13 verifizierte Modems. 70% Testabdeckung.",
       "learnMore": "Mehr erfahren",
       "github": "GitHub"
     }
@@ -58,6 +59,55 @@
     "brand": "Solent Labs™",
     "tagline": "Ein Solent Labs™ Projekt."
   },
+  "about": {
+    "meta": {
+      "title": "Über uns — Solent Labs™",
+      "description": "Erfahren Sie mehr über Solent Labs, unsere Mission komplexe Systeme beobachtbar zu machen, und die Person hinter den Projekten."
+    },
+    "header": {
+      "title": "Über Solent Labs",
+      "subtitle": "Komplexe Systeme durch Open-Source-Software beobachtbar machen."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "Komplexe Systeme verbergen ihre Daten. ISPs geben Ihnen ein Black-Box-Modem ohne Einblick in die Verbindungsqualität. Smart-Home-Geräte verstecken nützliche Metriken in proprietären Apps. Die Informationen existieren — sie sind nur nicht zugänglich. Wir bauen die Brücken, die diese Daten den Menschen zugänglich machen, die sie brauchen."
+    },
+    "founder": {
+      "title": "Entwickler",
+      "name": "Ken Schulz",
+      "role": "Gründer & Entwickler",
+      "bio": "Seit 27 Jahren entwickle ich Enterprise-Systeme sowie die Automatisierung, Tests und Werkzeuge, die Teams dabei helfen, bessere Ergebnisse zu liefern. Menschen-zentrierte Fuehrung. Operative Exzellenz. Reduktion manueller Arbeit, damit Menschen sich auf das Wesentliche konzentrieren koennen. Privat bin ich Ehemann und Vater von zwei Kindern. Ich trainiere eine Robotik-AG an einer Mittelschule, halte Huehner und verbringe meine Freizeit mit Segeln, Radfahren, Skifahren und Triathlon-Training. Es gibt immer noch einen Berg zu erklimmen. Etwas zu lernen. Etwas zu bauen. Etwas zu unterrichten.",
+      "approach": "Ich entwickle Software mit KI als Kraftverstärker — die Art, wie ein Solo-Entwickler liefert, wofür früher ein Team nötig war. Jede Codezeile wird mit denselben Tools geschrieben, die jedem Mitwirkenden zur Verfügung stehen."
+    },
+    "impact": {
+      "title": "Projekt-Impact",
+      "commits": "Commits",
+      "contributors": "Mitwirkende",
+      "modems": "verifizierte Modems",
+      "tests": "Testabdeckung"
+    },
+    "values": {
+      "title": "Werte",
+      "openSource": {
+        "title": "Open Source standardmäßig",
+        "text": "Öffentliche Projekte sind MIT-lizenziert. Forken, modifizieren, beitragen — gemeinsame Arbeit gehört der Community."
+      },
+      "privacy": {
+        "title": "Ihre Daten, Ihre Wahl",
+        "text": "Wir bauen Werkzeuge, die lokal funktionieren. Wenn Cloud-Features existieren, sind sie optional und transparent. Sie kontrollieren, was Ihr Netzwerk verlässt."
+      },
+      "quality": {
+        "title": "Kultur des Lernens",
+        "text": "Echte Geräte-Fixtures. Wachsende Test-Abdeckung. Jedes Problem ist eine Chance, das System besser zu machen."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Problem melden"
+    }
+  },
   "cmm": {
     "meta": {
       "title": "Cable Modem Monitor — Solent Labs™",
@@ -68,8 +118,8 @@
       "subtitle": "Machen Sie die Signaldaten Ihres Modems nutzbar.",
       "subtitleSecondary": "DOCSIS-Signalüberwachung für Home Assistant.",
       "stats": {
-        "modems": "10+ Modems",
-        "tests": "700+ Tests",
+        "modems": "13 verifizierte Modems",
+        "tests": "70% Testabdeckung",
         "languages": "12 Sprachen"
       }
     },
@@ -105,8 +155,8 @@
         "text": "Erfassen Sie die Abbrüche um 2 Uhr nachts und sporadische Probleme. Probleme, die verschwinden, bevor Sie nachsehen, werden in den Grafiken festgehalten."
       },
       "oneIntegration": {
-        "title": "Eine Integration, 10+ Modems",
-        "text": "Arris, Motorola, Netgear, Technicolor — einmal schreiben, viele unterstützen. Jeder Parser wird gegen echte Geräteerfassungen getestet."
+        "title": "Eine Integration, 13 Modems",
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — einmal schreiben, viele unterstützen. Jeder Parser wird gegen echte Geräteerfassungen getestet."
       },
       "haAutomation": {
         "title": "Home Assistant Automatisierung",

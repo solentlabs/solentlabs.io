@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../i18n';
+
+const locale = 'en';
+const t = getTranslations(locale);
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ken Schulz",
+  "jobTitle": "Founder & Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Solent Labs"
+  },
+  "url": "https://solentlabs.io/about/"
+};
+---
+
+<BaseLayout locale={locale} title={t.about.meta.title} description={t.about.meta.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  <div class="container">
+    <header class="page-header">
+      <h1>{t.about.header.title}</h1>
+      <p class="subtitle">{t.about.header.subtitle}</p>
+    </header>
+
+    <article class="content">
+      <section class="mission-section">
+        <h2>{t.about.mission.title}</h2>
+        <p>{t.about.mission.text}</p>
+      </section>
+
+      <section class="founder-section">
+        <h2>{t.about.founder.title}</h2>
+        <div class="founder-card">
+          <div class="founder-info">
+            <h3>{t.about.founder.name}</h3>
+            <p class="role">{t.about.founder.role}</p>
+            <p>{t.about.founder.bio}</p>
+            <p class="approach">{t.about.founder.approach}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-section">
+        <h2>{t.about.impact.title}</h2>
+        <div class="impact-grid">
+          <div class="impact-stat">
+            <span class="stat-number">472+</span>
+            <span class="stat-label">{t.about.impact.commits}</span>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">7</span>
+            <span class="stat-label">{t.about.impact.contributors}</span>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">13</span>
+            <span class="stat-label">{t.about.impact.modems}</span>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">70%</span>
+            <span class="stat-label">{t.about.impact.tests}</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <h2>{t.about.values.title}</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <h3>{t.about.values.openSource.title}</h3>
+            <p>{t.about.values.openSource.text}</p>
+          </div>
+          <div class="value-item">
+            <h3>{t.about.values.privacy.title}</h3>
+            <p>{t.about.values.privacy.text}</p>
+          </div>
+          <div class="value-item">
+            <h3>{t.about.values.quality.title}</h3>
+            <p>{t.about.values.quality.text}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>{t.about.contact.title}</h2>
+        <div class="contact-links">
+          <a href="https://github.com/solentlabs" class="cta-button">{t.about.contact.github}</a>
+          <a href="https://www.linkedin.com/in/kenschulz/" class="cta-button secondary">{t.about.contact.linkedin}</a>
+          <a href="https://github.com/solentlabs/cable_modem_monitor/issues" class="cta-button secondary">{t.about.contact.issues}</a>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <p>{t.footer.tagline}</p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style>
+  .founder-section {
+    margin: 3rem 0;
+  }
+
+  .founder-card {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .founder-info h3 {
+    margin-bottom: 0.25rem;
+    color: var(--dark);
+  }
+
+  .founder-info .role {
+    color: var(--orange);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .founder-info .approach {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--gray);
+  }
+
+  .impact-section {
+    margin: 3rem 0;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .impact-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .impact-stat {
+    background: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--orange);
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--gray);
+    margin-top: 0.25rem;
+  }
+
+  .values-section {
+    margin: 3rem 0;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .value-item {
+    background: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .value-item h3 {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .value-item p {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  .contact-section {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .mission-section {
+    margin: 2rem 0 3rem;
+  }
+
+  .mission-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+  }
+</style>

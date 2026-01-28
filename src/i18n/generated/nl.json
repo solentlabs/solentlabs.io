@@ -4,7 +4,8 @@
     "description": "Wij bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
   },
   "nav": {
-    "cableModemMonitor": "Cable Modem Monitor"
+    "cableModemMonitor": "Cable Modem Monitor",
+    "about": "Over ons"
   },
   "hero": {
     "headline": "Tools die verborgen data aan het licht brengen.",
@@ -17,7 +18,7 @@
     "title": "Producten",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "DOCSIS-signaalmonitoring voor Home Assistant. Volg signaalsterkte, ruismarges en fouten over alle kanalen van je modem. 10+ ondersteunde modems. 700+ tests.",
+      "description": "DOCSIS-signaalmonitoring voor Home Assistant. Volg signaalsterkte, ruismarges en fouten over alle kanalen van je modem. 13 geverifieerde modems. 70% testdekking.",
       "learnMore": "Meer informatie",
       "github": "GitHub"
     }
@@ -68,8 +69,8 @@
       "subtitle": "Maak de signaaldata van je modem bruikbaar.",
       "subtitleSecondary": "DOCSIS-signaalmonitoring voor Home Assistant.",
       "stats": {
-        "modems": "10+ modems",
-        "tests": "700+ tests",
+        "modems": "13 geverifieerde modems",
+        "tests": "70% testdekking",
         "languages": "12 talen"
       }
     },
@@ -105,8 +106,8 @@
         "text": "Vang de uitval om 2 uur 's nachts en intermitterende problemen. Problemen die verdwijnen tegen de tijd dat je kijkt worden vastgelegd in de grafieken."
       },
       "oneIntegration": {
-        "title": "Eén integratie, 10+ modems",
-        "text": "Arris, Motorola, Netgear, Technicolor — schrijf één keer, ondersteun velen. Elke parser is getest tegen echte apparaatopnames."
+        "title": "Eén integratie, 13 modems",
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — schrijf één keer, ondersteun velen. Elke parser is getest tegen echte apparaatopnames."
       },
       "haAutomation": {
         "title": "Home Assistant automatisering",
@@ -161,6 +162,55 @@
       "title": "Aan de Slag",
       "viewGithub": "Bekijk op GitHub",
       "readDocs": "Lees de documentatie"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Over ons — Solent Labs™",
+      "description": "Leer meer over Solent Labs, onze missie om complexe systemen observeerbaar te maken, en de persoon achter de projecten."
+    },
+    "header": {
+      "title": "Over Solent Labs",
+      "subtitle": "Complexe systemen observeerbaar maken door open source software."
+    },
+    "mission": {
+      "title": "Missie",
+      "text": "Complexe systemen verbergen hun data. ISP's geven je een black-box modem zonder inzicht in verbindingsgezondheid. Smart home-apparaten begraven nuttige metrics in propriëtaire apps. De informatie bestaat — ze is alleen niet toegankelijk. Wij bouwen de bruggen die deze data ontsluiten voor de mensen die het nodig hebben."
+    },
+    "founder": {
+      "title": "Maker",
+      "name": "Ken Schulz",
+      "role": "Oprichter & Ontwikkelaar",
+      "bio": "Al 27 jaar bouw ik enterprise-systemen en de automatisering, tests en tooling die teams helpen beter te presteren. Mensen-eerst leiderschap. Operationele excellentie. Het verminderen van handmatig werk zodat mensen zich kunnen richten op wat ertoe doet. Thuis ben ik echtgenoot en vader van twee kinderen. Ik coach een robotica-club op een middelbare school, houd kippen en breng mijn vrije tijd door met zeilen, fietsen, skieen en triathlon-training. Er is altijd nog een berg te beklimmen. Iets om te leren. Iets om te bouwen. Iets om te onderwijzen.",
+      "approach": "Ik bouw software met AI als krachtversterker — de manier waarop een solo-ontwikkelaar levert wat vroeger een team vereiste. Elke regel code is geschreven met dezelfde tools die beschikbaar zijn voor elke bijdrager."
+    },
+    "impact": {
+      "title": "Project Impact",
+      "commits": "commits",
+      "contributors": "bijdragers",
+      "modems": "geverifieerde modems",
+      "tests": "testdekking"
+    },
+    "values": {
+      "title": "Waarden",
+      "openSource": {
+        "title": "Open source standaard",
+        "text": "Openbare projecten zijn MIT-gelicenseerd. Fork, wijzig, draag bij — gedeeld werk is van de community."
+      },
+      "privacy": {
+        "title": "Uw gegevens, uw keuze",
+        "text": "We bouwen gereedschappen die lokaal werken. Wanneer cloud-functies bestaan, zijn ze opt-in en transparant. Je bepaalt wat je netwerk verlaat."
+      },
+      "quality": {
+        "title": "Leercultuur",
+        "text": "Echte apparaatfixtures. Groeiende testdekking. Elk probleem is een kans om het systeem beter te maken."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Meld een probleem"
     }
   }
 }
