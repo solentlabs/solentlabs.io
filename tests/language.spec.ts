@@ -85,42 +85,42 @@ test.describe('Translation Content', () => {
     // German title should be visible
     await expect(page).toHaveTitle(/Solent Labs™/);
 
-    // Content should be in German (check for German-specific text)
-    // "Projects" in German is "Projekte" - wait for page to load
+    // Content should be in German (check for German-specific text in products section)
+    // "Projects" in German is "Projekte"
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('text=Projekte')).toBeVisible();
+    await expect(page.locator('.products-section h2:has-text("Projekte")').first()).toBeVisible();
   });
 
   test('French page has translated content', async ({ page }) => {
     await page.goto('/fr/');
 
-    // "Projects" in French is "Projets"
+    // "Projects" in French is "Projets" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('text=Projets')).toBeVisible();
+    await expect(page.locator('.products-section h2:has-text("Projets")').first()).toBeVisible();
   });
 
   test('Ukrainian page has translated content', async ({ page }) => {
     await page.goto('/uk/');
 
-    // "Projects" in Ukrainian is "Проєкти"
+    // "Projects" in Ukrainian is "Проєкти" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('text=Проєкти')).toBeVisible();
+    await expect(page.locator('.products-section h2:has-text("Проєкти")').first()).toBeVisible();
   });
 
   test('Chinese page has translated content', async ({ page }) => {
     await page.goto('/zh/');
 
-    // "Projects" in Chinese is "项目"
+    // "Projects" in Chinese is "项目" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('text=项目')).toBeVisible();
+    await expect(page.locator('.products-section h2:has-text("项目")').first()).toBeVisible();
   });
 
   test('Spanish page has translated content', async ({ page }) => {
     await page.goto('/es/');
 
-    // "Projects" in Spanish is "Proyectos"
+    // "Projects" in Spanish is "Proyectos" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('text=Proyectos')).toBeVisible();
+    await expect(page.locator('.products-section h2:has-text("Proyectos")').first()).toBeVisible();
   });
 });
 
