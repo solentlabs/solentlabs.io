@@ -4,7 +4,10 @@
     "description": "Tworzymy oprogramowanie, które czyni złożone systemy obserwowalnymi. Open source w centrum."
   },
   "nav": {
+    "home": "Strona główna",
+    "projects": "Projekty",
     "cableModemMonitor": "Cable Modem Monitor",
+    "harCapture": "HTTP Archive (HAR) Capture",
     "about": "O nas"
   },
   "hero": {
@@ -12,23 +15,30 @@
     "subtitle": "Tworzymy oprogramowanie, które czyni złożone systemy obserwowalnymi. Open source w centrum."
   },
   "approach": {
-    "text": "Złożone systemy ukrywają swoje dane. Urządzenia zakopują metryki w nieporęcznych interfejsach. API nie udostępniają tego, czego potrzebujesz. Informacje istnieją — po prostu nie są dostępne. My budujemy mosty."
+    "text": "Złożone systemy ukrywają swoje dane. Urządzenia chowają metryki w nieporęcznych interfejsach. API nie udostępniają tego, czego potrzebujesz. Informacje istnieją — po prostu nie są dostępne. Budujemy mosty."
   },
   "products": {
-    "title": "Produkty",
+    "title": "Projekty",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, marginesy szumu i błędy na wszystkich kanałach modemu. 13 zweryfikowanych modemów. 70% pokrycia testami.",
+      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, margines szumu i błędy na wszystkich kanałach modemu. 13 zweryfikowanych modemów. 70% pokrycia testami.",
       "learnMore": "Dowiedz się więcej",
       "github": "GitHub"
+    },
+    "harCapture": {
+      "name": "HTTP Archive (HAR) Capture",
+      "description": "Biblioteka Python bez zależności do czyszczenia plików HAR. Wykrywa typowe wzorce PII (hasła, tokeny, e-maile) z redakcją zachowującą format. Interaktywny tryb przeglądu do weryfikacji. Rozszerzalny dla wzorców specyficznych dla domeny.",
+      "learnMore": "Dowiedz się więcej",
+      "github": "GitHub",
+      "pypi": "PyPI"
     }
   },
   "philosophy": {
-    "title": "Jak Budujemy",
-    "intro": "Te zasady kierują każdą decyzją — i wyznaczają oczekiwania dla kontrybutorów.",
+    "title": "Jak budujemy",
+    "intro": "Te zasady kierują każdą decyzją — i wyznaczają oczekiwania dla współtwórców.",
     "aiAccelerated": {
-      "title": "Przyspieszony przez AI:",
-      "text": "Używamy AI jako mnożnika siły. Nie jako sztuczki, ale jako sposobu, w jaki mały zespół dostarcza to, co kiedyś wymagało dużego. Każdy kontrybutor korzysta z tych samych narzędzi."
+      "title": "Przyspieszone przez AI:",
+      "text": "Używamy AI jako mnożnika siły. Nie jako gadżetu, ale jako sposobu, w jaki mały zespół dostarcza to, co kiedyś wymagało dużego. Każdy współtwórca korzysta z tych samych narzędzi."
     },
     "systemsFirst": {
       "title": "Najpierw systemy:",
@@ -36,22 +46,22 @@
     },
     "rootCause": {
       "title": "Przyczyna źródłowa:",
-      "text": "Napraw system, nie symptom. Kiedy coś się psuje, prześledź to wstecz. Każdy bug to szansa na uczynienie systemu bardziej poprawnym."
+      "text": "Napraw system, nie objaw. Gdy coś się psuje, prześledzij do źródła. Każdy błąd to szansa na ulepszenie systemu."
     },
     "dryArchitecture": {
       "title": "Architektura DRY:",
-      "text": "Don't Repeat Yourself. Jedna abstrakcja obsługuje dziesiątki modemów. Kontrybutorzy rozszerzają wzorce — nie duplikują logiki."
+      "text": "Don't Repeat Yourself. Jedna abstrakcja obsługuje dziesiątki modemów. Współtwórcy rozszerzają wzorce — nie powielają logiki."
     }
   },
   "whySolent": {
     "title": "Dlaczego \"Solent\"?",
     "intro": "Dwa znaczenia, jedna nazwa.",
-    "nautical": "Solent to lina sztagu dziobowego na żaglówce z ożaglowaniem kutrowym — lina, która wytrzymuje pod ciśnieniem. Dziedzictwo żeglarskie jest tu głęboko zakorzenione.",
-    "geographic": "Cieśnina Solent, między Anglią a Wyspą Wight, słynie z prądów, które mylą nawet doświadczonych żeglarzy. Nasze narzędzia przynoszą przejrzystość systemom, gdzie złożoność jest niewidoczna, dopóki coś się nie zepsuje."
+    "nautical": "Solent to linka sztagu przedniego na jachcie typu kuter — linka, która trzyma pod naciskiem. Dziedzictwo żeglarskie jest tu głęboko zakorzenione.",
+    "geographic": "Cieśnina Solent, między Anglią a wyspą Wight, słynie z prądów, które dezorientują nawet doświadczonych żeglarzy. Nasze narzędzia przynoszą przejrzystość systemom, gdzie złożoność jest niewidoczna, dopóki coś się nie zepsuje."
   },
   "community": {
     "title": "Społeczność",
-    "text": "Budowane otwarcie. Wkłady mile widziane.",
+    "text": "Budowane otwarcie. Wkład mile widziany.",
     "github": "GitHub",
     "contributeModem": "Dodaj modem"
   },
@@ -59,10 +69,59 @@
     "brand": "Solent Labs™",
     "tagline": "Projekt Solent Labs™."
   },
+  "about": {
+    "meta": {
+      "title": "O nas — Solent Labs™",
+      "description": "Poznaj Solent Labs, naszą misję czynienia złożonych systemów obserwowalnymi i osobę stojącą za projektami."
+    },
+    "header": {
+      "title": "O Solent Labs",
+      "subtitle": "Czynienie złożonych systemów obserwowalnymi poprzez oprogramowanie open source."
+    },
+    "mission": {
+      "title": "Misja",
+      "text": "Złożone systemy ukrywają swoje dane. Solent Labs buduje mosty, które czynią je obserwowalnymi — i uczy innych robić to samo. Open source, jeden projekt na raz."
+    },
+    "founder": {
+      "title": "Twórca",
+      "name": "Ken Schulz",
+      "role": "Założyciel i Deweloper",
+      "bio": "Spędziłem 27 lat budując systemy korporacyjne oraz automatyzację, testowanie i narzędzia, które pomagają zespołom lepiej dostarczać. Przywództwo zorientowane na ludzi. Doskonałość operacyjna. Redukcja wysiłku manualnego, aby ludzie mogli skupić się na tym, co ważne. W domu jestem mężem i ojcem dwójki dzieci. Trenuję robotykę w gimnazjum, hoduję kury i spędzam wolny czas żeglując, jeżdżąc na rowerze, jeżdżąc na nartach i trenując do triathlonów. Zawsze jest kolejna góra. Coś do nauczenia się. Coś do zbudowania. Coś do nauczania.",
+      "approach": "Cable Modem Monitor rozpoczął się jako eksperyment w rozwoju wspomaganym AI. Prawie 200 wpisów dziennika później jest dowodem na to, co możliwe, gdy doświadczenie spotyka nowe narzędzia."
+    },
+    "impact": {
+      "title": "Wpływ projektu",
+      "commits": "commity",
+      "contributors": "współtwórcy",
+      "modems": "zweryfikowane modemy",
+      "tests": "pokrycie testami"
+    },
+    "values": {
+      "title": "Wartości",
+      "openSource": {
+        "title": "Open source domyślnie",
+        "text": "Projekty publiczne są licencjonowane na MIT. Forkuj, modyfikuj, współtwórz — wspólna praca należy do społeczności."
+      },
+      "privacy": {
+        "title": "Twoje dane, Twój wybór",
+        "text": "Budujemy narzędzia, które działają najpierw lokalnie. Gdy istnieją funkcje chmurowe, są opcjonalne i przejrzyste. Ty kontrolujesz, co opuszcza Twoją sieć."
+      },
+      "quality": {
+        "title": "Kultura uczenia się",
+        "text": "Prawdziwe fixture'y urządzeń. Rosnące pokrycie testami. Każdy problem to szansa na ulepszenie systemu."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Zgłoś problem"
+    }
+  },
   "cmm": {
     "meta": {
       "title": "Cable Modem Monitor — Solent Labs™",
-      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, marginesy szumu i błędy."
+      "description": "Monitorowanie sygnału DOCSIS dla Home Assistant. Śledź siłę sygnału, margines szumu i błędy."
     },
     "header": {
       "title": "Cable Modem Monitor",
@@ -76,42 +135,42 @@
     },
     "problem": {
       "title": "Problem",
-      "intro": "Twój modem kablowy śledzi dane o jakości sygnału — jak silne jest połączenie, jak czysty jest sygnał, czy błędy się gromadzą. To wszystko jest zakopane w interfejsie webowym modemu. Ale te dane nie są użyteczne.",
+      "intro": "Twój modem kablowy śledzi dane jakości sygnału — jak silne jest Twoje połączenie, jak czysty jest sygnał, czy gromadzą się błędy. To wszystko jest zakopane w interfejsie webowym modemu. Ale te dane nie są użyteczne.",
       "items": {
-        "noHistory": "Brak historii — widzisz migawkę teraźniejszości, nie to, co się stało o 2 w nocy, gdy połączenie się zerwało",
-        "noAlerts": "Brak alertów — modem nie powie ci, gdy jakość sygnału spada lub błędy zaczynają rosnąć",
-        "noProof": "Brak dowodów — gdy dzwonisz do dostawcy, \"internet jest wolny\" nie jest dowodem, na który mogą zareagować",
-        "noCorrelation": "Brak korelacji — nie możesz połączyć \"Zoom się rozłączył o 15\" z problemami sygnału, których nie obserwowałeś"
+        "noHistory": "Brak historii — widzisz migawkę teraz, nie to, co się stało o 2 w nocy, gdy Twoje połączenie spadło",
+        "noAlerts": "Brak alertów — modem nie powie Ci, gdy jakość sygnału się pogarsza lub błędy zaczynają rosnąć",
+        "noProof": "Brak dowodu — gdy dzwonisz do swojego ISP, \"internet jest wolny\" nie jest dowodem, na który mogą zareagować",
+        "noCorrelation": "Brak korelacji — nie możesz połączyć \"Zoom spadł o 15\" z problemami sygnału, których nie obserwowałeś"
       }
     },
     "solution": {
       "title": "Rozwiązanie",
-      "intro": "Cable Modem Monitor pobiera dane sygnału bezpośrednio z modemu i wprowadza je do Home Assistant. Śledź stan połączenia w czasie dzięki historycznym wykresom, które wychwytują problemy, które w przeciwnym razie byś przegapił.",
+      "intro": "Cable Modem Monitor pobiera dane sygnału bezpośrednio z modemu i przenosi je do Home Assistant. Śledź zdrowie połączenia w czasie z wykresami historycznymi, które wychwytują problemy, które inaczej byś przegapił.",
       "captions": {
         "dashboard": "Status połączenia, czas pracy, opóźnienie i liczba błędów na pierwszy rzut oka",
-        "downstream": "Siła sygnału na wszystkich kanałach — natychmiast wykryj nierównowagi",
-        "snr": "Śledzenie jakości sygnału pomaga zidentyfikować problemy, zanim spowodują zerwanie",
+        "downstream": "Siła sygnału na wszystkich kanałach — wykryj nierównowagi natychmiast",
+        "snr": "Śledzenie jakości sygnału pomaga zidentyfikować problemy zanim spowodują spadki",
         "latency": "Monitorowanie czasu odpowiedzi wychwytuje spowolnienia w momencie ich wystąpienia",
-        "errors": "Trendy błędów ujawniają rozwijające się problemy w ciągu dni i tygodni"
+        "errors": "Trendy błędów ujawniają rozwijające się problemy przez dni i tygodnie"
       }
     },
     "value": {
-      "title": "Dlaczego To Ważne",
+      "title": "Dlaczego to ważne",
       "proof": {
-        "title": "Dowody, gdy ich potrzebujesz",
-        "text": "Pokaż dostawcy rzeczywiste dane — jakość sygnału spada, liczba błędów rośnie. Dowody są trudniejsze do odrzucenia niż \"wydaje się wolne\"."
+        "title": "Dowód, gdy go potrzebujesz",
+        "text": "Pokaż swojemu ISP rzeczywiste dane — spadająca jakość sygnału, rosnąca liczba błędów. Dowód trudniej odrzucić niż \"wydaje się wolno\"."
       },
       "patterns": {
         "title": "Wzorce w czasie",
-        "text": "Wychwytuj zerwania o 2 w nocy i sporadyczne problemy. Problemy, które znikają zanim sprawdzisz, są rejestrowane na wykresach."
+        "text": "Wychwytuj spadki o 2 w nocy i problemy przerywane. Problemy, które znikają, gdy sprawdzasz, są uchwycone na wykresach."
       },
       "oneIntegration": {
         "title": "Jedna integracja, 13 modemów",
-        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — napisz raz, obsługuj wiele. Każdy parser jest testowany na rzeczywistych zrzutach urządzeń."
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — napisz raz, wspieraj wiele. Każdy parser jest testowany na rzeczywistych przechwytach urządzeń."
       },
       "haAutomation": {
         "title": "Automatyzacja Home Assistant",
-        "text": "Ustaw alerty dla degradacji sygnału. Otrzymuj powiadomienia, zanim problemy staną się awariami."
+        "text": "Ustaw alerty dla degradacji sygnału. Otrzymuj powiadomienia zanim problemy staną się awariami."
       }
     },
     "install": {
@@ -121,7 +180,7 @@
       "hacsNote": "Wyszukaj \"Cable Modem Monitor\" w integracjach HACS."
     },
     "modems": {
-      "title": "Obsługiwane Modemy",
+      "title": "Obsługiwane modemy",
       "tableHeaders": {
         "manufacturer": "Producent",
         "model": "Model",
@@ -130,19 +189,19 @@
       },
       "status": {
         "verified": "Zweryfikowany",
-        "inProgress": "W Trakcie",
-        "testing": "W Testach"
+        "inProgress": "W toku",
+        "testing": "Testowanie"
       },
       "fullListLink": "Pełna lista kompatybilności"
     },
     "contribute": {
       "title": "Współtwórz",
-      "intro": "Cable Modem Monitor rozwija się dzięki wkładom społeczności. Dwa sposoby pomocy:",
+      "intro": "Cable Modem Monitor rośnie dzięki wkładowi społeczności. Dwa sposoby pomocy:",
       "captureData": {
-        "title": "Zrób zrzut danych modemu",
-        "description": "Udostępnij surowe dane z modemu, aby pomóc nam dodać wsparcie.",
-        "step1": "Zainstaluj w trybie Unknown Modem",
-        "step2": "Kliknij \"Capture HTML\" w ustawieniach",
+        "title": "Przechwyć dane modemu",
+        "description": "Udostępnij surowe dane ze swojego modemu, aby pomóc nam dodać wsparcie.",
+        "step1": "Zainstaluj w trybie Nieznany Modem",
+        "step2": "Kliknij \"Przechwyć HTML\" w ustawieniach",
         "step3": "Udostępnij plik programistom",
         "button": "Przewodnik przechwytywania"
       },
@@ -150,67 +209,102 @@
         "title": "Napisz parser",
         "description": "Zbuduj wsparcie dla nowego modelu modemu.",
         "items": {
-          "fork": "Zrób fork repozytorium",
-          "parser": "Stwórz parser według wzorca",
+          "fork": "Sforkuj repozytorium",
+          "parser": "Utwórz parser zgodnie ze wzorcem",
           "tests": "Dodaj testy z danymi fixture",
-          "pr": "Wyślij pull request"
+          "pr": "Prześlij pull request"
         },
         "button": "Przewodnik programisty"
       }
     },
     "cta": {
-      "title": "Zacznij",
+      "title": "Rozpocznij",
       "viewGithub": "Zobacz na GitHub",
       "readDocs": "Przeczytaj dokumentację"
     }
   },
-  "about": {
+  "hc": {
     "meta": {
-      "title": "O nas — Solent Labs™",
-      "description": "Poznaj Solent Labs, naszą misję uczynienia złożonych systemów obserwowalnymi oraz osobę stojącą za projektami."
+      "title": "HAR-CAPTURE — Solent Labs™",
+      "description": "Biblioteka Python bez zależności do czyszczenia plików HAR. Wykrywaj typowe wzorce PII z interaktywnym przeglądem. Rozszerzalny dla niestandardowych wzorców."
     },
     "header": {
-      "title": "O Solent Labs",
-      "subtitle": "Czynimy złożone systemy obserwowalnymi poprzez oprogramowanie open source."
+      "title": "HTTP Archive (HAR) Capture",
+      "subtitle": "Bezpiecznie udostępniaj pliki HAR",
+      "description": "Czyść pliki archiwów HTTP dla bezpiecznych raportów błędów i diagnostyki."
     },
-    "mission": {
-      "title": "Misja",
-      "text": "Złożone systemy ukrywają swoje dane. Dostawcy internetu dają ci modem-czarną skrzynkę bez wglądu w stan połączenia. Urządzenia smart home zakopują przydatne metryki w zastrzeżonych aplikacjach. Informacje istnieją — po prostu nie są dostępne. Budujemy mosty, które udostępniają te dane ludziom, którzy ich potrzebują."
+    "intro": {
+      "text": "Biblioteka Python bez zależności, która pomaga identyfikować i usuwać typowe wzorce PII z plików HAR z redakcją zachowującą format. Użyj interaktywnego przeglądu, aby zweryfikować, co zostało oznaczone. Rozszerzalny dla wzorców specyficznych dla domeny."
     },
-    "founder": {
-      "title": "Twórca",
-      "name": "Ken Schulz",
-      "role": "Założyciel i programista",
-      "bio": "Od 27 lat buduję systemy korporacyjne oraz automatyzację, testy i narzędzia, które pomagają zespołom dostarczać lepsze wyniki. Przywództwo skoncentrowane na ludziach. Doskonałość operacyjna. Redukcja pracy ręcznej, aby ludzie mogli skupić się na tym, co ważne. W domu jestem mężem i ojcem dwójki dzieci. Prowadzę koło robotyki w gimnazjum, hoduję kury i spędzam wolny czas na żeglarstwie, jeździe na rowerze, nartach i treningu do triathlonów. Zawsze jest kolejna góra. Coś do nauki. Coś do zbudowania. Coś do nauczenia.",
-      "approach": "Tworzę oprogramowanie z AI jako mnożnikiem siły — sposobem, w jaki samodzielny programista dostarcza to, co kiedyś wymagało zespołu. Każda linia kodu jest napisana tymi samymi narzędziami dostępnymi dla każdego kontrybutora."
-    },
-    "impact": {
-      "title": "Wpływ projektu",
-      "commits": "commitów",
-      "contributors": "kontrybutorów",
-      "modems": "zweryfikowanych modemów",
-      "tests": "pokrycia testami"
-    },
-    "values": {
-      "title": "Wartości",
-      "openSource": {
-        "title": "Open source domyślnie",
-        "text": "Projekty publiczne są na licencji MIT. Forkuj, modyfikuj, kontrybuuj — wspólna praca należy do społeczności."
+    "installation": {
+      "title": "Instalacja",
+      "installTitle": "Instaluj",
+      "command": "pip install har-capture",
+      "usageTitle": "Użycie",
+      "tabs": {
+        "cli": "CLI",
+        "api": "Python API"
       },
-      "privacy": {
-        "title": "Twoje dane, Twój wybór",
-        "text": "Budujemy narzędzia, które działają lokalnie w pierwszej kolejności. Kiedy funkcje chmury istnieją, są opcjonalne i przejrzyste. Kontrolujesz, co opuszcza twoją sieć."
-      },
-      "quality": {
-        "title": "Kultura uczenia się",
-        "text": "Rzeczywiste fixture urządzeń. Rosnące pokrycie testami. Każdy problem to szansa na ulepszenie systemu."
+      "cliUsage": "# Przechwyć i oczyść z interaktywnym przeglądem\nhar-capture get https://example.com --interactive -o sanitized.har.gz\n\n# Lub oczyść istniejący plik\nhar-capture sanitize input.har -o clean.har\n\n# Tryb interaktywnego przeglądu\nhar-capture sanitize input.har --interactive",
+      "apiUsage": "from har_capture import sanitize_har\nimport json\n\n# Oczyść dane HAR\nwith open('input.har') as f:\n    har_data = json.load(f)\n\nclean_har = sanitize_har(har_data)\n\nwith open('clean.har', 'w') as f:\n    json.dump(clean_har, f)"
+    },
+    "demo": {
+      "title": "Zobacz w akcji",
+      "placeholder": "Zrzuty ekranu trybu interaktywnego wkrótce! Tryb interaktywnego przeglądu pozwala zobaczyć dokładnie, co zostanie zredagowane przed zapisaniem oczyszczonego pliku.",
+      "mockServerNote": "Chcesz spróbować sam? Użyj serwera makiety, aby wygenerować przykładowe pliki HAR do testowania."
+    },
+    "features": {
+      "title": "Kluczowe funkcje",
+      "items": {
+        "deepPII": "Wykrywanie typowych PII (hasła, tokeny, e-maile, IP, MAC)",
+        "formatPreserving": "Redakcja zachowująca format (zachowuje poprawne dane testowe)",
+        "correlation": "Hasze zachowujące korelację",
+        "zeroDeps": "Zero zależności (tylko stdlib)",
+        "cliAndApi": "CLI i Python API",
+        "interactive": "Interaktywny tryb przeglądu do weryfikacji"
       }
     },
-    "contact": {
-      "title": "Kontakt",
+    "useCases": {
+      "title": "Przypadki użycia",
+      "items": {
+        "support": "Zespoły wsparcia zbierające diagnostykę od użytkowników",
+        "security": "Zespoły bezpieczeństwa przeglądające ruch webowy",
+        "testing": "Automatyzacja testów z wrażliwymi danymi",
+        "bugReports": "Raporty błędów wymagające plików HAR"
+      }
+    },
+    "comparison": {
+      "title": "Dlaczego har-capture?",
+      "tableHeaders": {
+        "feature": "Funkcja",
+        "harCapture": "har-capture",
+        "google": "Google har-sanitizer",
+        "manual": "Edycja ręczna"
+      },
+      "features": {
+        "programmable": "Programowalny (API/CLI)",
+        "formatPreserving": "Redakcja zachowująca format",
+        "maintained": "Aktywnie utrzymywany",
+        "zeroDeps": "Zero zależności"
+      },
+      "google2017": "Ostatnia aktualizacja 2017"
+    },
+    "install": {
+      "title": "Instalacja",
+      "pipCommand": "pip install har-capture",
+      "viewGithub": "Zobacz na GitHub",
+      "installPyPI": "Instaluj z PyPI"
+    },
+    "documentation": {
+      "title": "Dokumentacja",
+      "text": "Pełna dokumentacja dostępna na",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Zgłoś problem"
+      "harSpec": "Dowiedz się więcej o specyfikacji HAR"
+    },
+    "cta": {
+      "title": "Gotowy, aby bezpiecznie udostępniać pliki HAR?",
+      "viewGithub": "Zobacz na GitHub",
+      "installPyPI": "Instaluj z PyPI"
     }
   }
 }

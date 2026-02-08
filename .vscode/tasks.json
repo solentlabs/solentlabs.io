@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Dev Server",
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "detail": "Start Astro dev server for local testing",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": false
+      },
+      "isBackground": true,
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Build",
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": [],
+      "detail": "Build the static site to dist/",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Preview",
+      "type": "npm",
+      "script": "preview",
+      "problemMatcher": [],
+      "detail": "Preview the built site",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Test",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "detail": "Run Playwright tests",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Test UI",
+      "type": "npm",
+      "script": "test:ui",
+      "problemMatcher": [],
+      "detail": "Run Playwright tests with UI",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Translate",
+      "type": "npm",
+      "script": "translate",
+      "problemMatcher": [],
+      "detail": "Generate translations for all languages",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Translate Check",
+      "type": "npm",
+      "script": "translate:check",
+      "problemMatcher": [],
+      "detail": "Check if translations are up to date",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}

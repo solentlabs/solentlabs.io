@@ -1,63 +1,122 @@
 {
   "meta": {
     "title": "Solent Labs™",
-    "description": "Wij bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
+    "description": "We bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
   },
   "nav": {
+    "home": "Home",
+    "projects": "Projecten",
     "cableModemMonitor": "Cable Modem Monitor",
-    "about": "Over ons"
+    "harCapture": "HTTP Archive (HAR) Capture",
+    "about": "Over"
   },
   "hero": {
-    "headline": "Tools die verborgen data aan het licht brengen.",
-    "subtitle": "Wij bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
+    "headline": "Tools die verborgen data zichtbaar maken.",
+    "subtitle": "We bouwen software die complexe systemen observeerbaar maakt. Open source in de kern."
   },
   "approach": {
-    "text": "Complexe systemen verbergen hun data. Apparaten begraven metrics in onhandige interfaces. API's onthullen niet wat je nodig hebt. De informatie bestaat — ze is alleen niet toegankelijk. Wij bouwen bruggen."
+    "text": "Complexe systemen verbergen hun data. Apparaten begraven metrieken in onhandige interfaces. APIs geven niet bloot wat je nodig hebt. De informatie bestaat — het is gewoon niet toegankelijk. Wij bouwen bruggen."
   },
   "products": {
-    "title": "Producten",
+    "title": "Projecten",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
       "description": "DOCSIS-signaalmonitoring voor Home Assistant. Volg signaalsterkte, ruismarges en fouten over alle kanalen van je modem. 13 geverifieerde modems. 70% testdekking.",
       "learnMore": "Meer informatie",
       "github": "GitHub"
+    },
+    "harCapture": {
+      "name": "HTTP Archive (HAR) Capture",
+      "description": "Python-bibliotheek zonder afhankelijkheden voor het opschonen van HAR-bestanden. Detecteert veelvoorkomende PII-patronen (wachtwoorden, tokens, e-mails) met formaatbehoudende redactie. Interactieve controlemodus voor verificatie. Uitbreidbaar voor domeinspecifieke patronen.",
+      "learnMore": "Meer informatie",
+      "github": "GitHub",
+      "pypi": "PyPI"
     }
   },
   "philosophy": {
-    "title": "Hoe Wij Bouwen",
-    "intro": "Deze principes sturen elke beslissing — en bepalen verwachtingen voor bijdragers.",
+    "title": "Hoe we bouwen",
+    "intro": "Deze principes sturen elke beslissing — en stellen verwachtingen voor bijdragers.",
     "aiAccelerated": {
       "title": "AI-versneld:",
-      "text": "Wij gebruiken AI als krachtversterker. Niet als gimmick, maar als de manier waarop een klein team levert wat vroeger een groot team vereiste. Elke bijdrager profiteert van dezelfde tools."
+      "text": "We gebruiken AI als krachtversterker. Niet als gimmick, maar als hoe een klein team levert wat vroeger een groot team nodig had. Elke bijdrager profiteert van dezelfde tools."
     },
     "systemsFirst": {
       "title": "Systemen eerst:",
-      "text": "Begrijp het geheel voordat je delen optimaliseert. Monitoring is niet alleen cijfers — het gaat om begrijpen hoe metrics samenhangen en welke patronen storingen voorspellen."
+      "text": "Begrijp het geheel voordat je delen optimaliseert. Monitoring is niet alleen cijfers — het gaat om begrijpen hoe metrieken zich verhouden en welke patronen storingen voorspellen."
     },
     "rootCause": {
       "title": "Grondoorzaak:",
-      "text": "Repareer het systeem, niet het symptoom. Als iets kapot gaat, traceer het terug. Elke bug is een kans om het systeem correcter te maken."
+      "text": "Herstel het systeem, niet het symptoom. Als iets kapot gaat, traceer het terug. Elke bug is een kans om het systeem te verbeteren."
     },
     "dryArchitecture": {
       "title": "DRY-architectuur:",
-      "text": "Don't Repeat Yourself. Eén abstractie behandelt tientallen modems. Bijdragers breiden patronen uit — ze dupliceren geen logica."
+      "text": "Don't Repeat Yourself. Eén abstractie verwerkt tientallen modems. Bijdragers breiden patronen uit — ze dupliceren geen logica."
     }
   },
   "whySolent": {
     "title": "Waarom \"Solent\"?",
     "intro": "Twee betekenissen, één naam.",
-    "nautical": "De solent is de voorstag op een kottergetuigd zeilschip — de lijn die standhoudt onder druk. Nautisch erfgoed zit hier diep.",
-    "geographic": "De Solent-zeestraat, tussen Engeland en het Isle of Wight, staat bekend om stromingen die zelfs ervaren zeilers in verwarring brengen. Onze tools brengen transparantie naar systemen waar complexiteit onzichtbaar is totdat iets kapot gaat."
+    "nautical": "De solent is de voorstag-kabel op een kutter-getuigd zeilschip — de lijn die onder druk houdt. Nautisch erfgoed loopt hier diep.",
+    "geographic": "De Solent-zeestraat, tussen Engeland en het Isle of Wight, staat bekend om stromingen die zelfs ervaren zeilers verwarren. Onze tools brengen transparantie in systemen waar complexiteit onzichtbaar is totdat iets kapot gaat."
   },
   "community": {
     "title": "Community",
-    "text": "Open gebouwd. Bijdragen welkom.",
+    "text": "Openbaar gebouwd. Bijdragen welkom.",
     "github": "GitHub",
     "contributeModem": "Draag een modem bij"
   },
   "footer": {
     "brand": "Solent Labs™",
-    "tagline": "Een Solent Labs™ project."
+    "tagline": "Een Solent Labs™-project."
+  },
+  "about": {
+    "meta": {
+      "title": "Over — Solent Labs™",
+      "description": "Leer over Solent Labs, onze missie om complexe systemen observeerbaar te maken, en de persoon achter de projecten."
+    },
+    "header": {
+      "title": "Over Solent Labs",
+      "subtitle": "Complexe systemen observeerbaar maken via open source software."
+    },
+    "mission": {
+      "title": "Missie",
+      "text": "Complexe systemen verbergen hun data. Solent Labs bouwt bruggen die ze observeerbaar maken — en leert anderen hetzelfde te doen. Open source, één project tegelijk."
+    },
+    "founder": {
+      "title": "Oprichter",
+      "name": "Ken Schulz",
+      "role": "Oprichter & Ontwikkelaar",
+      "bio": "Ik heb 27 jaar bedrijfssystemen gebouwd en de automatisering, testing en tooling die teams beter laten leveren. Mens-gerichte leiding. Operationele excellentie. Handmatige inspanning verminderen zodat mensen zich kunnen richten op wat ertoe doet. Thuis ben ik een echtgenoot en vader van twee. Ik coach middelbare school robotica, houd kippen, en besteed mijn vrije tijd aan zeilen, fietsen, skiën en trainen voor triathlons. Er is altijd een andere berg. Iets om te leren. Iets om te bouwen. Iets om te onderwijzen.",
+      "approach": "Cable Modem Monitor begon als een experiment in AI-ondersteunde ontwikkeling. Bijna 200 journal-items later is het bewijs van wat mogelijk is wanneer ervaring nieuwe tools ontmoet."
+    },
+    "impact": {
+      "title": "Project Impact",
+      "commits": "commits",
+      "contributors": "bijdragers",
+      "modems": "geverifieerde modems",
+      "tests": "testdekking"
+    },
+    "values": {
+      "title": "Waarden",
+      "openSource": {
+        "title": "Open source standaard",
+        "text": "Publieke projecten zijn MIT-gelicentieerd. Fork, wijzig, draag bij — gedeeld werk behoort tot de community."
+      },
+      "privacy": {
+        "title": "Jouw data, jouw keuze",
+        "text": "We bouwen tools die eerst lokaal werken. Als cloudfuncties bestaan, zijn ze opt-in en transparant. Jij bepaalt wat je netwerk verlaat."
+      },
+      "quality": {
+        "title": "Cultuur van leren",
+        "text": "Echte apparaat-fixtures. Groeiende testdekking. Elk probleem is een kans om het systeem beter te maken."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Meld een probleem"
+    }
   },
   "cmm": {
     "meta": {
@@ -75,53 +134,53 @@
       }
     },
     "problem": {
-      "title": "Het Probleem",
-      "intro": "Je kabelmodem volgt signaalkwaliteitsdata — hoe sterk je verbinding is, hoe schoon het signaal is, of fouten zich opstapelen. Het zit allemaal begraven in de webinterface van het modem. Maar die data is niet bruikbaar.",
+      "title": "Het probleem",
+      "intro": "Je kabelmodem houdt signaaldata bij — hoe sterk je verbinding is, hoe schoon het signaal is, of fouten zich ophopen. Het is allemaal begraven in de webinterface van de modem. Maar die data is niet bruikbaar.",
       "items": {
         "noHistory": "Geen geschiedenis — je ziet een momentopname van nu, niet wat er om 2 uur 's nachts gebeurde toen je verbinding wegviel",
-        "noAlerts": "Geen waarschuwingen — het modem vertelt je niet wanneer signaalkwaliteit verslechtert of fouten beginnen te stijgen",
-        "noProof": "Geen bewijs — als je je provider belt, is \"het internet is traag\" geen bewijs waarop ze kunnen handelen",
-        "noCorrelation": "Geen correlatie — je kunt \"Zoom viel uit om 15:00\" niet verbinden met signaalproblemen die je niet observeerde"
+        "noAlerts": "Geen waarschuwingen — de modem vertelt je niet wanneer signaalskwaliteit verslechtert of fouten toenemen",
+        "noProof": "Geen bewijs — als je je ISP belt, is \"het internet is traag\" geen bewijs waarop ze kunnen handelen",
+        "noCorrelation": "Geen correlatie — je kunt \"Zoom viel uit om 15:00 uur\" niet verbinden met signaalproblemen die je niet observeerde"
       }
     },
     "solution": {
-      "title": "De Oplossing",
-      "intro": "Cable Modem Monitor haalt signaaldata rechtstreeks van je modem en brengt het naar Home Assistant. Volg verbindingsgezondheid over tijd met historische grafieken die problemen vangen die je anders zou missen.",
+      "title": "De oplossing",
+      "intro": "Cable Modem Monitor haalt signaaldata direct van je modem en brengt het in Home Assistant. Volg verbindingsgezondheid over tijd met historische grafieken die de problemen vangen die je anders zou missen.",
       "captions": {
         "dashboard": "Verbindingsstatus, uptime, latentie en foutentellingen in één oogopslag",
-        "downstream": "Signaalsterkte over alle kanalen — spot onbalansen direct",
-        "snr": "Signaalkwaliteitsmonitoring helpt problemen identificeren voordat ze uitval veroorzaken",
-        "latency": "Responstijdmonitoring vangt vertragingen op wanneer ze gebeuren",
-        "errors": "Foutentrends onthullen zich ontwikkelende problemen over dagen en weken"
+        "downstream": "Signaalsterkte over alle kanalen — ontdek onbalansen direct",
+        "snr": "Signaalkwaliteit tracking helpt problemen identificeren voordat ze uitval veroorzaken",
+        "latency": "Reactietijdmonitoring vangt vertragingen op zodra ze gebeuren",
+        "errors": "Fouttrends onthullen ontwikkelende problemen over dagen en weken"
       }
     },
     "value": {
-      "title": "Waarom Het Belangrijk Is",
+      "title": "Waarom het belangrijk is",
       "proof": {
         "title": "Bewijs wanneer je het nodig hebt",
-        "text": "Toon je provider echte data — signaalkwaliteit die daalt, foutentellingen die stijgen. Bewijs is moeilijker af te wijzen dan \"het voelt traag.\""
+        "text": "Toon je ISP werkelijke data — dalende signaalskwaliteit, stijgende foutentellingen. Bewijs is moeilijker af te wijzen dan \"het voelt traag.\""
       },
       "patterns": {
         "title": "Patronen over tijd",
-        "text": "Vang de uitval om 2 uur 's nachts en intermitterende problemen. Problemen die verdwijnen tegen de tijd dat je kijkt worden vastgelegd in de grafieken."
+        "text": "Vang de 2 uur 's nachts uitval en intermitterende problemen. Problemen die verdwijnen tegen de tijd dat je controleert, worden vastgelegd in de grafieken."
       },
       "oneIntegration": {
         "title": "Eén integratie, 13 modems",
-        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — schrijf één keer, ondersteun velen. Elke parser is getest tegen echte apparaatopnames."
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — schrijf eens, ondersteun velen. Elke parser wordt getest tegen echte apparaatopnames."
       },
       "haAutomation": {
         "title": "Home Assistant automatisering",
-        "text": "Stel waarschuwingen in voor signaalverslechtering. Word gewaarschuwd voordat problemen uitval worden."
+        "text": "Stel waarschuwingen in voor signaaldegradatie. Ontvang meldingen voordat problemen uitval worden."
       }
     },
     "install": {
-      "title": "Installeren",
+      "title": "Installatie",
       "hacs": "Toevoegen via HACS",
       "manual": "Handmatige installatie",
       "hacsNote": "Zoek naar \"Cable Modem Monitor\" in HACS-integraties."
     },
     "modems": {
-      "title": "Ondersteunde Modems",
+      "title": "Ondersteunde modems",
       "tableHeaders": {
         "manufacturer": "Fabrikant",
         "model": "Model",
@@ -130,8 +189,8 @@
       },
       "status": {
         "verified": "Geverifieerd",
-        "inProgress": "In Uitvoering",
-        "testing": "In Test"
+        "inProgress": "In uitvoering",
+        "testing": "Testen"
       },
       "fullListLink": "Volledige compatibiliteitslijst"
     },
@@ -141,10 +200,10 @@
       "captureData": {
         "title": "Modemdata vastleggen",
         "description": "Deel ruwe data van je modem om ons te helpen ondersteuning toe te voegen.",
-        "step1": "Installeer met Unknown Modem-modus",
-        "step2": "Klik op \"Capture HTML\" in instellingen",
+        "step1": "Installeer met Onbekend Modem modus",
+        "step2": "Klik op \"HTML vastleggen\" in instellingen",
         "step3": "Deel het bestand met ontwikkelaars",
-        "button": "Vastleggids"
+        "button": "Opnamegids"
       },
       "writeCode": {
         "title": "Schrijf een parser",
@@ -159,58 +218,93 @@
       }
     },
     "cta": {
-      "title": "Aan de Slag",
+      "title": "Aan de slag",
       "viewGithub": "Bekijk op GitHub",
       "readDocs": "Lees de documentatie"
     }
   },
-  "about": {
+  "hc": {
     "meta": {
-      "title": "Over ons — Solent Labs™",
-      "description": "Leer meer over Solent Labs, onze missie om complexe systemen observeerbaar te maken, en de persoon achter de projecten."
+      "title": "HAR-CAPTURE — Solent Labs™",
+      "description": "Python-bibliotheek zonder afhankelijkheden voor het opschonen van HAR-bestanden. Detecteer veelvoorkomende PII-patronen met interactieve controle. Uitbreidbaar voor aangepaste patronen."
     },
     "header": {
-      "title": "Over Solent Labs",
-      "subtitle": "Complexe systemen observeerbaar maken door open source software."
+      "title": "HTTP Archive (HAR) Capture",
+      "subtitle": "Deel HAR-bestanden veilig",
+      "description": "Schoon HTTP-archiefbestanden op voor veilige bugrapporten en diagnostiek."
     },
-    "mission": {
-      "title": "Missie",
-      "text": "Complexe systemen verbergen hun data. ISP's geven je een black-box modem zonder inzicht in verbindingsgezondheid. Smart home-apparaten begraven nuttige metrics in propriëtaire apps. De informatie bestaat — ze is alleen niet toegankelijk. Wij bouwen de bruggen die deze data ontsluiten voor de mensen die het nodig hebben."
+    "intro": {
+      "text": "Python-bibliotheek zonder afhankelijkheden die helpt veelvoorkomende PII-patronen uit HAR-bestanden te identificeren en verwijderen met formaatbehoudende redactie. Gebruik interactieve controle om te verifiëren wat gemarkeerd is. Uitbreidbaar voor domeinspecifieke patronen."
     },
-    "founder": {
-      "title": "Maker",
-      "name": "Ken Schulz",
-      "role": "Oprichter & Ontwikkelaar",
-      "bio": "Al 27 jaar bouw ik enterprise-systemen en de automatisering, tests en tooling die teams helpen beter te presteren. Mensen-eerst leiderschap. Operationele excellentie. Het verminderen van handmatig werk zodat mensen zich kunnen richten op wat ertoe doet. Thuis ben ik echtgenoot en vader van twee kinderen. Ik coach een robotica-club op een middelbare school, houd kippen en breng mijn vrije tijd door met zeilen, fietsen, skieen en triathlon-training. Er is altijd nog een berg te beklimmen. Iets om te leren. Iets om te bouwen. Iets om te onderwijzen.",
-      "approach": "Ik bouw software met AI als krachtversterker — de manier waarop een solo-ontwikkelaar levert wat vroeger een team vereiste. Elke regel code is geschreven met dezelfde tools die beschikbaar zijn voor elke bijdrager."
-    },
-    "impact": {
-      "title": "Project Impact",
-      "commits": "commits",
-      "contributors": "bijdragers",
-      "modems": "geverifieerde modems",
-      "tests": "testdekking"
-    },
-    "values": {
-      "title": "Waarden",
-      "openSource": {
-        "title": "Open source standaard",
-        "text": "Openbare projecten zijn MIT-gelicenseerd. Fork, wijzig, draag bij — gedeeld werk is van de community."
+    "installation": {
+      "title": "Installatie",
+      "installTitle": "Installeren",
+      "command": "pip install har-capture",
+      "usageTitle": "Gebruik",
+      "tabs": {
+        "cli": "CLI",
+        "api": "Python API"
       },
-      "privacy": {
-        "title": "Uw gegevens, uw keuze",
-        "text": "We bouwen gereedschappen die lokaal werken. Wanneer cloud-functies bestaan, zijn ze opt-in en transparant. Je bepaalt wat je netwerk verlaat."
-      },
-      "quality": {
-        "title": "Leercultuur",
-        "text": "Echte apparaatfixtures. Groeiende testdekking. Elk probleem is een kans om het systeem beter te maken."
+      "cliUsage": "# Vastleggen en opschonen met interactieve controle\nhar-capture get https://example.com --interactive -o sanitized.har.gz\n\n# Of bestaand bestand opschonen\nhar-capture sanitize input.har -o clean.har\n\n# Interactieve controlemodus\nhar-capture sanitize input.har --interactive",
+      "apiUsage": "from har_capture import sanitize_har\nimport json\n\n# HAR-data opschonen\nwith open('input.har') as f:\n    har_data = json.load(f)\n\nclean_har = sanitize_har(har_data)\n\nwith open('clean.har', 'w') as f:\n    json.dump(clean_har, f)"
+    },
+    "demo": {
+      "title": "Zie het in actie",
+      "placeholder": "Screenshots van interactieve modus komen binnenkort! De interactieve controlemodus laat je precies zien wat geredigeerd wordt voordat je het opgeschoonde bestand opslaat.",
+      "mockServerNote": "Wil je het zelf proberen? Gebruik de mock-server om voorbeeld-HAR-bestanden te genereren voor testen."
+    },
+    "features": {
+      "title": "Belangrijkste functies",
+      "items": {
+        "deepPII": "Detectie van veelvoorkomende PII (wachtwoorden, tokens, e-mails, IPs, MACs)",
+        "formatPreserving": "Formaatbehoudende redactie (behoudt geldige testdata)",
+        "correlation": "Correlatiebehoudende hashes",
+        "zeroDeps": "Nul afhankelijkheden (alleen stdlib)",
+        "cliAndApi": "CLI en Python API",
+        "interactive": "Interactieve controlemodus voor verificatie"
       }
     },
-    "contact": {
-      "title": "Contact",
+    "useCases": {
+      "title": "Gebruikssituaties",
+      "items": {
+        "support": "Supportteams verzamelen diagnostiek van gebruikers",
+        "security": "Beveiligingsteams beoordelen webverkeer",
+        "testing": "Testautomatisering met gevoelige data",
+        "bugReports": "Bugrapporten die HAR-bestanden vereisen"
+      }
+    },
+    "comparison": {
+      "title": "Waarom har-capture?",
+      "tableHeaders": {
+        "feature": "Functie",
+        "harCapture": "har-capture",
+        "google": "Google har-sanitizer",
+        "manual": "Handmatig bewerken"
+      },
+      "features": {
+        "programmable": "Programmeerbaar (API/CLI)",
+        "formatPreserving": "Formaatbehoudende redactie",
+        "maintained": "Actief onderhouden",
+        "zeroDeps": "Nul afhankelijkheden"
+      },
+      "google2017": "Laatst bijgewerkt 2017"
+    },
+    "install": {
+      "title": "Installatie",
+      "pipCommand": "pip install har-capture",
+      "viewGithub": "Bekijk op GitHub",
+      "installPyPI": "Installeer van PyPI"
+    },
+    "documentation": {
+      "title": "Documentatie",
+      "text": "Volledige documentatie beschikbaar op",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Meld een probleem"
+      "harSpec": "Meer informatie over de HAR-specificatie"
+    },
+    "cta": {
+      "title": "Klaar om HAR-bestanden veilig te delen?",
+      "viewGithub": "Bekijk op GitHub",
+      "installPyPI": "Installeer van PyPI"
     }
   }
 }

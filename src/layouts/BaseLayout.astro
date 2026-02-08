@@ -56,9 +56,25 @@ const alternateLinks = Object.keys(locales).map((lang) => ({
       <img src="/assets/images/solent-labs-web.png" alt="Solent Labs" class="nav-logo">
     </a>
     <div class="nav-links">
-      <a href={locale === 'en' ? '/cable-modem-monitor/' : `/${locale}/cable-modem-monitor/`}>
-        {t.nav.cableModemMonitor}
+      <a href={locale === 'en' ? '/' : `/${locale}/`}>
+        {t.nav.home}
       </a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-label="Projects menu">
+          {t.nav.projects}
+          <svg class="nav-chevron" width="10" height="10" viewBox="0 0 10 10">
+            <path d="M2 3l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href={locale === 'en' ? '/cable-modem-monitor/' : `/${locale}/cable-modem-monitor/`}>
+            {t.nav.cableModemMonitor}
+          </a>
+          <a href={locale === 'en' ? '/har-capture/' : `/${locale}/har-capture/`}>
+            {t.nav.harCapture}
+          </a>
+        </div>
+      </div>
       <a href={locale === 'en' ? '/about/' : `/${locale}/about/`}>
         {t.nav.about}
       </a>
@@ -87,7 +103,133 @@ const alternateLinks = Object.keys(locales).map((lang) => ({
 
   <slot />
 
+  <footer class="site-footer">
+    <button class="theme-toggle" aria-label="Toggle theme" id="theme-toggle" onclick="toggleTheme()">
+      <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="5" fill="currentColor"/>
+        <line x1="10" y1="2" x2="10" y2="4" stroke="currentColor" stroke-width="2"/>
+        <line x1="10" y1="16" x2="10" y2="18" stroke="currentColor" stroke-width="2"/>
+        <line x1="2" y1="10" x2="4" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="16" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="4" y1="4" x2="5.5" y2="5.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="14.5" y1="14.5" x2="16" y2="16" stroke="currentColor" stroke-width="2"/>
+        <line x1="4" y1="16" x2="5.5" y2="14.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="14.5" y1="5.5" x2="16" y2="4" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 20 20">
+        <path d="M17 12.5A7.5 7.5 0 1 1 7.5 3 6.5 6.5 0 0 0 17 12.5z" fill="currentColor"/>
+      </svg>
+    </button>
+  </footer>
+
   <style>
+    .site-footer {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 1000;
+    }
+
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      color: inherit;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .theme-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .theme-icon {
+      display: none;
+    }
+
+    [data-theme="dark"] .moon-icon,
+    [data-theme="light"] .sun-icon {
+      display: block;
+    }
+
+    .nav-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .nav-dropdown-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      font-size: inherit;
+      font-family: inherit;
+      padding: 0;
+    }
+
+    .nav-dropdown-toggle:hover {
+      color: var(--orange);
+    }
+
+    .nav-chevron {
+      transition: transform 0.2s;
+      margin-top: 2px;
+    }
+
+    .nav-dropdown:hover .nav-chevron,
+    .nav-dropdown:focus-within .nav-chevron {
+      transform: rotate(180deg);
+    }
+
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: #1a1a2e;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-0.5rem);
+      transition: all 0.2s;
+      min-width: 200px;
+      z-index: 100;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: #ffffff;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+
+    .nav-dropdown-menu a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--orange);
+    }
+
     .lang-switcher {
       position: relative;
     }
@@ -176,5 +318,33 @@ const alternateLinks = Object.keys(locales).map((lang) => ({
       font-size: 0.875rem;
     }
   </style>
+
+  <script is:inline>
+    // Initialize theme immediately to prevent flash
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <script is:inline>
+    // Theme toggle functionality - must be global for onclick
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Listen for system theme changes (when user hasn't manually set preference)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+  </script>
 </body>
 </html>

@@ -4,7 +4,10 @@
     "description": "Construímos software que torna sistemas complexos observáveis. Open source no núcleo."
   },
   "nav": {
+    "home": "Início",
+    "projects": "Projetos",
     "cableModemMonitor": "Cable Modem Monitor",
+    "harCapture": "HTTP Archive (HAR) Capture",
     "about": "Sobre"
   },
   "hero": {
@@ -12,46 +15,53 @@
     "subtitle": "Construímos software que torna sistemas complexos observáveis. Open source no núcleo."
   },
   "approach": {
-    "text": "Sistemas complexos escondem seus dados. Dispositivos enterram métricas em interfaces desajeitadas. APIs não expõem o que você precisa. A informação existe — só não está acessível. Nós construímos pontes."
+    "text": "Sistemas complexos escondem seus dados. Dispositivos enterram métricas em interfaces desajeitadas. APIs não expõem o que você precisa. A informação existe — ela só não está acessível. Nós construímos pontes."
   },
   "products": {
-    "title": "Produtos",
+    "title": "Projetos",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
-      "description": "Monitoramento de sinal DOCSIS para Home Assistant. Acompanhe a potência do sinal, margens de ruído e erros em todos os canais do seu modem. 13 modems verificados. 70% cobertura de testes.",
+      "description": "Monitoramento de sinal DOCSIS para Home Assistant. Rastreie força do sinal, margens de ruído e erros em todos os canais do seu modem. 13 modems verificados. 70% de cobertura de testes.",
       "learnMore": "Saiba mais",
       "github": "GitHub"
+    },
+    "harCapture": {
+      "name": "HTTP Archive (HAR) Capture",
+      "description": "Biblioteca Python sem dependências para higienizar arquivos HAR. Detecta padrões PII comuns (senhas, tokens, e-mails) com redação que preserva formato. Modo de revisão interativo para verificação. Extensível para padrões específicos de domínio.",
+      "learnMore": "Saiba mais",
+      "github": "GitHub",
+      "pypi": "PyPI"
     }
   },
   "philosophy": {
-    "title": "Como Construímos",
-    "intro": "Esses princípios guiam cada decisão — e estabelecem expectativas para contribuidores.",
+    "title": "Como construímos",
+    "intro": "Estes princípios guiam cada decisão — e estabelecem expectativas para colaboradores.",
     "aiAccelerated": {
       "title": "Acelerado por IA:",
-      "text": "Usamos IA como multiplicador de força. Não como truque, mas como a forma de um time pequeno entregar o que antes exigia um grande. Cada contribuidor se beneficia das mesmas ferramentas."
+      "text": "Usamos IA como um multiplicador de força. Não como um truque, mas como a forma que uma equipe pequena entrega o que costumava exigir uma grande. Cada colaborador se beneficia das mesmas ferramentas."
     },
     "systemsFirst": {
       "title": "Sistemas primeiro:",
-      "text": "Entenda o todo antes de otimizar partes. Monitoramento não é só números — é entender como métricas se relacionam e quais padrões preveem falhas."
+      "text": "Entenda o todo antes de otimizar as partes. Monitoramento não é apenas números — é entender como as métricas se relacionam e quais padrões predizem falhas."
     },
     "rootCause": {
       "title": "Causa raiz:",
-      "text": "Conserte o sistema, não o sintoma. Quando algo quebra, rastreie de volta. Cada bug é uma chance de tornar o sistema mais correto."
+      "text": "Corrija o sistema, não o sintoma. Quando algo quebra, rastreie até a origem. Cada bug é uma chance de melhorar o sistema."
     },
     "dryArchitecture": {
       "title": "Arquitetura DRY:",
-      "text": "Don't Repeat Yourself. Uma abstração lida com dezenas de modems. Contribuidores estendem padrões — não duplicam lógica."
+      "text": "Don't Repeat Yourself. Uma abstração manipula dezenas de modems. Colaboradores estendem padrões — eles não duplicam lógica."
     }
   },
   "whySolent": {
     "title": "Por que \"Solent\"?",
     "intro": "Dois significados, um nome.",
-    "nautical": "O solent é o cabo do estai de proa em um veleiro com armação de cúter — a linha que aguenta sob pressão. A herança náutica é profunda aqui.",
-    "geographic": "O estreito de Solent, entre a Inglaterra e a Ilha de Wight, é famoso por correntes que confundem até marinheiros experientes. Nossas ferramentas trazem transparência a sistemas onde a complexidade é invisível até algo quebrar."
+    "nautical": "O solent é o cabo do estai de proa em um veleiro do tipo cúter — a linha que aguenta sob pressão. A herança náutica é profunda aqui.",
+    "geographic": "O estreito de Solent, entre a Inglaterra e a Ilha de Wight, é famoso por correntes que confundem até marinheiros experientes. Nossas ferramentas trazem transparência a sistemas onde a complexidade é invisível até que algo quebre."
   },
   "community": {
     "title": "Comunidade",
-    "text": "Construído abertamente. Contribuições são bem-vindas.",
+    "text": "Construído abertamente. Contribuições bem-vindas.",
     "github": "GitHub",
     "contributeModem": "Contribuir um modem"
   },
@@ -59,10 +69,59 @@
     "brand": "Solent Labs™",
     "tagline": "Um projeto Solent Labs™."
   },
+  "about": {
+    "meta": {
+      "title": "Sobre — Solent Labs™",
+      "description": "Conheça a Solent Labs, nossa missão de tornar sistemas complexos observáveis e a pessoa por trás dos projetos."
+    },
+    "header": {
+      "title": "Sobre a Solent Labs",
+      "subtitle": "Tornando sistemas complexos observáveis através de software open source."
+    },
+    "mission": {
+      "title": "Missão",
+      "text": "Sistemas complexos escondem seus dados. A Solent Labs constrói pontes que os tornam observáveis — e ensina outros a fazer o mesmo. Open source, um projeto de cada vez."
+    },
+    "founder": {
+      "title": "Criador",
+      "name": "Ken Schulz",
+      "role": "Fundador & Desenvolvedor",
+      "bio": "Passei 27 anos construindo sistemas empresariais e a automação, testes e ferramentas que fazem as equipes entregarem melhor. Liderança centrada nas pessoas. Excelência operacional. Reduzir o esforço manual para que as pessoas possam se concentrar no que importa. Em casa, sou marido e pai de dois. Treino robótica de ensino médio, crio galinhas e passo meu tempo livre velejando, pedalando, esquiando e treinando para triatlos. Sempre há outra montanha. Algo para aprender. Algo para construir. Algo para ensinar.",
+      "approach": "Cable Modem Monitor começou como um experimento em desenvolvimento assistido por IA. Quase 200 entradas de diário depois, é prova do que é possível quando experiência encontra novas ferramentas."
+    },
+    "impact": {
+      "title": "Impacto do projeto",
+      "commits": "commits",
+      "contributors": "colaboradores",
+      "modems": "modems verificados",
+      "tests": "cobertura de testes"
+    },
+    "values": {
+      "title": "Valores",
+      "openSource": {
+        "title": "Open source por padrão",
+        "text": "Projetos públicos são licenciados MIT. Faça fork, modifique, contribua — trabalho compartilhado pertence à comunidade."
+      },
+      "privacy": {
+        "title": "Seus dados, sua escolha",
+        "text": "Construímos ferramentas que funcionam localmente primeiro. Quando recursos de nuvem existem, são opt-in e transparentes. Você controla o que sai da sua rede."
+      },
+      "quality": {
+        "title": "Cultura de aprendizado",
+        "text": "Fixtures de dispositivos reais. Cobertura de testes crescente. Cada problema é uma chance de tornar o sistema melhor."
+      }
+    },
+    "contact": {
+      "title": "Contato",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Relatar um problema"
+    }
+  },
   "cmm": {
     "meta": {
       "title": "Cable Modem Monitor — Solent Labs™",
-      "description": "Monitoramento de sinal DOCSIS para Home Assistant. Acompanhe a potência do sinal, margens de ruído e erros."
+      "description": "Monitoramento de sinal DOCSIS para Home Assistant. Rastreie força do sinal, margens de ruído e erros."
     },
     "header": {
       "title": "Cable Modem Monitor",
@@ -70,58 +129,58 @@
       "subtitleSecondary": "Monitoramento de sinal DOCSIS para Home Assistant.",
       "stats": {
         "modems": "13 modems verificados",
-        "tests": "70% cobertura de testes",
+        "tests": "70% de cobertura de testes",
         "languages": "12 idiomas"
       }
     },
     "problem": {
-      "title": "O Problema",
-      "intro": "Seu modem a cabo rastreia dados de qualidade de sinal — quão forte está sua conexão, quão limpo está o sinal, se erros estão acumulando. Tudo está enterrado na interface web do modem. Mas esses dados não são acionáveis.",
+      "title": "O problema",
+      "intro": "Seu modem a cabo rastreia dados de qualidade de sinal — quão forte é sua conexão, quão limpo é o sinal, se erros estão se acumulando. Tudo está enterrado na interface web do modem. Mas esses dados não são acionáveis.",
       "items": {
-        "noHistory": "Sem histórico — você vê uma foto do agora, não o que aconteceu às 2h da manhã quando sua conexão caiu",
-        "noAlerts": "Sem alertas — o modem não vai te avisar quando a qualidade do sinal degrada ou erros começam a subir",
-        "noProof": "Sem provas — quando você liga pro seu provedor, \"a internet tá lenta\" não é evidência em que eles podem agir",
-        "noCorrelation": "Sem correlação — você não consegue conectar \"o Zoom caiu às 15h\" com problemas de sinal que você não estava monitorando"
+        "noHistory": "Sem histórico — você vê um instantâneo de agora, não o que aconteceu às 2h da manhã quando sua conexão caiu",
+        "noAlerts": "Sem alertas — o modem não te dirá quando a qualidade do sinal degrada ou erros começam a subir",
+        "noProof": "Sem prova — quando você liga para seu provedor, \"a internet está lenta\" não é evidência sobre a qual eles possam agir",
+        "noCorrelation": "Sem correlação — você não pode conectar \"Zoom caiu às 15h\" com problemas de sinal que você não estava observando"
       }
     },
     "solution": {
-      "title": "A Solução",
-      "intro": "Cable Modem Monitor puxa dados de sinal diretamente do seu modem e traz pro Home Assistant. Acompanhe a saúde da conexão ao longo do tempo com gráficos históricos que capturam os problemas que você perderia de outra forma.",
+      "title": "A solução",
+      "intro": "Cable Modem Monitor puxa dados de sinal diretamente do seu modem e os traz para o Home Assistant. Rastreie a saúde da conexão ao longo do tempo com gráficos históricos que capturam os problemas que você de outra forma perderia.",
       "captions": {
-        "dashboard": "Status da conexão, uptime, latência e contagem de erros de relance",
-        "downstream": "Potência do sinal em todos os canais — detecte desbalanceamentos instantaneamente",
-        "snr": "Rastreamento de qualidade de sinal ajuda a identificar problemas antes que causem quedas",
-        "latency": "Monitoramento de tempo de resposta captura lentidões quando acontecem",
+        "dashboard": "Status da conexão, tempo de atividade, latência e contagens de erros de relance",
+        "downstream": "Força do sinal em todos os canais — detecte desequilíbrios instantaneamente",
+        "snr": "O rastreamento de qualidade de sinal ajuda a identificar problemas antes que causem quedas",
+        "latency": "O monitoramento do tempo de resposta captura lentidões conforme acontecem",
         "errors": "Tendências de erros revelam problemas em desenvolvimento ao longo de dias e semanas"
       }
     },
     "value": {
-      "title": "Por Que Importa",
+      "title": "Por que importa",
       "proof": {
-        "title": "Provas quando você precisa",
-        "text": "Mostre ao seu provedor dados reais — qualidade de sinal caindo, contagem de erros subindo. Evidências são mais difíceis de descartar do que \"parece lento\"."
+        "title": "Prova quando você precisa",
+        "text": "Mostre ao seu provedor dados reais — qualidade de sinal caindo, contagens de erros subindo. Evidência é mais difícil de descartar do que \"parece lento\"."
       },
       "patterns": {
         "title": "Padrões ao longo do tempo",
-        "text": "Capture as quedas das 2h da manhã e problemas intermitentes. Problemas que somem quando você vai verificar ficam registrados nos gráficos."
+        "text": "Capture as quedas das 2h da manhã e problemas intermitentes. Problemas que desaparecem quando você verifica são capturados nos gráficos."
       },
       "oneIntegration": {
         "title": "Uma integração, 13 modems",
         "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — escreva uma vez, suporte muitos. Cada parser é testado contra capturas de dispositivos reais."
       },
       "haAutomation": {
-        "title": "Automação do Home Assistant",
-        "text": "Configure alertas para degradação de sinal. Seja notificado antes que problemas se tornem quedas."
+        "title": "Automação Home Assistant",
+        "text": "Configure alertas para degradação de sinal. Receba notificações antes que problemas se tornem interrupções."
       }
     },
     "install": {
       "title": "Instalação",
       "hacs": "Adicionar via HACS",
       "manual": "Instalação manual",
-      "hacsNote": "Procure \"Cable Modem Monitor\" nas integrações do HACS."
+      "hacsNote": "Procure por \"Cable Modem Monitor\" nas integrações HACS."
     },
     "modems": {
-      "title": "Modems Suportados",
+      "title": "Modems suportados",
       "tableHeaders": {
         "manufacturer": "Fabricante",
         "model": "Modelo",
@@ -130,8 +189,8 @@
       },
       "status": {
         "verified": "Verificado",
-        "inProgress": "Em Andamento",
-        "testing": "Em Testes"
+        "inProgress": "Em andamento",
+        "testing": "Testando"
       },
       "fullListLink": "Lista completa de compatibilidade"
     },
@@ -141,9 +200,9 @@
       "captureData": {
         "title": "Capturar dados do modem",
         "description": "Compartilhe dados brutos do seu modem para nos ajudar a adicionar suporte.",
-        "step1": "Instale com o modo Unknown Modem",
-        "step2": "Clique em \"Capture HTML\" nas configurações",
-        "step3": "Compartilhe o arquivo com os desenvolvedores",
+        "step1": "Instale com modo Modem Desconhecido",
+        "step2": "Clique em \"Capturar HTML\" nas configurações",
+        "step3": "Compartilhe o arquivo com desenvolvedores",
         "button": "Guia de captura"
       },
       "writeCode": {
@@ -152,7 +211,7 @@
         "items": {
           "fork": "Faça fork do repositório",
           "parser": "Crie um parser seguindo o padrão",
-          "tests": "Adicione testes com dados de fixture",
+          "tests": "Adicione testes com dados fixture",
           "pr": "Envie um pull request"
         },
         "button": "Guia do desenvolvedor"
@@ -164,53 +223,88 @@
       "readDocs": "Ler a documentação"
     }
   },
-  "about": {
+  "hc": {
     "meta": {
-      "title": "Sobre — Solent Labs™",
-      "description": "Conheça a Solent Labs, nossa missão de tornar sistemas complexos observáveis, e a pessoa por trás dos projetos."
+      "title": "HAR-CAPTURE — Solent Labs™",
+      "description": "Biblioteca Python sem dependências para higienizar arquivos HAR. Detecte padrões PII comuns com revisão interativa. Extensível para padrões personalizados."
     },
     "header": {
-      "title": "Sobre a Solent Labs",
-      "subtitle": "Tornando sistemas complexos observáveis através de software open source."
+      "title": "HTTP Archive (HAR) Capture",
+      "subtitle": "Compartilhe arquivos HAR com segurança",
+      "description": "Higienize arquivos de arquivo HTTP para relatórios de bugs e diagnósticos seguros."
     },
-    "mission": {
-      "title": "Missão",
-      "text": "Sistemas complexos escondem seus dados. Provedores te dão um modem caixa-preta sem visibilidade sobre a saúde da conexão. Dispositivos de casa inteligente enterram métricas úteis em apps proprietários. A informação existe — só não está acessível. Construímos as pontes que expõem esses dados para as pessoas que precisam deles."
+    "intro": {
+      "text": "Biblioteca Python sem dependências que ajuda a identificar e remover padrões PII comuns de arquivos HAR com redação que preserva formato. Use revisão interativa para verificar o que foi sinalizado. Extensível para padrões específicos de domínio."
     },
-    "founder": {
-      "title": "Criador",
-      "name": "Ken Schulz",
-      "role": "Fundador & Desenvolvedor",
-      "bio": "Ha 27 anos construo sistemas corporativos e a automacao, testes e ferramentas que ajudam times a entregar melhor. Lideranca centrada em pessoas. Excelencia operacional. Reduzir trabalho manual para que as pessoas possam focar no que importa. Em casa, sou marido e pai de dois filhos. Treino um clube de robotica no ensino fundamental, crio galinhas e passo meu tempo livre velejando, pedalando, esquiando e treinando para triatlos. Sempre há outra montanha. Algo a aprender. Algo a construir. Algo a ensinar.",
-      "approach": "Eu construo software com IA como multiplicador de força — a forma de um desenvolvedor solo entregar o que antes exigia um time. Cada linha de código é escrita com as mesmas ferramentas disponíveis para qualquer contribuidor."
-    },
-    "impact": {
-      "title": "Impacto do projeto",
-      "commits": "commits",
-      "contributors": "contribuidores",
-      "modems": "modems verificados",
-      "tests": "cobertura de testes"
-    },
-    "values": {
-      "title": "Valores",
-      "openSource": {
-        "title": "Open source por padrão",
-        "text": "Projetos públicos são licenciados MIT. Faça fork, modifique, contribua — o trabalho compartilhado pertence à comunidade."
+    "installation": {
+      "title": "Instalação",
+      "installTitle": "Instalar",
+      "command": "pip install har-capture",
+      "usageTitle": "Uso",
+      "tabs": {
+        "cli": "CLI",
+        "api": "Python API"
       },
-      "privacy": {
-        "title": "Seus dados, sua escolha",
-        "text": "Construímos ferramentas que funcionam localmente em primeiro lugar. Quando recursos em nuvem existem, são opcionais e transparentes. Você controla o que deixa sua rede."
-      },
-      "quality": {
-        "title": "Cultura de aprendizado",
-        "text": "Fixtures de dispositivos reais. Cobertura de testes crescente. Cada problema é uma oportunidade de melhorar o sistema."
+      "cliUsage": "# Capturar e higienizar com revisão interativa\nhar-capture get https://example.com --interactive -o sanitized.har.gz\n\n# Ou higienizar arquivo existente\nhar-capture sanitize input.har -o clean.har\n\n# Modo de revisão interativa\nhar-capture sanitize input.har --interactive",
+      "apiUsage": "from har_capture import sanitize_har\nimport json\n\n# Higienizar dados HAR\nwith open('input.har') as f:\n    har_data = json.load(f)\n\nclean_har = sanitize_har(har_data)\n\nwith open('clean.har', 'w') as f:\n    json.dump(clean_har, f)"
+    },
+    "demo": {
+      "title": "Veja em ação",
+      "placeholder": "Capturas de tela do modo interativo em breve! O modo de revisão interativa permite que você veja exatamente o que será redigido antes de salvar o arquivo higienizado.",
+      "mockServerNote": "Quer experimentar você mesmo? Use o servidor simulado para gerar arquivos HAR de exemplo para testes."
+    },
+    "features": {
+      "title": "Recursos principais",
+      "items": {
+        "deepPII": "Detecção de PII comuns (senhas, tokens, e-mails, IPs, MACs)",
+        "formatPreserving": "Redação que preserva formato (mantém dados de teste válidos)",
+        "correlation": "Hashes que preservam correlação",
+        "zeroDeps": "Zero dependências (apenas stdlib)",
+        "cliAndApi": "CLI e Python API",
+        "interactive": "Modo de revisão interativa para verificação"
       }
     },
-    "contact": {
-      "title": "Contato",
+    "useCases": {
+      "title": "Casos de uso",
+      "items": {
+        "support": "Equipes de suporte coletando diagnósticos de usuários",
+        "security": "Equipes de segurança revisando tráfego web",
+        "testing": "Automação de testes com dados sensíveis",
+        "bugReports": "Relatórios de bugs que requerem arquivos HAR"
+      }
+    },
+    "comparison": {
+      "title": "Por que har-capture?",
+      "tableHeaders": {
+        "feature": "Recurso",
+        "harCapture": "har-capture",
+        "google": "Google har-sanitizer",
+        "manual": "Edição manual"
+      },
+      "features": {
+        "programmable": "Programável (API/CLI)",
+        "formatPreserving": "Redação que preserva formato",
+        "maintained": "Ativamente mantido",
+        "zeroDeps": "Zero dependências"
+      },
+      "google2017": "Última atualização 2017"
+    },
+    "install": {
+      "title": "Instalação",
+      "pipCommand": "pip install har-capture",
+      "viewGithub": "Ver no GitHub",
+      "installPyPI": "Instalar do PyPI"
+    },
+    "documentation": {
+      "title": "Documentação",
+      "text": "Documentação completa disponível no",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Reportar um problema"
+      "harSpec": "Saiba mais sobre a especificação HAR"
+    },
+    "cta": {
+      "title": "Pronto para compartilhar arquivos HAR com segurança?",
+      "viewGithub": "Ver no GitHub",
+      "installPyPI": "Instalar do PyPI"
     }
   }
 }

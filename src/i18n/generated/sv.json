@@ -4,39 +4,49 @@
     "description": "Vi bygger mjukvara som gör komplexa system observerbara. Öppen källkod i kärnan."
   },
   "nav": {
+    "home": "Hem",
+    "projects": "Projekt",
     "cableModemMonitor": "Cable Modem Monitor",
-    "about": "Om oss"
+    "harCapture": "HTTP Archive (HAR) Capture",
+    "about": "Om"
   },
   "hero": {
-    "headline": "Verktyg som avslöjar dold data.",
+    "headline": "Verktyg som avslöjar dolda data.",
     "subtitle": "Vi bygger mjukvara som gör komplexa system observerbara. Öppen källkod i kärnan."
   },
   "approach": {
-    "text": "Komplexa system döljer sin data. Enheter begraver mätvärden i klumpiga gränssnitt. API:er exponerar inte vad du behöver. Informationen finns — den är bara inte tillgänglig. Vi bygger broar."
+    "text": "Komplexa system döljer sina data. Enheter begr aver mätvärden i klumpiga gränssnitt. API:er exponerar inte det du behöver. Informationen finns — den är bara inte tillgänglig. Vi bygger broar."
   },
   "products": {
-    "title": "Produkter",
+    "title": "Projekt",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
       "description": "DOCSIS-signalövervakning för Home Assistant. Spåra signalstyrka, brusmarginaler och fel över alla ditt modems kanaler. 13 verifierade modem. 70% testtäckning.",
       "learnMore": "Läs mer",
       "github": "GitHub"
+    },
+    "harCapture": {
+      "name": "HTTP Archive (HAR) Capture",
+      "description": "Python-bibliotek utan beroenden för att sanera HAR-filer. Upptäcker vanliga PII-mönster (lösenord, tokens, e-post) med formatbevarande redigering. Interaktivt granskningsläge för verifiering. Utökningsbart för domänspecifika mönster.",
+      "learnMore": "Läs mer",
+      "github": "GitHub",
+      "pypi": "PyPI"
     }
   },
   "philosophy": {
-    "title": "Hur Vi Bygger",
+    "title": "Hur vi bygger",
     "intro": "Dessa principer styr varje beslut — och sätter förväntningar för bidragsgivare.",
     "aiAccelerated": {
-      "title": "AI-accelererad:",
-      "text": "Vi använder AI som en kraftmultiplikator. Inte som en gimmick, utan som hur ett litet team levererar det som tidigare krävde ett stort. Varje bidragsgivare drar nytta av samma verktyg."
+      "title": "AI-accelererat:",
+      "text": "Vi använder AI som en kraftmultiplikator. Inte som en gimmick, utan som hur ett litet team levererar det som en gång krävde ett stort. Varje bidragsgivare drar nytta av samma verktyg."
     },
     "systemsFirst": {
       "title": "System först:",
-      "text": "Förstå helheten innan du optimerar delar. Övervakning är inte bara siffror — det är att förstå hur mätvärden hänger ihop och vilka mönster förutsäger fel."
+      "text": "Förstå helheten innan du optimerar delar. Övervakning är inte bara siffror — det handlar om att förstå hur mätvärden relaterar och vilka mönster förutsäger fel."
     },
     "rootCause": {
       "title": "Grundorsak:",
-      "text": "Fixa systemet, inte symptomet. När något går sönder, spåra det bakåt. Varje bugg är en chans att göra systemet mer korrekt."
+      "text": "Fixa systemet, inte symptomet. När något går sönder, spåra det tillbaka. Varje bugg är en chans att förbättra systemet."
     },
     "dryArchitecture": {
       "title": "DRY-arkitektur:",
@@ -46,11 +56,11 @@
   "whySolent": {
     "title": "Varför \"Solent\"?",
     "intro": "Två betydelser, ett namn.",
-    "nautical": "Solent är förstaget på en kutterriggad segelbåt — linan som håller under tryck. Nautiskt arv går djupt här.",
+    "nautical": "Solenten är förstagens kabel på en kutteriggad segelbåt — linan som håller under tryck. Nautiskt arv löper djupt här.",
     "geographic": "Solentsundet, mellan England och Isle of Wight, är känt för strömmar som förvirrar även erfarna seglare. Våra verktyg ger transparens till system där komplexitet är osynlig tills något går sönder."
   },
   "community": {
-    "title": "Community",
+    "title": "Gemenskap",
     "text": "Byggt öppet. Bidrag välkomna.",
     "github": "GitHub",
     "contributeModem": "Bidra med ett modem"
@@ -58,6 +68,55 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Ett Solent Labs™-projekt."
+  },
+  "about": {
+    "meta": {
+      "title": "Om — Solent Labs™",
+      "description": "Lär dig om Solent Labs, vårt uppdrag att göra komplexa system observerbara och personen bakom projekten."
+    },
+    "header": {
+      "title": "Om Solent Labs",
+      "subtitle": "Göra komplexa system observerbara genom mjukvara med öppen källkod."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "Komplexa system döljer sina data. Solent Labs bygger broar som gör dem observerbara — och lär andra att göra detsamma. Öppen källkod, ett projekt i taget."
+    },
+    "founder": {
+      "title": "Skapare",
+      "name": "Ken Schulz",
+      "role": "Grundare & Utvecklare",
+      "bio": "Jag har ägnat 27 år åt att bygga företagssystem och automation, testning och verktyg som hjälper team att leverera bättre. Människocentrerat ledarskap. Operativ excellens. Minska manuellt arbete så att människor kan fokusera på det som betyder något. Hemma är jag make och far till två. Jag tränar mellanstadie-robotik, håller höns och tillbringar min fritid med segling, cykling, skidåkning och träning för triathlon. Det finns alltid ett annat berg. Något att lära. Något att bygga. Något att lära ut.",
+      "approach": "Cable Modem Monitor började som ett experiment i AI-assisterad utveckling. Nästan 200 journalanteckningar senare är det bevis på vad som är möjligt när erfarenhet möter nya verktyg."
+    },
+    "impact": {
+      "title": "Projektpåverkan",
+      "commits": "commits",
+      "contributors": "bidragsgivare",
+      "modems": "verifierade modem",
+      "tests": "testtäckning"
+    },
+    "values": {
+      "title": "Värderingar",
+      "openSource": {
+        "title": "Öppen källkod som standard",
+        "text": "Offentliga projekt är MIT-licensierade. Forka, modifiera, bidra — delat arbete tillhör gemenskapen."
+      },
+      "privacy": {
+        "title": "Din data, ditt val",
+        "text": "Vi bygger verktyg som fungerar lokalt först. När molnfunktioner finns är de opt-in och transparenta. Du kontrollerar vad som lämnar ditt nätverk."
+      },
+      "quality": {
+        "title": "Lärandekultur",
+        "text": "Riktiga enhetsfixtures. Växande testtäckning. Varje problem är en chans att göra systemet bättre."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "issues": "Rapportera ett problem"
+    }
   },
   "cmm": {
     "meta": {
@@ -78,40 +137,40 @@
       "title": "Problemet",
       "intro": "Ditt kabelmodem spårar signalkvalitetsdata — hur stark din anslutning är, hur ren signalen är, om fel ackumuleras. Allt är begravt i modemets webbgränssnitt. Men den datan är inte användbar.",
       "items": {
-        "noHistory": "Ingen historik — du ser en ögonblicksbild av nu, inte vad som hände kl 02 när din anslutning tappades",
+        "noHistory": "Ingen historik — du ser en ögonblicksbild av nu, inte vad som hände kl 02 när din anslutning föll",
         "noAlerts": "Inga varningar — modemet berättar inte när signalkvaliteten försämras eller fel börjar öka",
-        "noProof": "Inga bevis — när du ringer din ISP är \"internet är långsamt\" inte bevis de kan agera på",
-        "noCorrelation": "Ingen korrelation — du kan inte koppla \"Zoom tappades kl 15\" med signalproblem du inte övervakade"
+        "noProof": "Inget bevis — när du ringer din ISP är \"internet är långsamt\" inte bevis de kan agera på",
+        "noCorrelation": "Ingen korrelation — du kan inte koppla \"Zoom föll kl 15\" med signalproblem du inte observerade"
       }
     },
     "solution": {
       "title": "Lösningen",
-      "intro": "Cable Modem Monitor hämtar signaldata direkt från ditt modem och för in det i Home Assistant. Spåra anslutningshälsa över tid med historiska grafer som fångar problem du annars skulle missa.",
+      "intro": "Cable Modem Monitor hämtar signaldata direkt från ditt modem och för det till Home Assistant. Spåra anslutningshälsa över tid med historiska grafer som fångar problemen du annars skulle missa.",
       "captions": {
-        "dashboard": "Anslutningsstatus, drifttid, latens och felräkningar på ett ögonblick",
-        "downstream": "Signalstyrka över alla kanaler — upptäck obalanser direkt",
-        "snr": "Signalkvalitetsspårning hjälper identifiera problem innan de orsakar avbrott",
+        "dashboard": "Anslutningsstatus, drifttid, latens och felräkningar på ett ögonkast",
+        "downstream": "Signalstyrka över alla kanaler — upptäck obalanser omedelbart",
+        "snr": "Signalkvalitetsspårning hjälper till att identifiera problem innan de orsakar avbrott",
         "latency": "Svarstidsövervakning fångar nedgångar när de händer",
         "errors": "Feltrender avslöjar utvecklande problem över dagar och veckor"
       }
     },
     "value": {
-      "title": "Varför Det Spelar Roll",
+      "title": "Varför det spelar roll",
       "proof": {
-        "title": "Bevis när du behöver dem",
-        "text": "Visa din ISP verklig data — signalkvalitet som sjunker, felräkningar som ökar. Bevis är svårare att avfärda än \"det känns långsamt\"."
+        "title": "Bevis när du behöver det",
+        "text": "Visa din ISP verklig data — sjunkande signalkvalitet, stigande felräkningar. Bevis är svårare att avfärda än \"det känns långsamt\"."
       },
       "patterns": {
         "title": "Mönster över tid",
-        "text": "Fånga avbrotten kl 02 och intermittenta problem. Problem som försvinner innan du kontrollerar fångas i graferna."
+        "text": "Fånga 02-avbrotten och intermittenta problem. Problem som försvinner när du kontrollerar fångas i graferna."
       },
       "oneIntegration": {
         "title": "En integration, 13 modem",
-        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — skriv en gång, stöd många. Varje parser testas mot verkliga enhetsinspelningar."
+        "text": "Arris, Motorola, Netgear, Technicolor, Virgin Media — skriv en gång, stöd många. Varje parser testas mot riktiga enhetsinspelningar."
       },
       "haAutomation": {
         "title": "Home Assistant-automation",
-        "text": "Sätt varningar för signalförsämring. Få notiser innan problem blir avbrott."
+        "text": "Ställ in varningar för signalförsämring. Få meddelanden innan problem blir avbrott."
       }
     },
     "install": {
@@ -121,7 +180,7 @@
       "hacsNote": "Sök efter \"Cable Modem Monitor\" i HACS-integrationer."
     },
     "modems": {
-      "title": "Stödda Modem",
+      "title": "Stödda modem",
       "tableHeaders": {
         "manufacturer": "Tillverkare",
         "model": "Modell",
@@ -131,18 +190,18 @@
       "status": {
         "verified": "Verifierad",
         "inProgress": "Pågår",
-        "testing": "Testas"
+        "testing": "Testar"
       },
       "fullListLink": "Fullständig kompatibilitetslista"
     },
     "contribute": {
       "title": "Bidra",
-      "intro": "Cable Modem Monitor växer genom community-bidrag. Två sätt att hjälpa:",
+      "intro": "Cable Modem Monitor växer genom gemenskapsbidrag. Två sätt att hjälpa:",
       "captureData": {
         "title": "Fånga modemdata",
         "description": "Dela rådata från ditt modem för att hjälpa oss lägga till stöd.",
-        "step1": "Installera med Unknown Modem-läge",
-        "step2": "Klicka \"Capture HTML\" i inställningar",
+        "step1": "Installera med Okänt Modem-läge",
+        "step2": "Klicka på \"Fånga HTML\" i inställningar",
         "step3": "Dela filen med utvecklare",
         "button": "Fångstguide"
       },
@@ -152,65 +211,100 @@
         "items": {
           "fork": "Forka repositoryt",
           "parser": "Skapa en parser enligt mönstret",
-          "tests": "Lägg till tester med fixture-data",
+          "tests": "Lägg till tester med fixturedata",
           "pr": "Skicka in en pull request"
         },
         "button": "Utvecklarguide"
       }
     },
     "cta": {
-      "title": "Kom Igång",
-      "viewGithub": "Se på GitHub",
+      "title": "Kom igång",
+      "viewGithub": "Visa på GitHub",
       "readDocs": "Läs dokumentationen"
     }
   },
-  "about": {
+  "hc": {
     "meta": {
-      "title": "Om oss — Solent Labs™",
-      "description": "Lär dig om Solent Labs, vårt uppdrag att göra komplexa system observerbara, och personen bakom projekten."
+      "title": "HAR-CAPTURE — Solent Labs™",
+      "description": "Python-bibliotek utan beroenden för att sanera HAR-filer. Upptäck vanliga PII-mönster med interaktiv granskning. Utökningsbart för anpassade mönster."
     },
     "header": {
-      "title": "Om Solent Labs",
-      "subtitle": "Gör komplexa system observerbara genom öppen källkod."
+      "title": "HTTP Archive (HAR) Capture",
+      "subtitle": "Dela HAR-filer säkert",
+      "description": "Sanera HTTP-arkivfiler för säkra buggrapporter och diagnostik."
     },
-    "mission": {
-      "title": "Uppdrag",
-      "text": "Komplexa system döljer sin data. Internetleverantörer ger dig ett black-box-modem utan insyn i anslutningshälsa. Smarta hem-enheter begraver användbara mätvärden i proprietära appar. Informationen finns — den är bara inte tillgänglig. Vi bygger broarna som exponerar denna data för de som behöver den."
+    "intro": {
+      "text": "Python-bibliotek utan beroenden som hjälper till att identifiera och ta bort vanliga PII-mönster från HAR-filer med formatbevarande redigering. Använd interaktiv granskning för att verifiera vad som flaggats. Utökningsbart för domänspecifika mönster."
     },
-    "founder": {
-      "title": "Skapare",
-      "name": "Ken Schulz",
-      "role": "Grundare & Utvecklare",
-      "bio": "I 27 ar har jag byggt foretagssystem och den automation, testning och verktyg som hjalper team att leverera battre. Mannisko-forst-ledarskap. Operativ excellens. Minska manuellt arbete sa att manniskor kan fokusera pa det som spelar roll. Hemma ar jag make och far till tva barn. Jag coachar en robotikklubb pa hogstadiet, har honor och tillbringar min fritid med segling, cykling, skidakning och triathlontraning. Det finns alltid ett annat berg. Något att lära sig. Något att bygga. Något att lära ut.",
-      "approach": "Jag bygger mjukvara med AI som en kraftmultiplikator — hur en ensam utvecklare levererar det som tidigare krävde ett team. Varje rad kod är skriven med samma verktyg som är tillgängliga för alla bidragsgivare."
-    },
-    "impact": {
-      "title": "Projektpåverkan",
-      "commits": "commits",
-      "contributors": "bidragsgivare",
-      "modems": "verifierade modem",
-      "tests": "testtäckning"
-    },
-    "values": {
-      "title": "Värderingar",
-      "openSource": {
-        "title": "Öppen källkod som standard",
-        "text": "Offentliga projekt är MIT-licensierade. Forka, modifiera, bidra — delat arbete tillhör communityt."
+    "installation": {
+      "title": "Installation",
+      "installTitle": "Installera",
+      "command": "pip install har-capture",
+      "usageTitle": "Användning",
+      "tabs": {
+        "cli": "CLI",
+        "api": "Python API"
       },
-      "privacy": {
-        "title": "Dina data, ditt val",
-        "text": "Vi bygger verktyg som fungerar lokalt först. När molnfunktioner finns är de frivilliga och transparenta. Du styr vad som lämnar ditt nätverk."
-      },
-      "quality": {
-        "title": "Lärningskultur",
-        "text": "Verkliga enhets-fixtures. Växande testtäckning. Varje problem är en chans att göra systemet bättre."
+      "cliUsage": "# Fånga och sanera med interaktiv granskning\nhar-capture get https://example.com --interactive -o sanitized.har.gz\n\n# Eller sanera befintlig fil\nhar-capture sanitize input.har -o clean.har\n\n# Interaktivt granskningsläge\nhar-capture sanitize input.har --interactive",
+      "apiUsage": "from har_capture import sanitize_har\nimport json\n\n# Sanera HAR-data\nwith open('input.har') as f:\n    har_data = json.load(f)\n\nclean_har = sanitize_har(har_data)\n\nwith open('clean.har', 'w') as f:\n    json.dump(clean_har, f)"
+    },
+    "demo": {
+      "title": "Se det i aktion",
+      "placeholder": "Skärmdumpar av interaktivt läge kommer snart! Det interaktiva granskningsläget låter dig se exakt vad som kommer att redigeras innan du sparar den sanerade filen.",
+      "mockServerNote": "Vill du prova själv? Använd mock-servern för att generera exempel-HAR-filer för testning."
+    },
+    "features": {
+      "title": "Nyckelfunktioner",
+      "items": {
+        "deepPII": "Upptäckt av vanliga PII (lösenord, tokens, e-post, IP, MAC)",
+        "formatPreserving": "Formatbevarande redigering (behåller giltig testdata)",
+        "correlation": "Korrelationsbevarande hashar",
+        "zeroDeps": "Noll beroenden (endast stdlib)",
+        "cliAndApi": "CLI och Python API",
+        "interactive": "Interaktivt granskningsläge för verifiering"
       }
     },
-    "contact": {
-      "title": "Kontakt",
+    "useCases": {
+      "title": "Användningsfall",
+      "items": {
+        "support": "Supportteam som samlar diagnostik från användare",
+        "security": "Säkerhetsteam som granskar webbtrafik",
+        "testing": "Testautomation med känslig data",
+        "bugReports": "Buggrapporter som kräver HAR-filer"
+      }
+    },
+    "comparison": {
+      "title": "Varför har-capture?",
+      "tableHeaders": {
+        "feature": "Funktion",
+        "harCapture": "har-capture",
+        "google": "Google har-sanitizer",
+        "manual": "Manuell redigering"
+      },
+      "features": {
+        "programmable": "Programmerbar (API/CLI)",
+        "formatPreserving": "Formatbevarande redigering",
+        "maintained": "Aktivt underhållen",
+        "zeroDeps": "Noll beroenden"
+      },
+      "google2017": "Senast uppdaterad 2017"
+    },
+    "install": {
+      "title": "Installation",
+      "pipCommand": "pip install har-capture",
+      "viewGithub": "Visa på GitHub",
+      "installPyPI": "Installera från PyPI"
+    },
+    "documentation": {
+      "title": "Dokumentation",
+      "text": "Fullständig dokumentation tillgänglig på",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Rapportera ett problem"
+      "harSpec": "Läs mer om HAR-specifikationen"
+    },
+    "cta": {
+      "title": "Redo att dela HAR-filer säkert?",
+      "viewGithub": "Visa på GitHub",
+      "installPyPI": "Installera från PyPI"
     }
   }
 }

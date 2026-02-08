@@ -1,0 +1,426 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../i18n';
+
+const locale = 'en';
+const t = getTranslations(locale);
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "har-capture",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Python 3.10+",
+  "description": "Zero-dependency Python library for sanitizing HAR files. Remove passwords, tokens, and PII from HTTP archives with format-preserving redaction.",
+  "url": "https://solentlabs.io/har-capture/",
+  "author": {
+    "@type": "Organization",
+    "name": "Solent Labs",
+    "url": "https://solentlabs.io"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "license": "https://opensource.org/licenses/MIT"
+};
+---
+
+<BaseLayout locale={locale} title={t.hc.meta.title} description={t.hc.meta.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <div class="container">
+    <header class="page-header">
+      <h1>{t.hc.header.title}</h1>
+      <p class="subtitle">{t.hc.header.subtitle}</p>
+      <p class="subtitle-secondary">{t.hc.header.description}</p>
+      <div class="badges">
+        <img src="https://img.shields.io/pypi/v/har-capture" alt="PyPI version">
+        <img src="https://img.shields.io/pypi/dm/har-capture" alt="Downloads">
+        <img src="https://codecov.io/gh/solentlabs/har-capture/branch/main/graph/badge.svg" alt="Code coverage">
+        <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="Zero dependencies">
+        <img src="https://img.shields.io/github/license/solentlabs/har-capture" alt="MIT License">
+      </div>
+    </header>
+
+    <article class="content">
+      <section class="problem-section">
+        <h2>The Problem</h2>
+        <p>HAR files contain everything your browser sends and receives—passwords, API keys, tokens, emails, IP addresses. Support teams need them for debugging, but sharing them raw is a security nightmare. Manually editing is error-prone: miss one token in a 10MB file and you have a breach. Even automated tools can't catch everything—domain-specific secrets require domain-specific patterns.</p>
+      </section>
+
+      <section class="solution-section">
+        <h2>The Solution</h2>
+        <p>har-capture helps identify and remove common sensitive data patterns from HAR files while preserving their debugging value. Interactive review mode shows you what was flagged so you can verify before sharing. Extensible API lets you add custom patterns for your domain.</p>
+      </section>
+
+      <section class="problem-section" style="border-left-color: #e74c3c;">
+        <h2>⚠️ Important: Use at Your Own Risk</h2>
+        <p><strong>har-capture is a development tool that helps identify common PII patterns.</strong> It is NOT a substitute for manual security review, domain-specific sanitization, or production security workflows.</p>
+        <p>This tool uses heuristics that cannot anticipate every pattern. Domain-specific secrets, proprietary formats, and unusual auth schemes may not be detected. <strong>You are responsible for verifying all sanitized output before sharing.</strong></p>
+        <p><strong>Always use interactive mode</strong> (<code>--interactive</code>) to review what was flagged. For production use, extend the detection patterns for your specific domain. Assume HAR files may still contain sensitive data after sanitization.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">This tool reduces but does not eliminate the risk of PII exposure. Provided "as-is" under MIT License without warranty of any kind.</p>
+      </section>
+
+      <section class="demo-section">
+        <h2>{t.hc.demo.title}</h2>
+
+        <div class="demo-content">
+          <div class="tabs">
+            <input type="radio" name="demo-tabs" id="tab-basic">
+            <label for="tab-basic">Basic Usage</label>
+
+            <input type="radio" name="demo-tabs" id="tab-comparison">
+            <label for="tab-comparison">Comparison</label>
+
+            <input type="radio" name="demo-tabs" id="tab-interactive" checked>
+            <label for="tab-interactive">Interactive Review</label>
+
+            <div class="tab-content" data-tab="basic">
+              <p>Capture and automatically sanitize HAR files with a single command:</p>
+              <pre class="terminal-output"><code>$ har-capture get http://localhost:8080/api/user -o demo.har
+
+============================================================
+HAR CAPTURE
+============================================================
+
+  Target:     http://localhost:8080/api/user
+  Browser:    chromium
+  Output:     demo.har
+
+Checking connectivity...
+  Connected:  http://localhost:8080/
+
+Checking authentication type...
+  Detected: Form-based or no auth required
+
+============================================================
+CAPTURE COMPLETE
+============================================================
+
+  Compressed: demo.sanitized.har.gz
+  Sanitized:  demo.sanitized.har
+  Removed 3 bloat entries (7 -&gt; 4)
+
+Next steps:
+  • Share the file (PII removed): demo.sanitized.har.gz
+  • Validate for secrets: har-capture validate demo.sanitized.har.gz</code></pre>
+
+              <h4 style="margin-top: 2rem;">Validation</h4>
+              <p>Verify HAR files are safe to share:</p>
+              <pre class="terminal-output"><code>$ har-capture validate demo.sanitized.har.gz
+
+[OK] demo.sanitized.har.gz: Clean
+
+Summary: 0 errors, 0 warnings</code></pre>
+            </div>
+
+            <div class="tab-content" data-tab="comparison">
+              <p>See how sensitive data is automatically detected and removed:</p>
+
+              <div class="comparison-grid">
+                <div class="comparison-column">
+                  <h4>Original (Unlabeled Pipe Data)</h4>
+                  <pre class="terminal-output"><code set:html={`var deviceConfig = '
+  NETGEAR-C7000|
+  192.168.0.1|
+  admin|
+  TK421_1977!|
+  MatrixNet-5G|
+  sk_live_a8f2k9m3p7x1n6v4b2|
+  SN827194729|
+  WPA3|
+  10.31.41.5
+';
+var systemInfo = '
+  Router7|
+  GRID_NET_2024|
+  00:1A:2B:3C:4D:5E|
+  enabled|
+  tok_1982flynn
+';`} /></pre>
+                </div>
+
+                <div class="comparison-column">
+                  <h4>Sanitized (PII Removed)</h4>
+                  <pre class="terminal-output"><code set:html={`var deviceConfig = '
+  NETGEAR-C7000|
+  10.255.186.84|
+  admin|
+  FIELD_a8b9c0d1|
+  MatrixNet-5G|
+  FIELD_7b609581|
+  SN: SERIAL_c1673a31|
+  WPA3|
+  10.255.186.84
+';
+var systemInfo = '
+  Router7|
+  GRID_NET_2024|
+  02:21:96:a3:9b:4b|
+  enabled|
+  FIELD_9d8e7f6g
+';`} /></pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab="interactive">
+              <p>When ambiguous values are detected (like unlabeled pipe-delimited data), har-capture prompts for manual review:</p>
+              <img src="/assets/images/har-capture-interactive-mode.png" alt="Interactive review mode showing flagged values for manual selection" class="demo-screenshot">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-section">
+        <h2>Why It Matters</h2>
+        <p><strong>Security teams</strong> can share HAR files with vendors without exposing credentials.</p>
+        <p><strong>Support teams</strong> can collect diagnostics from users safely and confidently.</p>
+        <p><strong>Developers</strong> can automate HAR sanitization in CI/CD pipelines without dependencies.</p>
+        <p>One leaked API key can cost thousands in breach response. har-capture prevents that.</p>
+      </section>
+
+      <section class="features-section">
+        <h2>{t.hc.features.title}</h2>
+        <ul class="features-list">
+          <li>{t.hc.features.items.deepPII}</li>
+          <li>{t.hc.features.items.formatPreserving}</li>
+          <li>{t.hc.features.items.correlation}</li>
+          <li>{t.hc.features.items.zeroDeps}</li>
+          <li>{t.hc.features.items.cliAndApi}</li>
+          <li>{t.hc.features.items.interactive}</li>
+        </ul>
+      </section>
+
+      <section class="use-cases-section">
+        <h2>{t.hc.useCases.title}</h2>
+        <ul class="use-cases-list">
+          <li>{t.hc.useCases.items.support}</li>
+          <li>{t.hc.useCases.items.security}</li>
+          <li>{t.hc.useCases.items.testing}</li>
+          <li>{t.hc.useCases.items.bugReports}</li>
+        </ul>
+      </section>
+
+      <section class="comparison-section">
+        <h2>{t.hc.comparison.title}</h2>
+        <div class="modem-table-wrapper">
+          <table class="modem-table">
+            <thead>
+              <tr>
+                <th>{t.hc.comparison.tableHeaders.feature}</th>
+                <th>{t.hc.comparison.tableHeaders.harCapture}</th>
+                <th>{t.hc.comparison.tableHeaders.google}</th>
+                <th>{t.hc.comparison.tableHeaders.manual}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{t.hc.comparison.features.programmable}</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>{t.hc.comparison.features.formatPreserving}</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>❌</td>
+              </tr>
+              <tr>
+                <td>{t.hc.comparison.features.maintained}</td>
+                <td>✅</td>
+                <td>❌ <small>({t.hc.comparison.google2017})</small></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>{t.hc.comparison.features.zeroDeps}</td>
+                <td>✅</td>
+                <td>❌ <small>(Python 2.7, Flask, etc.)</small></td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="documentation-section">
+        <h2>{t.hc.documentation.title}</h2>
+        <p>
+          {t.hc.documentation.text} <a href="https://github.com/solentlabs/har-capture#readme">{t.hc.documentation.github}</a>
+        </p>
+        <p>
+          <a href="http://www.softwareishard.com/blog/har-12-spec/">{t.hc.documentation.harSpec}</a>
+        </p>
+      </section>
+
+      <section class="installation-section">
+        <h2>{t.hc.installation.title}</h2>
+
+        <div class="install-block">
+          <h3>{t.hc.installation.installTitle}</h3>
+          <pre><code>{t.hc.installation.command}</code></pre>
+        </div>
+
+        <div class="usage-block">
+          <h3>{t.hc.installation.usageTitle}</h3>
+          <div class="tabs">
+            <input type="radio" name="usage-tabs" id="tab-cli" checked>
+            <label for="tab-cli">{t.hc.installation.tabs.cli}</label>
+
+            <input type="radio" name="usage-tabs" id="tab-api">
+            <label for="tab-api">{t.hc.installation.tabs.api}</label>
+
+            <div class="tab-content" data-tab="cli">
+              <pre><code>{t.hc.installation.cliUsage}</code></pre>
+            </div>
+
+            <div class="tab-content" data-tab="api">
+              <pre><code>{t.hc.installation.apiUsage}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>{t.hc.cta.title}</h2>
+        <div class="cta-links">
+          <a href="https://github.com/solentlabs/har-capture" class="cta-button">{t.hc.cta.viewGithub}</a>
+          <a href="https://pypi.org/project/har-capture/" class="cta-button secondary">{t.hc.cta.installPyPI}</a>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <p>{t.footer.tagline}</p>
+    </footer>
+  </div>
+
+  <style>
+    .tabs {
+      margin-top: 1.5rem;
+    }
+
+    .tabs input[type="radio"] {
+      display: none;
+    }
+
+    .tabs label {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: -1px;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 0.5rem 0.5rem 0 0;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.9rem;
+      position: relative;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .tabs label:hover {
+      background: rgba(0, 0, 0, 0.15);
+      color: rgba(255, 255, 255, 1);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .tabs input[type="radio"]:checked + label {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.35);
+      border-bottom-color: transparent;
+      color: var(--orange);
+      font-weight: 700;
+      z-index: 1;
+    }
+
+    .tabs .tab-content {
+      display: none;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 0 0.5rem 0.5rem 0.5rem;
+      margin-top: 0;
+    }
+
+    .tabs input#tab-cli:checked ~ .tab-content[data-tab="cli"],
+    .tabs input#tab-api:checked ~ .tab-content[data-tab="api"] {
+      display: block;
+    }
+
+    .tabs input#tab-basic:checked ~ .tab-content[data-tab="basic"],
+    .tabs input#tab-comparison:checked ~ .tab-content[data-tab="comparison"],
+    .tabs input#tab-interactive:checked ~ .tab-content[data-tab="interactive"] {
+      display: block;
+    }
+
+    .tab-content h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: var(--orange);
+    }
+
+    .tab-content h4 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: var(--orange);
+    }
+
+    .demo-section .tabs {
+      margin-top: 1.5rem;
+    }
+
+    .demo-section .demo-screenshot {
+      margin-top: 1rem;
+    }
+
+    .install-block,
+    .usage-block {
+      margin-top: 2rem;
+    }
+
+    .install-block h3,
+    .usage-block h3 {
+      margin-bottom: 1rem;
+      color: var(--orange);
+    }
+
+    .tabs .tab-content pre {
+      margin: 0;
+    }
+
+    .tabs .tab-content code {
+      font-size: 0.9rem;
+    }
+
+    .demo-placeholder {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+
+    .demo-placeholder p {
+      margin-bottom: 1rem;
+    }
+
+    .demo-note {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-style: italic;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+  </style>
+</BaseLayout>

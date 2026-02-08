@@ -4,7 +4,10 @@
     "description": "We build software that makes complex systems observable. Open source at the core."
   },
   "nav": {
+    "home": "Home",
+    "projects": "Projects",
     "cableModemMonitor": "Cable Modem Monitor",
+    "harCapture": "HTTP Archive (HAR) Capture",
     "about": "About"
   },
   "hero": {
@@ -15,12 +18,19 @@
     "text": "Complex systems hide their data. Devices bury metrics in clunky interfaces. APIs don't expose what you need. The information exists — it's just not accessible. We build bridges."
   },
   "products": {
-    "title": "Products",
+    "title": "Projects",
     "cableModemMonitor": {
       "name": "Cable Modem Monitor",
       "description": "DOCSIS signal monitoring for Home Assistant. Track signal strength, noise margins, and errors across all your modem's channels. 13 verified modems. 70% test coverage.",
       "learnMore": "Learn more",
       "github": "GitHub"
+    },
+    "harCapture": {
+      "name": "HTTP Archive (HAR) Capture",
+      "description": "Zero-dependency Python library for sanitizing HAR files. Detects common PII patterns (passwords, tokens, emails) with format-preserving redaction. Interactive review mode for verification. Extensible for domain-specific patterns.",
+      "learnMore": "Learn more",
+      "github": "GitHub",
+      "pypi": "PyPI"
     }
   },
   "philosophy": {
@@ -211,6 +221,90 @@
       "title": "Get Started",
       "viewGithub": "View on GitHub",
       "readDocs": "Read the docs"
+    }
+  },
+  "hc": {
+    "meta": {
+      "title": "HAR-CAPTURE — Solent Labs™",
+      "description": "Zero-dependency Python library for sanitizing HAR files. Detect common PII patterns with interactive review. Extensible for custom patterns."
+    },
+    "header": {
+      "title": "HTTP Archive (HAR) Capture",
+      "subtitle": "Share HAR Files Safely",
+      "description": "Sanitize HTTP Archive files for secure bug reports and diagnostics."
+    },
+    "intro": {
+      "text": "Zero-dependency Python library that helps identify and remove common PII patterns from HAR files with format-preserving redaction. Use interactive review to verify what's flagged. Extensible for domain-specific patterns."
+    },
+    "installation": {
+      "title": "Installation",
+      "installTitle": "Install",
+      "command": "pip install har-capture",
+      "usageTitle": "Usage",
+      "tabs": {
+        "cli": "CLI",
+        "api": "Python API"
+      },
+      "cliUsage": "# Capture and sanitize with interactive review\nhar-capture get https://example.com --interactive -o sanitized.har.gz\n\n# Or sanitize existing file\nhar-capture sanitize input.har -o clean.har\n\n# Interactive review mode\nhar-capture sanitize input.har --interactive",
+      "apiUsage": "from har_capture import sanitize_har\nimport json\n\n# Sanitize HAR data\nwith open('input.har') as f:\n    har_data = json.load(f)\n\nclean_har = sanitize_har(har_data)\n\nwith open('clean.har', 'w') as f:\n    json.dump(clean_har, f)"
+    },
+    "demo": {
+      "title": "See It In Action",
+      "placeholder": "Interactive mode screenshots coming soon! The interactive review mode lets you see exactly what will be redacted before saving the sanitized file.",
+      "mockServerNote": "Want to try it yourself? Use the mock server to generate sample HAR files for testing."
+    },
+    "features": {
+      "title": "Key Features",
+      "items": {
+        "deepPII": "Common PII detection (passwords, tokens, emails, IPs, MACs)",
+        "formatPreserving": "Format-preserving redaction (keeps valid test data)",
+        "correlation": "Correlation-preserving hashes",
+        "zeroDeps": "Zero dependencies (stdlib only)",
+        "cliAndApi": "CLI and Python API",
+        "interactive": "Interactive review mode for verification"
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "items": {
+        "support": "Support teams collecting diagnostics from users",
+        "security": "Security teams reviewing web traffic",
+        "testing": "Test automation with sensitive data",
+        "bugReports": "Bug reports requiring HAR files"
+      }
+    },
+    "comparison": {
+      "title": "Why har-capture?",
+      "tableHeaders": {
+        "feature": "Feature",
+        "harCapture": "har-capture",
+        "google": "Google har-sanitizer",
+        "manual": "Manual Editing"
+      },
+      "features": {
+        "programmable": "Programmable (API/CLI)",
+        "formatPreserving": "Format-preserving redaction",
+        "maintained": "Actively maintained",
+        "zeroDeps": "Zero dependencies"
+      },
+      "google2017": "Last updated 2017"
+    },
+    "install": {
+      "title": "Installation",
+      "pipCommand": "pip install har-capture",
+      "viewGithub": "View on GitHub",
+      "installPyPI": "Install from PyPI"
+    },
+    "documentation": {
+      "title": "Documentation",
+      "text": "Full documentation available on",
+      "github": "GitHub",
+      "harSpec": "Learn more about the HAR specification"
+    },
+    "cta": {
+      "title": "Ready to Share HAR Files Safely?",
+      "viewGithub": "View on GitHub",
+      "installPyPI": "Install from PyPI"
     }
   }
 }

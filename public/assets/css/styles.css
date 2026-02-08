@@ -2,11 +2,39 @@
     --orange: #E67E22;
     --orange-light: #F39C12;
     --orange-dark: #D35400;
-    --dark: #2C3E50;
-    --gray: #7F8C8D;
+}
+
+/* Light mode (default) */
+:root, [data-theme="light"] {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8F9FA;
+    --bg-gradient-start: #F8F9FA;
+    --bg-gradient-end: #E8ECEF;
+    --text-primary: #2C3E50;
+    --text-secondary: #7F8C8D;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2a2a2a;
+    --bg-gradient-start: #1a1a1a;
+    --bg-gradient-end: #252525;
+    --text-primary: #e0e0e0;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Legacy variables for compatibility */
+:root {
+    --dark: var(--text-primary);
+    --gray: var(--text-secondary);
     --gray-light: #BDC3C7;
-    --light: #F8F9FA;
-    --white: #FFFFFF;
+    --light: var(--bg-secondary);
+    --white: var(--bg-primary);
 }
 
 * {
@@ -18,9 +46,10 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.6;
-    color: var(--dark);
-    background: linear-gradient(135deg, var(--light) 0%, #E8ECEF 100%);
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
     min-height: 100vh;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Top Navigation */
@@ -29,12 +58,12 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background: var(--white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    background: var(--bg-primary);
+    box-shadow: 0 2px 10px var(--shadow-color);
     position: sticky;
     top: 0;
     z-index: 100;
-    position: relative;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-brand {
@@ -318,7 +347,7 @@ body {
     text-align: center;
     padding: 1.5rem 2rem 2rem;
     border-bottom: 1px solid var(--gray-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .page-header h1 {
@@ -1075,6 +1104,103 @@ footer p {
     opacity: 0.8;
 }
 
+/* Demo Section Styles */
+.demo-content {
+    margin: 2rem 0;
+}
+
+.demo-content h3 {
+    color: var(--text-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.demo-content h3:first-child {
+    margin-top: 0;
+}
+
+.demo-content h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.demo-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.terminal-output {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1.5rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0 2rem 0;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.terminal-output code {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: pre;
+    background: none;
+    color: inherit;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+/* Light mode override for terminal output */
+[data-theme="light"] .terminal-output {
+    background: #f5f5f5;
+    color: #2C3E50;
+    border: 1px solid #ddd;
+}
+
+/* Light mode override for tab content text */
+[data-theme="light"] .tab-content {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .tab-content p {
+    color: #000000;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.comparison-column {
+    min-width: 0;
+}
+
+.comparison-column h4 {
+    margin-bottom: 0.75rem;
+}
+
+.comparison-column .terminal-output {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.demo-screenshot {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    margin: 1rem 0 2rem 0;
+    display: block;
+    background: #1e1e1e;
+    padding: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .top-nav {
@@ -1186,5 +1312,14 @@ footer p {
         width: 100%;
         max-width: 250px;
         text-align: center;
+    }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .terminal-output {
+        font-size: 0.8rem;
+        padding: 1rem;
     }
 }
