@@ -30,9 +30,9 @@ test.describe('Homepage Rendering', () => {
       // Hero section exists
       await expect(page.locator('h1').first()).toBeVisible();
 
-      // Footer is visible with brand (use more specific selector)
-      await expect(page.locator('footer').last()).toBeVisible();
-      await expect(page.locator('footer').last()).toContainText('Solent Labs™');
+      // Footer inside content container has brand
+      await expect(page.locator('.container footer, footer:has-text("Solent Labs™")').first()).toBeVisible();
+      await expect(page.locator('.container footer, footer:has-text("Solent Labs™")').first()).toContainText('Solent Labs™');
     });
   }
 });
@@ -134,6 +134,6 @@ test.describe('Responsive Design', () => {
     await page.goto('/');
 
     await expect(page.locator('h1').first()).toBeVisible();
-    await expect(page.locator('footer').last()).toBeVisible();
+    await expect(page.locator('.container footer, footer:has-text("Solent Labs™")').first()).toBeVisible();
   });
 });

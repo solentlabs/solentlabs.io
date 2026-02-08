@@ -86,7 +86,8 @@ test.describe('Translation Content', () => {
     await expect(page).toHaveTitle(/Solent Labs™/);
 
     // Content should be in German (check for German-specific text)
-    // "Projects" in German is "Projekte"
+    // "Projects" in German is "Projekte" - wait for page to load
+    await page.waitForLoadState('networkidle');
     await expect(page.locator('text=Projekte')).toBeVisible();
   });
 
@@ -94,6 +95,7 @@ test.describe('Translation Content', () => {
     await page.goto('/fr/');
 
     // "Projects" in French is "Projets"
+    await page.waitForLoadState('networkidle');
     await expect(page.locator('text=Projets')).toBeVisible();
   });
 
@@ -101,6 +103,7 @@ test.describe('Translation Content', () => {
     await page.goto('/uk/');
 
     // "Projects" in Ukrainian is "Проєкти"
+    await page.waitForLoadState('networkidle');
     await expect(page.locator('text=Проєкти')).toBeVisible();
   });
 
@@ -108,6 +111,7 @@ test.describe('Translation Content', () => {
     await page.goto('/zh/');
 
     // "Projects" in Chinese is "项目"
+    await page.waitForLoadState('networkidle');
     await expect(page.locator('text=项目')).toBeVisible();
   });
 
@@ -115,6 +119,7 @@ test.describe('Translation Content', () => {
     await page.goto('/es/');
 
     // "Projects" in Spanish is "Proyectos"
+    await page.waitForLoadState('networkidle');
     await expect(page.locator('text=Proyectos')).toBeVisible();
   });
 });
