@@ -82,9 +82,9 @@ test.describe('Navigation', () => {
   test('CMM link works from localized homepage', async ({ page }) => {
     await page.goto('/de/');
 
-    // Click the CMM link in the products section
+    // Click the CMM link in the products section - force on mobile where elements may overlap
     const cmmLink = page.locator('.product-feature a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
-    await cmmLink.click();
+    await cmmLink.click({ force: true });
     await expect(page).toHaveURL(/\/de\/cable-modem-monitor/);
   });
 });

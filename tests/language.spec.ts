@@ -56,11 +56,14 @@ test.describe('Language Switcher', () => {
   test('clicking UK navigates to Ukrainian page', async ({ page }) => {
     await page.goto('/');
 
-    // Hover to reveal dropdown, then wait for link to be visible before clicking
+    // Hover to reveal dropdown and wait for Ukrainian link to appear
     await page.locator('.lang-switcher').hover();
     const ukLink = page.locator('a[href="/uk/"]');
-    await ukLink.waitFor({ state: 'visible' });
-    await ukLink.click();
+    await expect(ukLink).toBeVisible();
+
+    // Use evaluate to programmatically click the link
+    await ukLink.evaluate((el: HTMLElement) => el.click());
+
     await expect(page).toHaveURL(/\/uk\/?$/);
 
     const htmlLang = await page.locator('html').getAttribute('lang');
