@@ -88,7 +88,7 @@ test.describe('Translation Content', () => {
     // Content should be in German (check for German-specific text in products section)
     // "Projects" in German is "Projekte"
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('.products-section h2:has-text("Projekte")').first()).toBeVisible();
+    await expect(page.locator('.product-feature h2:has-text("Projekte")').first()).toBeVisible();
   });
 
   test('French page has translated content', async ({ page }) => {
@@ -96,7 +96,7 @@ test.describe('Translation Content', () => {
 
     // "Projects" in French is "Projets" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('.products-section h2:has-text("Projets")').first()).toBeVisible();
+    await expect(page.locator('.product-feature h2:has-text("Projets")').first()).toBeVisible();
   });
 
   test('Ukrainian page has translated content', async ({ page }) => {
@@ -104,7 +104,7 @@ test.describe('Translation Content', () => {
 
     // "Projects" in Ukrainian is "Проєкти" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('.products-section h2:has-text("Проєкти")').first()).toBeVisible();
+    await expect(page.locator('.product-feature h2:has-text("Проєкти")').first()).toBeVisible();
   });
 
   test('Chinese page has translated content', async ({ page }) => {
@@ -112,7 +112,7 @@ test.describe('Translation Content', () => {
 
     // "Projects" in Chinese is "项目" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('.products-section h2:has-text("项目")').first()).toBeVisible();
+    await expect(page.locator('.product-feature h2:has-text("项目")').first()).toBeVisible();
   });
 
   test('Spanish page has translated content', async ({ page }) => {
@@ -120,7 +120,7 @@ test.describe('Translation Content', () => {
 
     // "Projects" in Spanish is "Proyectos" - check in products section
     await page.waitForLoadState('networkidle');
-    await expect(page.locator('.products-section h2:has-text("Proyectos")').first()).toBeVisible();
+    await expect(page.locator('.product-feature h2:has-text("Proyectos")').first()).toBeVisible();
   });
 });
 

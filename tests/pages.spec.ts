@@ -75,7 +75,7 @@ test.describe('Navigation', () => {
     await page.goto('/');
 
     // Check for CMM link in products section (not nav dropdown)
-    const cmmLink = page.locator('.products-section a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
+    const cmmLink = page.locator('.product-feature a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
     await expect(cmmLink).toBeVisible();
   });
 
@@ -83,7 +83,7 @@ test.describe('Navigation', () => {
     await page.goto('/de/');
 
     // Click the CMM link in the products section
-    const cmmLink = page.locator('.products-section a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
+    const cmmLink = page.locator('.product-feature a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
     await cmmLink.click();
     await expect(page).toHaveURL(/\/de\/cable-modem-monitor/);
   });
