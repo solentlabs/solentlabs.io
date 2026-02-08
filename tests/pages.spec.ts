@@ -30,9 +30,9 @@ test.describe('Homepage Rendering', () => {
       // Hero section exists
       await expect(page.locator('h1').first()).toBeVisible();
 
-      // Footer is visible with brand
-      await expect(page.locator('footer')).toBeVisible();
-      await expect(page.locator('footer')).toContainText('Solent Labs™');
+      // Footer is visible with brand (use more specific selector)
+      await expect(page.locator('footer').last()).toBeVisible();
+      await expect(page.locator('footer').last()).toContainText('Solent Labs™');
     });
   }
 });
@@ -74,14 +74,17 @@ test.describe('Navigation', () => {
   test('Homepage has link to CMM product page', async ({ page }) => {
     await page.goto('/');
 
-    const cmmLink = page.locator('a[href*="cable-modem-monitor"]').first();
+    // Check for CMM link in products section (not nav dropdown)
+    const cmmLink = page.locator('.products-section a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
     await expect(cmmLink).toBeVisible();
   });
 
   test('CMM link works from localized homepage', async ({ page }) => {
     await page.goto('/de/');
 
-    await page.click('a[href*="cable-modem-monitor"]');
+    // Click the CMM link in the products section
+    const cmmLink = page.locator('.products-section a[href*="cable-modem-monitor"], .cta-button[href*="cable-modem-monitor"]').first();
+    await cmmLink.click();
     await expect(page).toHaveURL(/\/de\/cable-modem-monitor/);
   });
 });
@@ -131,6 +134,6 @@ test.describe('Responsive Design', () => {
     await page.goto('/');
 
     await expect(page.locator('h1').first()).toBeVisible();
-    await expect(page.locator('footer')).toBeVisible();
+    await expect(page.locator('footer').last()).toBeVisible();
   });
 });

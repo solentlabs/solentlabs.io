@@ -86,36 +86,36 @@ test.describe('Translation Content', () => {
     await expect(page).toHaveTitle(/Solent Labs™/);
 
     // Content should be in German (check for German-specific text)
-    // "Products" in German is "Produkte"
-    await expect(page.locator('text=Produkte')).toBeVisible();
+    // "Projects" in German is "Projekte"
+    await expect(page.locator('text=Projekte')).toBeVisible();
   });
 
   test('French page has translated content', async ({ page }) => {
     await page.goto('/fr/');
 
-    // "Products" in French is "Produits"
-    await expect(page.locator('text=Produits')).toBeVisible();
+    // "Projects" in French is "Projets"
+    await expect(page.locator('text=Projets')).toBeVisible();
   });
 
   test('Ukrainian page has translated content', async ({ page }) => {
     await page.goto('/uk/');
 
-    // "Products" in Ukrainian is "Продукти"
-    await expect(page.locator('text=Продукти')).toBeVisible();
+    // "Projects" in Ukrainian is "Проєкти"
+    await expect(page.locator('text=Проєкти')).toBeVisible();
   });
 
   test('Chinese page has translated content', async ({ page }) => {
     await page.goto('/zh/');
 
-    // "Products" in Chinese is "产品"
-    await expect(page.locator('text=产品')).toBeVisible();
+    // "Projects" in Chinese is "项目"
+    await expect(page.locator('text=项目')).toBeVisible();
   });
 
   test('Spanish page has translated content', async ({ page }) => {
     await page.goto('/es/');
 
-    // "Products" in Spanish is "Productos"
-    await expect(page.locator('text=Productos')).toBeVisible();
+    // "Projects" in Spanish is "Proyectos"
+    await expect(page.locator('text=Proyectos')).toBeVisible();
   });
 });
 
