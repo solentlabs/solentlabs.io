@@ -7,8 +7,7 @@
     "home": "Strona główna",
     "projects": "Projekty",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "O nas"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Narzędzia ujawniające ukryte dane.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Projekt Solent Labs™."
-  },
-  "about": {
-    "meta": {
-      "title": "O nas — Solent Labs™",
-      "description": "Poznaj Solent Labs, naszą misję czynienia złożonych systemów obserwowalnymi i osobę stojącą za projektami."
-    },
-    "header": {
-      "title": "O Solent Labs",
-      "subtitle": "Czynienie złożonych systemów obserwowalnymi poprzez oprogramowanie open source."
-    },
-    "mission": {
-      "title": "Misja",
-      "text": "Złożone systemy ukrywają swoje dane. Solent Labs buduje mosty, które czynią je obserwowalnymi — i uczy innych robić to samo. Open source, jeden projekt na raz."
-    },
-    "founder": {
-      "title": "Twórca",
-      "name": "Ken Schulz",
-      "role": "Założyciel i Deweloper",
-      "bio": "Spędziłem 27 lat budując systemy korporacyjne oraz automatyzację, testowanie i narzędzia, które pomagają zespołom lepiej dostarczać. Przywództwo zorientowane na ludzi. Doskonałość operacyjna. Redukcja wysiłku manualnego, aby ludzie mogli skupić się na tym, co ważne. W domu jestem mężem i ojcem dwójki dzieci. Trenuję robotykę w gimnazjum, hoduję kury i spędzam wolny czas żeglując, jeżdżąc na rowerze, jeżdżąc na nartach i trenując do triathlonów. Zawsze jest kolejna góra. Coś do nauczenia się. Coś do zbudowania. Coś do nauczania.",
-      "approach": "Cable Modem Monitor rozpoczął się jako eksperyment w rozwoju wspomaganym AI. Prawie 200 wpisów dziennika później jest dowodem na to, co możliwe, gdy doświadczenie spotyka nowe narzędzia."
-    },
-    "impact": {
-      "title": "Wpływ projektu",
-      "commits": "commity",
-      "contributors": "współtwórcy",
-      "modems": "zweryfikowane modemy",
-      "tests": "pokrycie testami"
-    },
-    "values": {
-      "title": "Wartości",
-      "openSource": {
-        "title": "Open source domyślnie",
-        "text": "Projekty publiczne są licencjonowane na MIT. Forkuj, modyfikuj, współtwórz — wspólna praca należy do społeczności."
-      },
-      "privacy": {
-        "title": "Twoje dane, Twój wybór",
-        "text": "Budujemy narzędzia, które działają najpierw lokalnie. Gdy istnieją funkcje chmurowe, są opcjonalne i przejrzyste. Ty kontrolujesz, co opuszcza Twoją sieć."
-      },
-      "quality": {
-        "title": "Kultura uczenia się",
-        "text": "Prawdziwe fixture'y urządzeń. Rosnące pokrycie testami. Każdy problem to szansa na ulepszenie systemu."
-      }
-    },
-    "contact": {
-      "title": "Kontakt",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Zgłoś problem"
-    }
   },
   "cmm": {
     "meta": {

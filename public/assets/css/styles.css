@@ -1021,23 +1021,6 @@ h2::before {
     color: var(--orange);
 }
 
-/* About CTA */
-.about-cta {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.about-cta a {
-    color: var(--orange);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.about-cta a:hover {
-    text-decoration: underline;
-}
-
 /* CTA Section */
 .cta-section {
     text-align: center;

@@ -7,8 +7,7 @@
     "home": "首页",
     "projects": "项目",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "关于"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "揭示隐藏数据的工具。",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Solent Labs™ 项目。"
-  },
-  "about": {
-    "meta": {
-      "title": "关于 — Solent Labs™",
-      "description": "了解 Solent Labs、我们让复杂系统可观测的使命以及项目背后的人。"
-    },
-    "header": {
-      "title": "关于 Solent Labs",
-      "subtitle": "通过开源软件让复杂系统可观测。"
-    },
-    "mission": {
-      "title": "使命",
-      "text": "复杂系统隐藏其数据。Solent Labs 搭建让它们可观测的桥梁——并教导他人做同样的事情。开源,一次一个项目。"
-    },
-    "founder": {
-      "title": "创始人",
-      "name": "Ken Schulz",
-      "role": "创始人与开发者",
-      "bio": "我花了 27 年构建企业系统以及让团队更好交付的自动化、测试和工具。以人为本的领导力。卓越运营。减少手动工作,让人们可以专注于重要的事情。在家里,我是丈夫和两个孩子的父亲。我指导中学机器人团队,养鸡,并在业余时间航海、骑自行车、滑雪和训练铁人三项。总有另一座山。要学习的东西。要构建的东西。要教授的东西。",
-      "approach": "Cable Modem Monitor 始于 AI 辅助开发的实验。近 200 条日志条目后,它证明了当经验遇到新工具时可能发生的事情。"
-    },
-    "impact": {
-      "title": "项目影响",
-      "commits": "提交",
-      "contributors": "贡献者",
-      "modems": "已验证的调制解调器",
-      "tests": "测试覆盖率"
-    },
-    "values": {
-      "title": "价值观",
-      "openSource": {
-        "title": "默认开源",
-        "text": "公共项目采用 MIT 许可。Fork、修改、贡献——共享工作属于社区。"
-      },
-      "privacy": {
-        "title": "您的数据,您的选择",
-        "text": "我们构建首先在本地工作的工具。当云功能存在时,它们是可选的且透明的。您控制离开网络的内容。"
-      },
-      "quality": {
-        "title": "学习文化",
-        "text": "真实设备固件。不断增长的测试覆盖率。每个问题都是让系统更好的机会。"
-      }
-    },
-    "contact": {
-      "title": "联系",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "报告问题"
-    }
   },
   "cmm": {
     "meta": {

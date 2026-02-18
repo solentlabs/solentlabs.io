@@ -7,8 +7,7 @@
     "home": "Home",
     "projects": "Projects",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "About"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Tools that surface hidden data.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "A Solent Labs™ project."
-  },
-  "about": {
-    "meta": {
-      "title": "About — Solent Labs™",
-      "description": "Learn about Solent Labs, our mission to make complex systems observable, and the person behind the projects."
-    },
-    "header": {
-      "title": "About Solent Labs",
-      "subtitle": "Making complex systems observable through open source software."
-    },
-    "mission": {
-      "title": "Mission",
-      "text": "Complex systems hide their data. Solent Labs builds bridges that make them observable — and teaches others to do the same. Open source, one project at a time."
-    },
-    "founder": {
-      "title": "Creator",
-      "name": "Ken Schulz",
-      "role": "Founder & Developer",
-      "bio": "I've spent 27 years building enterprise systems and the automation, testing, and tooling that make teams deliver better. People-first leadership. Operational excellence. Reducing manual effort so people can focus on what matters. At home, I'm a husband and father of two. I coach middle school robotics, raise chickens, and spend my free time sailing, biking, skiing, and training for triathlons. There's always another mountain. Something to learn. Something to build. Something to teach.",
-      "approach": "Cable Modem Monitor started as an experiment in AI-assisted development. Nearly 200 journal entries later, it's proof of what's possible when experience meets new tools."
-    },
-    "impact": {
-      "title": "Project Impact",
-      "commits": "commits",
-      "contributors": "contributors",
-      "modems": "verified modems",
-      "tests": "test coverage"
-    },
-    "values": {
-      "title": "Values",
-      "openSource": {
-        "title": "Open source by default",
-        "text": "Public projects are MIT licensed. Fork, modify, contribute — shared work belongs to the community."
-      },
-      "privacy": {
-        "title": "Your data, your choice",
-        "text": "We build tools that work locally first. When cloud features exist, they're opt-in and transparent. You control what leaves your network."
-      },
-      "quality": {
-        "title": "Culture of learning",
-        "text": "Real device fixtures. Growing test coverage. Every issue is a chance to make the system better."
-      }
-    },
-    "contact": {
-      "title": "Connect",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Report an issue"
-    }
   },
   "cmm": {
     "meta": {

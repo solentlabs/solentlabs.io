@@ -7,8 +7,7 @@
     "home": "Home",
     "projects": "Projecten",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "Over"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Tools die verborgen data zichtbaar maken.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Een Solent Labs™-project."
-  },
-  "about": {
-    "meta": {
-      "title": "Over — Solent Labs™",
-      "description": "Leer over Solent Labs, onze missie om complexe systemen observeerbaar te maken, en de persoon achter de projecten."
-    },
-    "header": {
-      "title": "Over Solent Labs",
-      "subtitle": "Complexe systemen observeerbaar maken via open source software."
-    },
-    "mission": {
-      "title": "Missie",
-      "text": "Complexe systemen verbergen hun data. Solent Labs bouwt bruggen die ze observeerbaar maken — en leert anderen hetzelfde te doen. Open source, één project tegelijk."
-    },
-    "founder": {
-      "title": "Oprichter",
-      "name": "Ken Schulz",
-      "role": "Oprichter & Ontwikkelaar",
-      "bio": "Ik heb 27 jaar bedrijfssystemen gebouwd en de automatisering, testing en tooling die teams beter laten leveren. Mens-gerichte leiding. Operationele excellentie. Handmatige inspanning verminderen zodat mensen zich kunnen richten op wat ertoe doet. Thuis ben ik een echtgenoot en vader van twee. Ik coach middelbare school robotica, houd kippen, en besteed mijn vrije tijd aan zeilen, fietsen, skiën en trainen voor triathlons. Er is altijd een andere berg. Iets om te leren. Iets om te bouwen. Iets om te onderwijzen.",
-      "approach": "Cable Modem Monitor begon als een experiment in AI-ondersteunde ontwikkeling. Bijna 200 journal-items later is het bewijs van wat mogelijk is wanneer ervaring nieuwe tools ontmoet."
-    },
-    "impact": {
-      "title": "Project Impact",
-      "commits": "commits",
-      "contributors": "bijdragers",
-      "modems": "geverifieerde modems",
-      "tests": "testdekking"
-    },
-    "values": {
-      "title": "Waarden",
-      "openSource": {
-        "title": "Open source standaard",
-        "text": "Publieke projecten zijn MIT-gelicentieerd. Fork, wijzig, draag bij — gedeeld werk behoort tot de community."
-      },
-      "privacy": {
-        "title": "Jouw data, jouw keuze",
-        "text": "We bouwen tools die eerst lokaal werken. Als cloudfuncties bestaan, zijn ze opt-in en transparant. Jij bepaalt wat je netwerk verlaat."
-      },
-      "quality": {
-        "title": "Cultuur van leren",
-        "text": "Echte apparaat-fixtures. Groeiende testdekking. Elk probleem is een kans om het systeem beter te maken."
-      }
-    },
-    "contact": {
-      "title": "Contact",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Meld een probleem"
-    }
   },
   "cmm": {
     "meta": {

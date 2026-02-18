@@ -7,8 +7,7 @@
     "home": "Hem",
     "projects": "Projekt",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "Om"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Verktyg som avslöjar dolda data.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Ett Solent Labs™-projekt."
-  },
-  "about": {
-    "meta": {
-      "title": "Om — Solent Labs™",
-      "description": "Lär dig om Solent Labs, vårt uppdrag att göra komplexa system observerbara och personen bakom projekten."
-    },
-    "header": {
-      "title": "Om Solent Labs",
-      "subtitle": "Göra komplexa system observerbara genom mjukvara med öppen källkod."
-    },
-    "mission": {
-      "title": "Mission",
-      "text": "Komplexa system döljer sina data. Solent Labs bygger broar som gör dem observerbara — och lär andra att göra detsamma. Öppen källkod, ett projekt i taget."
-    },
-    "founder": {
-      "title": "Skapare",
-      "name": "Ken Schulz",
-      "role": "Grundare & Utvecklare",
-      "bio": "Jag har ägnat 27 år åt att bygga företagssystem och automation, testning och verktyg som hjälper team att leverera bättre. Människocentrerat ledarskap. Operativ excellens. Minska manuellt arbete så att människor kan fokusera på det som betyder något. Hemma är jag make och far till två. Jag tränar mellanstadie-robotik, håller höns och tillbringar min fritid med segling, cykling, skidåkning och träning för triathlon. Det finns alltid ett annat berg. Något att lära. Något att bygga. Något att lära ut.",
-      "approach": "Cable Modem Monitor började som ett experiment i AI-assisterad utveckling. Nästan 200 journalanteckningar senare är det bevis på vad som är möjligt när erfarenhet möter nya verktyg."
-    },
-    "impact": {
-      "title": "Projektpåverkan",
-      "commits": "commits",
-      "contributors": "bidragsgivare",
-      "modems": "verifierade modem",
-      "tests": "testtäckning"
-    },
-    "values": {
-      "title": "Värderingar",
-      "openSource": {
-        "title": "Öppen källkod som standard",
-        "text": "Offentliga projekt är MIT-licensierade. Forka, modifiera, bidra — delat arbete tillhör gemenskapen."
-      },
-      "privacy": {
-        "title": "Din data, ditt val",
-        "text": "Vi bygger verktyg som fungerar lokalt först. När molnfunktioner finns är de opt-in och transparenta. Du kontrollerar vad som lämnar ditt nätverk."
-      },
-      "quality": {
-        "title": "Lärandekultur",
-        "text": "Riktiga enhetsfixtures. Växande testtäckning. Varje problem är en chans att göra systemet bättre."
-      }
-    },
-    "contact": {
-      "title": "Kontakt",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Rapportera ett problem"
-    }
   },
   "cmm": {
     "meta": {

@@ -7,8 +7,7 @@
     "home": "Início",
     "projects": "Projetos",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "Sobre"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Ferramentas que revelam dados ocultos.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Um projeto Solent Labs™."
-  },
-  "about": {
-    "meta": {
-      "title": "Sobre — Solent Labs™",
-      "description": "Conheça a Solent Labs, nossa missão de tornar sistemas complexos observáveis e a pessoa por trás dos projetos."
-    },
-    "header": {
-      "title": "Sobre a Solent Labs",
-      "subtitle": "Tornando sistemas complexos observáveis através de software open source."
-    },
-    "mission": {
-      "title": "Missão",
-      "text": "Sistemas complexos escondem seus dados. A Solent Labs constrói pontes que os tornam observáveis — e ensina outros a fazer o mesmo. Open source, um projeto de cada vez."
-    },
-    "founder": {
-      "title": "Criador",
-      "name": "Ken Schulz",
-      "role": "Fundador & Desenvolvedor",
-      "bio": "Passei 27 anos construindo sistemas empresariais e a automação, testes e ferramentas que fazem as equipes entregarem melhor. Liderança centrada nas pessoas. Excelência operacional. Reduzir o esforço manual para que as pessoas possam se concentrar no que importa. Em casa, sou marido e pai de dois. Treino robótica de ensino médio, crio galinhas e passo meu tempo livre velejando, pedalando, esquiando e treinando para triatlos. Sempre há outra montanha. Algo para aprender. Algo para construir. Algo para ensinar.",
-      "approach": "Cable Modem Monitor começou como um experimento em desenvolvimento assistido por IA. Quase 200 entradas de diário depois, é prova do que é possível quando experiência encontra novas ferramentas."
-    },
-    "impact": {
-      "title": "Impacto do projeto",
-      "commits": "commits",
-      "contributors": "colaboradores",
-      "modems": "modems verificados",
-      "tests": "cobertura de testes"
-    },
-    "values": {
-      "title": "Valores",
-      "openSource": {
-        "title": "Open source por padrão",
-        "text": "Projetos públicos são licenciados MIT. Faça fork, modifique, contribua — trabalho compartilhado pertence à comunidade."
-      },
-      "privacy": {
-        "title": "Seus dados, sua escolha",
-        "text": "Construímos ferramentas que funcionam localmente primeiro. Quando recursos de nuvem existem, são opt-in e transparentes. Você controla o que sai da sua rede."
-      },
-      "quality": {
-        "title": "Cultura de aprendizado",
-        "text": "Fixtures de dispositivos reais. Cobertura de testes crescente. Cada problema é uma chance de tornar o sistema melhor."
-      }
-    },
-    "contact": {
-      "title": "Contato",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Relatar um problema"
-    }
   },
   "cmm": {
     "meta": {

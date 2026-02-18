@@ -7,8 +7,7 @@
     "home": "Home",
     "projects": "Progetti",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "Chi siamo"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Strumenti che rivelano dati nascosti.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Un progetto Solent Labs™."
-  },
-  "about": {
-    "meta": {
-      "title": "Chi siamo — Solent Labs™",
-      "description": "Scopri Solent Labs, la nostra missione di rendere osservabili i sistemi complessi e la persona dietro i progetti."
-    },
-    "header": {
-      "title": "Chi siamo Solent Labs",
-      "subtitle": "Rendere osservabili i sistemi complessi attraverso software open source."
-    },
-    "mission": {
-      "title": "Missione",
-      "text": "I sistemi complessi nascondono i loro dati. Solent Labs costruisce ponti che li rendono osservabili — e insegna ad altri a fare lo stesso. Open source, un progetto alla volta."
-    },
-    "founder": {
-      "title": "Creatore",
-      "name": "Ken Schulz",
-      "role": "Fondatore & Sviluppatore",
-      "bio": "Ho passato 27 anni a costruire sistemi aziendali e l'automazione, i test e gli strumenti che permettono ai team di consegnare meglio. Leadership incentrata sulle persone. Eccellenza operativa. Ridurre lo sforzo manuale così le persone possono concentrarsi su ciò che conta. A casa, sono un marito e padre di due figli. Alleno robotica alle scuole medie, allevo galline e passo il mio tempo libero a fare vela, andare in bici, sciare e allenarmi per triathlon. C'è sempre un'altra montagna. Qualcosa da imparare. Qualcosa da costruire. Qualcosa da insegnare.",
-      "approach": "Cable Modem Monitor è iniziato come un esperimento nello sviluppo assistito dall'AI. Quasi 200 voci di diario dopo, è la prova di cosa è possibile quando l'esperienza incontra nuovi strumenti."
-    },
-    "impact": {
-      "title": "Impatto del progetto",
-      "commits": "commit",
-      "contributors": "contributori",
-      "modems": "modem verificati",
-      "tests": "copertura test"
-    },
-    "values": {
-      "title": "Valori",
-      "openSource": {
-        "title": "Open source per impostazione predefinita",
-        "text": "I progetti pubblici sono sotto licenza MIT. Forka, modifica, contribuisci — il lavoro condiviso appartiene alla community."
-      },
-      "privacy": {
-        "title": "I tuoi dati, la tua scelta",
-        "text": "Costruiamo strumenti che funzionano prima localmente. Quando esistono funzionalità cloud, sono opt-in e trasparenti. Tu controlli cosa lascia la tua rete."
-      },
-      "quality": {
-        "title": "Cultura dell'apprendimento",
-        "text": "Fixture di dispositivi reali. Copertura test in crescita. Ogni problema è un'opportunità per rendere il sistema migliore."
-      }
-    },
-    "contact": {
-      "title": "Contatti",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Segnala un problema"
-    }
   },
   "cmm": {
     "meta": {

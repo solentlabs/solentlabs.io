@@ -7,8 +7,7 @@
     "home": "Startseite",
     "projects": "Projekte",
     "cableModemMonitor": "Cable Modem Monitor",
-    "harCapture": "HTTP Archive (HAR) Capture",
-    "about": "Über uns"
+    "harCapture": "HTTP Archive (HAR) Capture"
   },
   "hero": {
     "headline": "Werkzeuge, die verborgene Daten sichtbar machen.",
@@ -68,55 +67,6 @@
   "footer": {
     "brand": "Solent Labs™",
     "tagline": "Ein Solent Labs™-Projekt."
-  },
-  "about": {
-    "meta": {
-      "title": "Über uns — Solent Labs™",
-      "description": "Erfahren Sie mehr über Solent Labs, unsere Mission, komplexe Systeme beobachtbar zu machen, und die Person hinter den Projekten."
-    },
-    "header": {
-      "title": "Über Solent Labs",
-      "subtitle": "Komplexe Systeme durch Open-Source-Software beobachtbar machen."
-    },
-    "mission": {
-      "title": "Mission",
-      "text": "Komplexe Systeme verbergen ihre Daten. Solent Labs baut Brücken, die sie beobachtbar machen — und lehrt andere, dasselbe zu tun. Open Source, ein Projekt nach dem anderen."
-    },
-    "founder": {
-      "title": "Gründer",
-      "name": "Ken Schulz",
-      "role": "Gründer & Entwickler",
-      "bio": "Ich habe 27 Jahre lang Unternehmenssysteme sowie die Automatisierung, Tests und Werkzeuge entwickelt, die Teams zu besseren Ergebnissen verhelfen. Menschenzentrierte Führung. Operative Exzellenz. Manuelle Arbeit reduzieren, damit sich Menschen auf das Wesentliche konzentrieren können. Zu Hause bin ich Ehemann und Vater von zwei Kindern. Ich trainiere Mittelschul-Robotik, züchte Hühner und verbringe meine Freizeit mit Segeln, Radfahren, Skifahren und Training für Triathlons. Es gibt immer einen weiteren Berg. Etwas zu lernen. Etwas zu bauen. Etwas zu lehren.",
-      "approach": "Cable Modem Monitor begann als Experiment in KI-unterstützter Entwicklung. Fast 200 Journal-Einträge später ist es der Beweis dafür, was möglich ist, wenn Erfahrung auf neue Werkzeuge trifft."
-    },
-    "impact": {
-      "title": "Projekt-Impact",
-      "commits": "Commits",
-      "contributors": "Mitwirkende",
-      "modems": "verifizierte Modems",
-      "tests": "Testabdeckung"
-    },
-    "values": {
-      "title": "Werte",
-      "openSource": {
-        "title": "Open Source als Standard",
-        "text": "Öffentliche Projekte sind MIT-lizenziert. Forken, modifizieren, beitragen — gemeinsame Arbeit gehört der Community."
-      },
-      "privacy": {
-        "title": "Ihre Daten, Ihre Wahl",
-        "text": "Wir entwickeln Werkzeuge, die zuerst lokal funktionieren. Wenn Cloud-Funktionen existieren, sind sie opt-in und transparent. Sie kontrollieren, was Ihr Netzwerk verlässt."
-      },
-      "quality": {
-        "title": "Kultur des Lernens",
-        "text": "Echte Geräte-Fixtures. Wachsende Testabdeckung. Jedes Problem ist eine Chance, das System besser zu machen."
-      }
-    },
-    "contact": {
-      "title": "Kontakt",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "issues": "Problem melden"
-    }
   },
   "cmm": {
     "meta": {
